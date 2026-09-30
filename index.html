@@ -128,7 +128,7 @@ header {
 
 .links {
   display: flex;
-  gap: 28px;
+  gap: 24px;
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   text-transform: uppercase;
@@ -138,6 +138,32 @@ header {
 
 .links a:hover {
   color: var(--gold-border);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-user-btn {
+  background: #f7eedb;
+  color: var(--royal-maroon);
+  border: 1px solid var(--gold-border);
+  padding: 9px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12.5px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s ease;
+}
+
+.nav-user-btn:hover {
+  background: #ecdaba;
 }
 
 .nav-cart-btn {
@@ -161,15 +187,6 @@ header {
 .nav-cart-btn:hover {
   background: var(--burgundy);
   transform: translateY(-2px);
-}
-
-.cart-pill {
-  background: var(--gold-primary);
-  color: var(--velvet);
-  font-size: 11px;
-  padding: 2px 7px;
-  border-radius: 12px;
-  font-weight: 700;
 }
 
 /* HERO */
@@ -403,10 +420,6 @@ header {
   transition: transform 0.5s ease;
 }
 
-.product-card:hover .card-image-box img {
-  transform: scale(1.08);
-}
-
 .exclusive-tag {
   position: absolute;
   top: 14px;
@@ -494,7 +507,67 @@ header {
   color: var(--gold-glow);
 }
 
-/* ROYAL CHECKOUT DRAWER / MODAL */
+/* REVIEWS SECTION */
+.reviews-container {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.write-review-card {
+  background: #fffdf9;
+  border: 1.5px solid var(--gold-primary);
+  padding: 26px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(46, 8, 11, 0.08);
+}
+
+.write-review-card h3 {
+  font-family: 'Cinzel Decorative', Georgia, serif;
+  font-size: 20px;
+  color: var(--royal-maroon);
+  margin-bottom: 8px;
+}
+
+.star-rating-select {
+  display: flex;
+  gap: 8px;
+  font-size: 26px;
+  color: #d1bda2;
+  cursor: pointer;
+  margin-bottom: 14px;
+}
+
+.star-rating-select span.active {
+  color: var(--gold-primary);
+}
+
+.reviews-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.review-item {
+  background: #fffdfa;
+  border: 1px solid rgba(197, 155, 39, 0.3);
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+}
+
+.review-author {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--royal-maroon);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+/* MODAL / DRAWER */
 .checkout-modal {
   display: none;
   position: fixed;
@@ -547,48 +620,38 @@ header {
   color: var(--royal-maroon);
 }
 
-.order-items-box {
-  background: #f7efe1;
-  border-radius: 12px;
-  border: 1px solid rgba(197, 155, 39, 0.35);
-  padding: 14px 16px;
+/* VIP CARD UI */
+.vip-pass-card {
+  background: linear-gradient(135deg, #38080c 0%, #1e0305 100%);
+  border: 1.5px solid var(--gold-primary);
+  border-radius: 14px;
+  padding: 18px 20px;
+  color: #fff;
   margin-bottom: 20px;
-  max-height: 150px;
-  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 8px 22px rgba(46, 8, 11, 0.3);
 }
 
-.cart-item-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.vip-pass-card .vip-tag {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: var(--gold-glow);
+  text-transform: uppercase;
+}
+
+.vip-pass-card h4 {
+  font-family: 'Cinzel Decorative', Georgia, serif;
+  font-size: 19px;
+  color: var(--gold-primary);
+  margin: 6px 0;
+}
+
+.vip-id-num {
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
-  padding: 7px 0;
-  border-bottom: 1px dashed rgba(197, 155, 39, 0.3);
-}
-
-.cart-item-row:last-child {
-  border-bottom: none;
-}
-
-.item-remove {
-  color: #ad2b2b;
-  cursor: pointer;
-  font-size: 15px;
-  margin-left: 10px;
-  font-weight: bold;
-}
-
-.cart-total-bar {
-  display: flex;
-  justify-content: space-between;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  color: var(--royal-maroon);
-  margin-top: 8px;
-  padding-top: 8px;
-  border-top: 1.5px solid var(--gold-border);
+  letter-spacing: 1.5px;
+  color: #d1b8b8;
 }
 
 /* FORM FIELDS */
@@ -631,7 +694,7 @@ header {
   box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
 }
 
-/* LUXURY IN-APP UPI PAYMENT BOX */
+/* UPI PAYMENT BOX */
 .payment-card {
   margin: 18px 0;
   border: 2px dashed var(--gold-border);
@@ -639,18 +702,6 @@ header {
   padding: 16px;
   border-radius: 14px;
   text-align: center;
-  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.08);
-}
-
-.payment-card-title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12.5px;
-  font-weight: 700;
-  color: var(--royal-maroon);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  display: block;
 }
 
 .direct-upi-btn {
@@ -666,14 +717,8 @@ header {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 13px;
-  letter-spacing: 0.5px;
   margin: 10px auto;
   box-shadow: 0 4px 14px rgba(26, 115, 232, 0.35);
-  transition: transform 0.2s ease;
-}
-
-.direct-upi-btn:hover {
-  transform: translateY(-2px);
 }
 
 .qr-box {
@@ -683,18 +728,14 @@ header {
   align-items: center;
 }
 
-.qr-frame {
-  padding: 8px;
-  background: #fff;
-  border: 1px solid #d9c49a;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-}
-
 .qr-frame img {
   width: 145px;
   height: 145px;
   display: block;
+  border: 1px solid #d9c49a;
+  border-radius: 10px;
+  padding: 4px;
+  background: #fff;
 }
 
 .upi-id-badge {
@@ -720,32 +761,14 @@ header {
   padding: 3px 8px;
   border-radius: 10px;
   cursor: pointer;
-  font-weight: 600;
 }
 
-/* STEP 2: UTR INPUT CARD */
 .utr-card {
   background: #fff6f6;
   border: 1.5px solid #f1c5c5;
   border-radius: 12px;
   padding: 14px;
   margin-bottom: 16px;
-}
-
-.utr-card label {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  color: #8c1d1d;
-  display: block;
-}
-
-.utr-card small {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 11px;
-  color: #695252;
-  display: block;
-  margin: 3px 0 8px;
 }
 
 .submit-order-btn {
@@ -765,15 +788,8 @@ header {
   justify-content: center;
   gap: 10px;
   box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
-  transition: all 0.3s ease;
 }
 
-.submit-order-btn:hover {
-  background: #1eb855;
-  transform: translateY(-2px);
-}
-
-/* FLOATING BAR */
 .floating-actions {
   position: fixed;
   bottom: 22px;
@@ -809,7 +825,6 @@ header {
   border: 1.5px solid var(--gold-primary);
 }
 
-/* RESPONSIVE */
 @media (max-width: 992px) {
   .hero-box {
     grid-template-columns: 1fr;
@@ -819,6 +834,9 @@ header {
   }
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .reviews-container {
+    grid-template-columns: 1fr;
   }
   .links {
     display: none;
@@ -830,11 +848,8 @@ header {
     grid-template-columns: 1fr;
     gap: 18px;
   }
-  .hero-text {
-    padding: 40px 22px;
-  }
-  .hero-title {
-    font-size: 38px;
+  .reviews-list {
+    grid-template-columns: 1fr;
   }
   .form-row {
     grid-template-columns: 1fr;
@@ -845,12 +860,10 @@ header {
 
 <body>
 
-<!-- TOP ANNOUNCEMENT -->
 <div class="topbar">
   ✦ Grand Festive Sale ✦ FLAT ₹300 OFF • 100% PREPAID VIP DISPATCH • FREE SHIPPING
 </div>
 
-<!-- HEADER -->
 <header>
   <nav class="nav">
     <a href="#" class="brand">
@@ -863,11 +876,16 @@ header {
 
     <div class="links">
       <a href="#collection">Collection</a>
-      <a href="#about">Heritage</a>
+      <a href="#reviews">Royal Reviews</a>
       <a href="#contact">Support</a>
     </div>
 
     <div class="nav-actions">
+      <!-- USER ACCOUNT BUTTON -->
+      <button class="nav-user-btn" onclick="openProfileModal()">
+        <span id="navUserLabel">👤 VIP Profile</span>
+      </button>
+
       <button class="nav-cart-btn" onclick="openOrderModal()">
         🛍️ Cart (<span id="topCartCount">0</span>)
       </button>
@@ -915,8 +933,7 @@ header {
     </div>
 
     <div class="product-grid">
-
-      <!-- PRODUCT 1 -->
+      <!-- 1 -->
       <article class="product-card">
         <div class="card-image-box">
           <span class="exclusive-tag">Bestseller</span>
@@ -924,20 +941,16 @@ header {
         </div>
         <div class="card-info">
           <h3>Classic Heritage Combo</h3>
-          <div class="rating-bar">
-            ★★★★★ <span style="color:var(--text-muted);font-size:11px;">(4.9/5)</span>
-          </div>
+          <div class="rating-bar">★★★★★ <span style="color:var(--text-muted);font-size:11px;">(4.9/5)</span></div>
           <div class="card-pricing">
             <span class="card-striked">₹1,199</span>
             <span class="card-final-price">₹899</span>
           </div>
-          <button class="add-btn" onclick="addToCart('Classic Heritage Combo', 899)">
-            Add To Bag ✦
-          </button>
+          <button class="add-btn" onclick="addToCart('Classic Heritage Combo', 899)">Add To Bag ✦</button>
         </div>
       </article>
 
-      <!-- PRODUCT 2 -->
+      <!-- 2 -->
       <article class="product-card">
         <div class="card-image-box">
           <span class="exclusive-tag">Trending</span>
@@ -945,20 +958,16 @@ header {
         </div>
         <div class="card-info">
           <h3>Royal Rajputana Combo</h3>
-          <div class="rating-bar">
-            ★★★★★ <span style="color:var(--text-muted);font-size:11px;">(5.0/5)</span>
-          </div>
+          <div class="rating-bar">★★★★★ <span style="color:var(--text-muted);font-size:11px;">(5.0/5)</span></div>
           <div class="card-pricing">
             <span class="card-striked">₹1,199</span>
             <span class="card-final-price">₹899</span>
           </div>
-          <button class="add-btn" onclick="addToCart('Royal Rajputana Combo', 899)">
-            Add To Bag ✦
-          </button>
+          <button class="add-btn" onclick="addToCart('Royal Rajputana Combo', 899)">Add To Bag ✦</button>
         </div>
       </article>
 
-      <!-- PRODUCT 3 -->
+      <!-- 3 -->
       <article class="product-card">
         <div class="card-image-box">
           <span class="exclusive-tag">Festive Special</span>
@@ -966,20 +975,16 @@ header {
         </div>
         <div class="card-info">
           <h3>Meenakari Velvet Combo</h3>
-          <div class="rating-bar">
-            ★★★★★ <span style="color:var(--text-muted);font-size:11px;">(4.8/5)</span>
-          </div>
+          <div class="rating-bar">★★★★★ <span style="color:var(--text-muted);font-size:11px;">(4.8/5)</span></div>
           <div class="card-pricing">
             <span class="card-striked">₹1,199</span>
             <span class="card-final-price">₹899</span>
           </div>
-          <button class="add-btn" onclick="addToCart('Meenakari Velvet Combo', 899)">
-            Add To Bag ✦
-          </button>
+          <button class="add-btn" onclick="addToCart('Meenakari Velvet Combo', 899)">Add To Bag ✦</button>
         </div>
       </article>
 
-      <!-- PRODUCT 4 -->
+      <!-- 4 -->
       <article class="product-card">
         <div class="card-image-box">
           <span class="exclusive-tag">New Edition</span>
@@ -987,19 +992,65 @@ header {
         </div>
         <div class="card-info">
           <h3>Kundan Floral Combo</h3>
-          <div class="rating-bar">
-            ★★★★★ <span style="color:var(--text-muted);font-size:11px;">(4.9/5)</span>
-          </div>
+          <div class="rating-bar">★★★★★ <span style="color:var(--text-muted);font-size:11px;">(4.9/5)</span></div>
           <div class="card-pricing">
             <span class="card-striked">₹1,199</span>
             <span class="card-final-price">₹899</span>
           </div>
-          <button class="add-btn" onclick="addToCart('Kundan Floral Combo', 899)">
-            Add To Bag ✦
-          </button>
+          <button class="add-btn" onclick="addToCart('Kundan Floral Combo', 899)">Add To Bag ✦</button>
         </div>
       </article>
+    </div>
+  </section>
 
+  <!-- LIVE RATING & REVIEWS SECTION -->
+  <section class="section" id="reviews">
+    <div class="section-head">
+      <span class="subtitle-badge">Royal Experience</span>
+      <h2>Customer Ratings &amp; Reviews</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="reviews-container">
+      <!-- Write Review Form -->
+      <div class="write-review-card">
+        <h3>Rate Your Experience</h3>
+        <p style="font-family:'Montserrat',sans-serif;font-size:12px;color:var(--text-muted);margin-bottom:14px;">
+          झुमका कॉम्बो बॉक्स आपको कैसा लगा? अपना रिव्यू दर्ज करें:
+        </p>
+
+        <form id="reviewForm" onsubmit="submitReview(event)">
+          <div class="form-group">
+            <label>Select Rating (स्टार चुनें):</label>
+            <div class="star-rating-select" id="starSelector">
+              <span onclick="setRating(1)">★</span>
+              <span onclick="setRating(2)">★</span>
+              <span onclick="setRating(3)">★</span>
+              <span onclick="setRating(4)">★</span>
+              <span onclick="setRating(5)" class="active">★</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Your Name (नाम) *</label>
+            <input type="text" class="input-field" id="revName" placeholder="उदा. अंजलि सिंह" required>
+          </div>
+
+          <div class="form-group">
+            <label>Your Review (अनुभव लिखें) *</label>
+            <textarea class="input-field" id="revText" rows="3" placeholder="डिज़ाइन, क्वालिटी और पैकेजिंग के बारे में बताएं..." required></textarea>
+          </div>
+
+          <button type="submit" class="add-btn" style="width:100%;margin-top:10px;">
+            Publish Review ✍️
+          </button>
+        </form>
+      </div>
+
+      <!-- Reviews Feed -->
+      <div class="reviews-list" id="reviewsList">
+        <!-- Rendered by JavaScript -->
+      </div>
     </div>
   </section>
 </main>
@@ -1014,7 +1065,66 @@ header {
   </a>
 </div>
 
-<!-- CHECKOUT + PREPAID UPI MODAL -->
+<!-- 1. VIP CUSTOMER PROFILE MODAL -->
+<div class="checkout-modal" id="profileModal">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeProfileModal()">×</button>
+    
+    <div class="modal-head">
+      <h3>VIP Member ID</h3>
+      <p style="font-family:'Montserrat',sans-serif;font-size:12px;color:var(--text-muted);margin-top:4px;">
+        अपनी प्रोफाइल सेव करें ताकि चेकआउट पर बार-बार एड्रेस न भरना पड़े
+      </p>
+    </div>
+
+    <!-- Visual Member ID Card -->
+    <div class="vip-pass-card">
+      <div class="vip-tag">✦ Jhumkawala Privileged Member ✦</div>
+      <h4 id="vipCardName">Guest Customer</h4>
+      <div class="vip-id-num" id="vipCardId">ID: JW-NOT-REGISTERED</div>
+    </div>
+
+    <form id="profileForm" onsubmit="saveProfile(event)">
+      <div class="form-group">
+        <label>Full Name *</label>
+        <input type="text" class="input-field" id="profName" placeholder="उदा. प्रिया शर्मा" required>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Phone Number *</label>
+          <input type="tel" class="input-field" id="profPhone" placeholder="10 अंकों का नंबर" pattern="[0-9]{10}" required>
+        </div>
+        <div class="form-group">
+          <label>Pincode *</label>
+          <input type="text" class="input-field" id="profPin" placeholder="उदा. 110059" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Saved Delivery Address *</label>
+        <textarea class="input-field" id="profAddress" rows="2" placeholder="मकान नं, गली, इलाका..." required></textarea>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>City *</label>
+          <input type="text" class="input-field" id="profCity" placeholder="उदा. नई दिल्ली" required>
+        </div>
+        <div class="form-group">
+          <label>State *</label>
+          <input type="text" class="input-field" id="profState" placeholder="उदा. दिल्ली" required>
+        </div>
+      </div>
+
+      <button type="submit" class="submit-order-btn" style="background:var(--royal-maroon);">
+        <span>Save VIP Profile</span> 💾
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- 2. CHECKOUT + PREPAID UPI MODAL -->
 <div class="checkout-modal" id="orderModal">
   <div class="modal-content">
     <button class="modal-close" onclick="closeOrderModal()">×</button>
@@ -1026,60 +1136,56 @@ header {
       </p>
     </div>
 
-    <!-- Items in Bag -->
     <div class="order-items-box" id="cartContent">
       <p style="font-family:'Montserrat',sans-serif;font-size:13px;color:var(--text-muted);text-align:center;">
         आपकी शॉपिंग बैग अभी खाली है।
       </p>
     </div>
 
-    <!-- Customer Form -->
     <form id="orderForm" onsubmit="handleOrderSubmit(event)">
-      
       <div class="form-group">
-        <label>Full Name (पूरा नाम) *</label>
+        <label>Full Name *</label>
         <input type="text" class="input-field" id="custName" placeholder="उदा. अनुष्का शर्मा" required>
       </div>
 
       <div class="form-row">
         <div class="form-group">
-          <label>Phone Number (मोबाइल नंबर) *</label>
+          <label>Phone Number *</label>
           <input type="tel" class="input-field" id="custPhone" placeholder="10 अंकों का नंबर" pattern="[0-9]{10}" required>
         </div>
         <div class="form-group">
-          <label>Pincode (पिनकोड) *</label>
+          <label>Pincode *</label>
           <input type="text" class="input-field" id="custPin" placeholder="उदा. 110059" required>
         </div>
       </div>
 
       <div class="form-group">
-        <label>Full Delivery Address (पूरा पता) *</label>
+        <label>Full Delivery Address *</label>
         <textarea class="input-field" id="custAddress" rows="2" placeholder="मकान नं, गली/रोड, लैंडमार्क..." required></textarea>
       </div>
 
       <div class="form-row">
         <div class="form-group">
-          <label>City (शहर) *</label>
+          <label>City *</label>
           <input type="text" class="input-field" id="custCity" placeholder="उदा. नई दिल्ली" required>
         </div>
         <div class="form-group">
-          <label>State (राज्य) *</label>
+          <label>State *</label>
           <input type="text" class="input-field" id="custState" placeholder="उदा. दिल्ली" required>
         </div>
       </div>
 
-      <!-- UPI STEP 1: PAYMENT -->
+      <!-- UPI STEP 1 -->
       <div class="payment-card">
-        <span class="payment-card-title">💳 Step 1: Pay Online (Instant UPI)</span>
+        <span style="font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;color:var(--royal-maroon);text-transform:uppercase;">
+          💳 Step 1: Pay Online (Instant UPI)
+        </span>
         
         <a id="directUpiBtn" class="direct-upi-btn" href="#">
           ⚡ Pay Directly via UPI App (GPay / PhonePe / Paytm)
         </a>
 
         <div class="qr-box">
-          <p style="font-family:'Montserrat',sans-serif;font-size:11.5px;color:var(--text-muted);margin-bottom:6px;">
-            या किसी भी UPI App से QR Scan करके पे करें:
-          </p>
           <div class="qr-frame">
             <img id="upiQrImg" src="" alt="Jhumkawala UPI QR">
           </div>
@@ -1090,15 +1196,19 @@ header {
         </div>
       </div>
 
-      <!-- UPI STEP 2: UTR ENTRY -->
+      <!-- UPI STEP 2 -->
       <div class="utr-card">
-        <label>📝 Step 2: UPI Transaction / UTR No. *</label>
-        <small>पेमेंट करने के बाद PhonePe / Google Pay / Paytm की रसीद से 12-अंकों का UTR / Ref No. दर्ज करें:</small>
+        <label style="font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;color:#8c1d1d;display:block;">
+          📝 Step 2: UPI Transaction / UTR No. *
+        </label>
+        <small style="font-family:'Montserrat',sans-serif;font-size:11px;color:#695252;display:block;margin:3px 0 8px;">
+          पेमेंट के बाद 12-अंकों का UTR / Ref No. यहाँ दर्ज करें:
+        </small>
         <input type="text" class="input-field" id="custUtr" placeholder="उदा. 4256XXXXXXXX (12 Digits)" maxlength="24" required>
       </div>
 
       <button type="submit" class="submit-order-btn">
-        <span>Confirm Order & Send via WhatsApp</span> 💬
+        <span>Confirm Order &amp; Send via WhatsApp</span> 💬
       </button>
     </form>
   </div>
@@ -1106,12 +1216,136 @@ header {
 
 <script>
 // CONFIG
-const UPI_ID = "9971566545@pthdfc"; // आपका UPI ID
+const UPI_ID = "9971566545@pthdfc";
 const MERCHANT_NAME = "Jhumkawala";
 const WA_PHONE = "919971566545";
 
 let cart = [];
+let selectedStars = 5;
 
+// DEFAULT REVIEWS
+const defaultReviews = [
+  { name: "Priya Sharma", rating: 5, text: "Jhumka combo quality is genuinely royal! Beautiful packing and received on time in Delhi." },
+  { name: "Sneha Roy", rating: 5, text: "Meenakari velvet combo is gorgeous. Heavy festive look at such an affordable price." },
+  { name: "Ananya Mishra", rating: 4, text: "Loved the Rajputana combo box. Traditional, elegant and very comfortable to wear." }
+];
+
+// INITIALIZE APP
+window.addEventListener('DOMContentLoaded', () => {
+  loadVIPProfile();
+  loadReviews();
+  setRating(5);
+});
+
+// ================= VIP PROFILE LOGIC =================
+function loadVIPProfile() {
+  const saved = localStorage.getItem("jhumkawala_user");
+  if (saved) {
+    const user = JSON.parse(saved);
+    document.getElementById("navUserLabel").innerText = `👤 ${user.name.split(' ')[0]}`;
+    document.getElementById("vipCardName").innerText = user.name;
+    document.getElementById("vipCardId").innerText = `ID: ${user.vipId}`;
+
+    // Autofill Profile Modal Form
+    document.getElementById("profName").value = user.name || "";
+    document.getElementById("profPhone").value = user.phone || "";
+    document.getElementById("profPin").value = user.pin || "";
+    document.getElementById("profAddress").value = user.address || "";
+    document.getElementById("profCity").value = user.city || "";
+    document.getElementById("profState").value = user.state || "";
+
+    // Autofill Checkout Form
+    document.getElementById("custName").value = user.name || "";
+    document.getElementById("custPhone").value = user.phone || "";
+    document.getElementById("custPin").value = user.pin || "";
+    document.getElementById("custAddress").value = user.address || "";
+    document.getElementById("custCity").value = user.city || "";
+    document.getElementById("custState").value = user.state || "";
+  }
+}
+
+function saveProfile(e) {
+  e.preventDefault();
+  const name = document.getElementById("profName").value.trim();
+  const phone = document.getElementById("profPhone").value.trim();
+  const pin = document.getElementById("profPin").value.trim();
+  const address = document.getElementById("profAddress").value.trim();
+  const city = document.getElementById("profCity").value.trim();
+  const state = document.getElementById("profState").value.trim();
+
+  let vipId = "JW-" + Math.floor(10000 + Math.random() * 90000);
+  const existing = localStorage.getItem("jhumkawala_user");
+  if (existing) {
+    vipId = JSON.parse(existing).vipId || vipId;
+  }
+
+  const profileData = { name, phone, pin, address, city, state, vipId };
+  localStorage.setItem("jhumkawala_user", JSON.stringify(profileData));
+
+  alert("🎉 VIP Profile सफलतापूर्वक सेव हो गई!");
+  loadVIPProfile();
+  closeProfileModal();
+}
+
+function openProfileModal() {
+  document.getElementById("profileModal").classList.add("active");
+}
+
+function closeProfileModal() {
+  document.getElementById("profileModal").classList.remove("active");
+}
+
+// ================= REVIEWS & RATING LOGIC =================
+function setRating(stars) {
+  selectedStars = stars;
+  const spans = document.querySelectorAll("#starSelector span");
+  spans.forEach((span, idx) => {
+    if (idx < stars) {
+      span.classList.add("active");
+    } else {
+      span.classList.remove("active");
+    }
+  });
+}
+
+function loadReviews() {
+  let reviews = JSON.parse(localStorage.getItem("jhumkawala_reviews"));
+  if (!reviews || reviews.length === 0) {
+    reviews = defaultReviews;
+    localStorage.setItem("jhumkawala_reviews", JSON.stringify(reviews));
+  }
+
+  const listEl = document.getElementById("reviewsList");
+  listEl.innerHTML = reviews.map(r => `
+    <div class="review-item">
+      <div style="color:var(--gold-primary);font-size:16px;">${'★'.repeat(r.rating)}${'☆'.repeat(5 - r.rating)}</div>
+      <p style="font-family:'Montserrat',sans-serif;font-size:13px;color:var(--text-muted);margin:8px 0;line-height:1.6;">
+        "${r.text}"
+      </p>
+      <div class="review-author">
+        <span>— ${r.name}</span>
+        <span style="font-size:10px;color:#28a745;font-weight:600;">✓ Verified Buyer</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+function submitReview(e) {
+  e.preventDefault();
+  const name = document.getElementById("revName").value.trim();
+  const text = document.getElementById("revText").value.trim();
+
+  let reviews = JSON.parse(localStorage.getItem("jhumkawala_reviews")) || defaultReviews;
+  reviews.unshift({ name, rating: selectedStars, text });
+  localStorage.setItem("jhumkawala_reviews", JSON.stringify(reviews));
+
+  alert("धन्यवाद! आपका रिव्यू सफलतापूर्वक जोड़ दिया गया है 🌟");
+  document.getElementById("reviewForm").reset();
+  setRating(5);
+  loadReviews();
+}
+
+// ================= CART & CHECKOUT LOGIC =================
 function addToCart(title, price) {
   cart.push({ title, price });
   updateCartUI();
@@ -1141,17 +1375,17 @@ function updateCartUI() {
   let total = cart.reduce((acc, item) => acc + item.price, 0);
 
   let html = cart.map((item, idx) => `
-    <div class="cart-item-row">
+    <div class="cart-item-row" style="display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px dashed #d9c49a;font-family:'Montserrat',sans-serif;font-size:13px;">
       <span><b>${idx + 1}.</b> ${item.title}</span>
       <span>
         ₹${item.price}
-        <span class="item-remove" onclick="removeFromCart(${idx})" title="Remove item">✕</span>
+        <span class="item-remove" onclick="removeFromCart(${idx})" style="color:#ad2b2b;cursor:pointer;margin-left:10px;font-weight:bold;">✕</span>
       </span>
     </div>
   `).join('');
 
   html += `
-    <div class="cart-total-bar">
+    <div style="display:flex;justify-content:space-between;font-family:'Montserrat',sans-serif;font-size:15px;font-weight:700;color:var(--royal-maroon);margin-top:8px;padding-top:8px;border-top:1.5px solid var(--gold-border);">
       <span>Total Payable (कुल राशि):</span>
       <span>₹${total}</span>
     </div>
@@ -1188,14 +1422,13 @@ function closeOrderModal() {
   document.getElementById('orderModal').classList.remove('active');
 }
 
-// Click outside to close
-document.getElementById('orderModal').addEventListener('click', function(e) {
-  if (e.target === this) {
-    closeOrderModal();
+// Close modals on outside tap
+window.addEventListener('click', function(e) {
+  if (e.target.classList.contains('checkout-modal')) {
+    e.target.classList.remove('active');
   }
 });
 
-// SUBMIT ORDER
 function handleOrderSubmit(e) {
   e.preventDefault();
 
@@ -1218,6 +1451,14 @@ function handleOrderSubmit(e) {
     return;
   }
 
+  // Get VIP ID if saved
+  let vipTag = "";
+  const savedUser = localStorage.getItem("jhumkawala_user");
+  if (savedUser) {
+    const u = JSON.parse(savedUser);
+    vipTag = `%0A• *VIP Member ID:* ${u.vipId}`;
+  }
+
   let total = cart.reduce((acc, item) => acc + item.price, 0);
   let itemsText = cart.map((item, idx) => `• ${idx + 1}. ${item.title} (₹${item.price})`).join("%0A");
 
@@ -1231,7 +1472,7 @@ function handleOrderSubmit(e) {
     `============================%0A` +
     `*👤 DELIVERY DETAILS:*%0A` +
     `• *Customer:* ${name}%0A` +
-    `• *Mobile:* ${phone}%0A` +
+    `• *Mobile:* ${phone}${vipTag}%0A` +
     `• *Address:* ${address}%0A` +
     `• *City:* ${city}, ${state}%0A` +
     `• *Pincode:* ${pin}%0A` +
