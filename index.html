@@ -3,25 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jhumkawala | Handcrafted Fashion Jhumka Collection</title>
-<meta name="description" content="Jhumkawala - Traditional, Elegant & Timeless Fashion Jhumka Combo Box.">
+<title>Jhumkawala | Curated Fashion Jhumka Box</title>
+<meta name="description" content="Jhumkawala - Handcrafted & Curated Ethnic Fashion Jhumkas.">
 
-<!-- Premium Aesthetic Fonts -->
+<!-- Luxury Editorial Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,600;0,6..96,800;1,6..96,500&family=Italiana&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 :root {
-  --bg-black: #110e0e;
-  --bg-card: #1c1616;
-  --bg-card-light: #251e1e;
-  --cream-light: #fff8ed;
-  --cream-soft: #f4e8d3;
-  --gold: #d4a359;
-  --gold-glow: #f5d496;
-  --border-color: #3d2f2f;
-  --text-muted: #bdaea1;
+  /* Ultra-Premium Obsidian & Champagne Palette */
+  --noir: #0c0a0a;             /* Deepest velvet black */
+  --surface: #141111;          /* Card black */
+  --surface-tint: #1c1817;     /* Elevated element surface */
+  --border-lux: rgba(226, 185, 126, 0.22);
+  --border-hover: rgba(226, 185, 126, 0.5);
+
+  --cream-pure: #fffbf5;       /* Warm silk cream */
+  --cream-soft: #ede2d3;       /* Muted silk cream */
+  --gold-metallic: linear-gradient(135deg, #f5d8a0 0%, #d4a762 50%, #9e7330 100%);
+  --gold-text: #e2b97e;
+  --gold-glow: rgba(226, 185, 126, 0.18);
+  
   --wa-green: #25D366;
 }
 
@@ -37,9 +41,14 @@ html {
 
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  background-color: var(--bg-black);
-  color: var(--cream-light);
+  background-color: var(--noir);
+  background-image: 
+    radial-gradient(circle at 50% 0%, #1f1715 0%, transparent 45%),
+    radial-gradient(circle at 100% 100%, #1a1211 0%, transparent 40%);
+  color: var(--cream-soft);
+  min-height: 100vh;
   line-height: 1.6;
+  letter-spacing: 0.2px;
 }
 
 a {
@@ -47,55 +56,60 @@ a {
   color: inherit;
 }
 
-/* TOP GANESH SHLOK BAR */
+/* TOP SPIRITUAL BAR */
 .topbar {
-  background: #0a0808;
-  color: var(--gold);
-  padding: 8px 16px;
+  background: #060505;
+  color: var(--gold-text);
+  padding: 9px 18px;
   text-align: center;
-  font-size: 12px;
+  font-size: 11.5px;
   letter-spacing: 2px;
-  border-bottom: 1px solid #2a2020;
+  border-bottom: 1px solid var(--border-lux);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 /* NAVBAR */
 header {
-  background: rgba(17, 14, 14, 0.95);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border-color);
+  background: rgba(12, 10, 10, 0.88);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border-lux);
   position: sticky;
   top: 0;
   z-index: 100;
 }
 
 .nav {
-  max-width: 1200px;
+  max-width: 1220px;
   margin: auto;
-  height: 80px;
+  height: 86px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 24px;
 }
 
+/* HIGH-END LOGO BRANDING */
 .brand-wrapper {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
 }
 
-.ganesh-logo-symbol {
-  width: 48px;
-  height: 48px;
-  border: 1.5px solid var(--gold);
+.ganesh-symbol {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--gold-text);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
-  color: var(--gold);
-  background: radial-gradient(circle, #2a2020, #140f0f);
-  box-shadow: 0 0 12px rgba(212, 163, 89, 0.2);
+  font-size: 20px;
+  color: var(--gold-text);
+  background: radial-gradient(circle, #211917, #0f0c0c);
+  box-shadow: 0 0 16px var(--gold-glow);
 }
 
 .brand-text-block {
@@ -104,194 +118,225 @@ header {
 }
 
 .brand-name {
-  font-family: 'Cinzel', serif;
-  font-size: 26px;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 30px;
   font-weight: 800;
-  color: var(--cream-light);
+  color: var(--cream-pure);
   letter-spacing: 1.5px;
-  line-height: 1;
+  line-height: 0.95;
 }
 
 .brand-name span {
-  color: var(--gold);
+  background: var(--gold-metallic);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: italic;
+  font-weight: 500;
 }
 
 .brand-sub {
   font-size: 8.5px;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   text-transform: uppercase;
-  color: var(--gold);
-  margin-top: 4px;
+  color: var(--gold-text);
+  margin-top: 5px;
   font-weight: 600;
+  opacity: 0.9;
 }
 
-/* NAVIGATION MENU */
+/* NAV LINKS */
 .nav-links {
   display: flex;
-  gap: 24px;
-  font-size: 13.5px;
+  gap: 28px;
+  font-size: 13px;
   font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   color: var(--cream-soft);
 }
 
 .nav-links a {
-  transition: color 0.2s;
+  transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: var(--gold);
+  color: var(--gold-text);
 }
 
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 .vip-id-btn {
   background: transparent;
-  color: var(--gold);
-  border: 1px solid var(--gold);
+  color: var(--gold-text);
+  border: 1px solid var(--border-lux);
   padding: 8px 16px;
-  border-radius: 20px;
+  border-radius: 24px;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   cursor: pointer;
-  transition: 0.2s;
+  transition: all 0.3s;
 }
 
 .vip-id-btn:hover {
-  background: var(--gold);
-  color: var(--bg-black);
+  border-color: var(--gold-text);
+  box-shadow: 0 0 12px var(--gold-glow);
 }
 
 .nav-cart-btn {
-  background: var(--gold);
-  color: var(--bg-black);
+  background: var(--gold-metallic);
+  color: #120e0b;
   border: none;
-  padding: 9px 18px;
-  border-radius: 20px;
+  padding: 10px 20px;
+  border-radius: 25px;
   cursor: pointer;
   font-size: 13px;
   font-weight: 700;
   display: flex;
   align-items: center;
   gap: 6px;
-  transition: 0.2s;
+  box-shadow: 0 4px 18px rgba(226, 185, 126, 0.25);
+  transition: all 0.3s;
 }
 
 .nav-cart-btn:hover {
-  background: var(--gold-glow);
   transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(226, 185, 126, 0.4);
 }
 
 /* HERO SECTION */
 .hero {
-  max-width: 1200px;
-  margin: 35px auto;
+  max-width: 1220px;
+  margin: 35px auto 50px;
   padding: 0 20px;
 }
 
 .hero-box {
-  background: linear-gradient(135deg, #1c1616 0%, #151010 100%);
-  border-radius: 24px;
-  border: 1px solid var(--border-color);
+  background: linear-gradient(145deg, #161211 0%, #0e0b0b 100%);
+  border-radius: 28px;
+  border: 1px solid var(--border-lux);
   display: grid;
   grid-template-columns: 1.15fr 1fr;
   overflow: hidden;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+
+.hero-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-text), transparent);
 }
 
 .hero-text {
-  padding: 55px 45px;
+  padding: 65px 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .shlok-banner {
-  color: var(--gold);
-  font-size: 12.5px;
-  letter-spacing: 1px;
-  margin-bottom: 12px;
+  color: var(--gold-text);
+  font-size: 13px;
   font-style: italic;
+  margin-bottom: 14px;
+  opacity: 0.9;
 }
 
 .hero-title {
-  font-family: 'Cinzel', serif;
-  font-size: clamp(32px, 4.5vw, 48px);
-  color: var(--cream-light);
-  line-height: 1.15;
-  margin-bottom: 12px;
+  font-family: 'Italiana', serif;
+  font-size: clamp(38px, 5vw, 60px);
+  color: var(--cream-pure);
+  line-height: 1.1;
+  margin-bottom: 14px;
 }
 
-.hero-title span {
-  color: var(--gold);
+.hero-title em {
+  font-family: 'Bodoni Moda', serif;
+  font-style: italic;
+  background: var(--gold-metallic);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero-desc {
   font-size: 14.5px;
-  color: var(--text-muted);
-  margin-bottom: 24px;
+  color: var(--cream-soft);
+  opacity: 0.8;
+  margin-bottom: 28px;
+  max-width: 480px;
+  font-weight: 300;
 }
 
 .price-row {
   display: flex;
   align-items: baseline;
-  gap: 12px;
-  margin-bottom: 25px;
+  gap: 14px;
+  margin-bottom: 28px;
 }
 
 .curr-price {
-  font-size: 32px;
-  font-weight: 800;
-  color: var(--gold);
+  font-family: 'Bodoni Moda', serif;
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--gold-text);
 }
 
 .old-price {
   text-decoration: line-through;
-  color: #7a6e6e;
+  color: #695e59;
   font-size: 18px;
 }
 
 .save-badge {
-  background: rgba(212, 163, 89, 0.15);
-  color: var(--gold);
-  border: 1px solid var(--gold);
+  background: rgba(226, 185, 126, 0.1);
+  color: var(--gold-text);
+  border: 1px solid var(--border-lux);
   font-size: 11.5px;
-  font-weight: 700;
+  font-weight: 600;
   padding: 4px 10px;
-  border-radius: 6px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
 }
 
 .cta-btn {
-  background: var(--gold);
-  color: var(--bg-black);
-  padding: 14px 32px;
+  background: var(--gold-metallic);
+  color: #120e0b;
+  padding: 15px 36px;
   border-radius: 30px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 13.5px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
   width: fit-content;
   border: none;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  box-shadow: 0 4px 15px rgba(212, 163, 89, 0.3);
-  transition: 0.2s;
+  box-shadow: 0 6px 22px rgba(226, 185, 126, 0.3);
+  transition: all 0.3s;
 }
 
 .cta-btn:hover {
-  background: var(--gold-glow);
   transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(226, 185, 126, 0.45);
 }
 
 .hero-image-box {
-  background: #141010;
+  background: #110e0e;
+  position: relative;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 
 .hero-image-box img {
@@ -299,50 +344,58 @@ header {
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform 0.8s ease;
 }
 
-/* PRODUCT SPOTLIGHT SECTION */
+.hero-box:hover .hero-image-box img {
+  transform: scale(1.04);
+}
+
+/* SPOTLIGHT SECTION */
 .section {
-  max-width: 1200px;
-  margin: 60px auto;
+  max-width: 1220px;
+  margin: 70px auto;
   padding: 0 20px;
 }
 
 .section-head {
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 .section-head h2 {
-  font-family: 'Cinzel', serif;
-  font-size: 30px;
-  color: var(--cream-light);
+  font-family: 'Italiana', serif;
+  font-size: 36px;
+  color: var(--cream-pure);
 }
 
 .section-head p {
-  font-size: 13.5px;
-  color: var(--gold);
-  margin-top: 4px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold-text);
+  margin-top: 6px;
 }
 
 .product-single-card {
-  max-width: 820px;
+  max-width: 860px;
   margin: auto;
-  background: var(--bg-card);
-  border-radius: 20px;
-  border: 1px solid var(--border-color);
-  padding: 30px;
+  background: var(--surface);
+  border-radius: 24px;
+  border: 1px solid var(--border-lux);
+  padding: 34px;
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 30px;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 35px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.4);
 }
 
 .product-img-wrap {
   aspect-ratio: 1/1;
-  border-radius: 14px;
+  border-radius: 16px;
   overflow: hidden;
-  background: #140f0f;
-  border: 1px solid var(--border-color);
+  background: #0f0c0c;
+  border: 1px solid var(--border-lux);
 }
 
 .product-img-wrap img {
@@ -353,87 +406,92 @@ header {
 
 .product-specs-list {
   list-style: none;
-  margin: 15px 0 22px;
+  margin: 16px 0 24px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 9px;
 }
 
 .product-specs-list li {
   font-size: 13px;
-  color: var(--text-muted);
+  color: var(--cream-soft);
+  opacity: 0.85;
 }
 
 .product-specs-list li b {
-  color: var(--cream-soft);
+  color: var(--cream-pure);
+  font-weight: 600;
 }
 
 /* REVIEWS SECTION */
 .reviews-grid {
-  background: var(--bg-card);
-  border-radius: 20px;
-  border: 1px solid var(--border-color);
-  padding: 30px;
+  background: var(--surface);
+  border-radius: 24px;
+  border: 1px solid var(--border-lux);
+  padding: 34px;
   display: grid;
   grid-template-columns: 1fr 1.3fr;
-  gap: 35px;
+  gap: 40px;
 }
 
 .star-rating-widget {
   display: flex;
-  gap: 6px;
+  gap: 8px;
   font-size: 26px;
-  color: #4a3e3e;
+  color: #382e2c;
   cursor: pointer;
   margin-bottom: 14px;
 }
 
 .star-rating-widget span.active {
-  color: var(--gold);
+  color: var(--gold-text);
 }
 
 .form-group {
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .form-group label {
   display: block;
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 600;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 4px;
+  color: var(--gold-text);
+  margin-bottom: 5px;
 }
 
 .input-box {
   width: 100%;
-  padding: 10px 12px;
-  background: var(--bg-black);
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
+  padding: 12px 14px;
+  background: #0f0c0c;
+  border: 1px solid var(--border-lux);
+  border-radius: 10px;
   font-size: 13px;
-  color: var(--cream-light);
+  color: var(--cream-pure);
   font-family: inherit;
   outline: none;
+  transition: border-color 0.25s;
 }
 
 .input-box:focus {
-  border-color: var(--gold);
+  border-color: var(--gold-text);
 }
 
 .reviews-feed {
-  max-height: 380px;
+  max-height: 390px;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
   gap: 12px;
+  padding-right: 4px;
 }
 
 .single-review-box {
-  background: var(--bg-card-light);
-  border: 1px solid var(--border-color);
-  padding: 14px 16px;
-  border-radius: 12px;
+  background: var(--surface-tint);
+  border: 1px solid var(--border-lux);
+  padding: 16px 18px;
+  border-radius: 14px;
 }
 
 .review-header {
@@ -444,28 +502,29 @@ header {
 }
 
 .review-author-name {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 13px;
-  color: var(--cream-light);
+  color: var(--cream-pure);
 }
 
 .review-stars {
-  color: var(--gold);
-  font-size: 14px;
+  color: var(--gold-text);
+  font-size: 13px;
 }
 
 .review-comment {
   font-size: 13px;
-  color: var(--text-muted);
+  color: var(--cream-soft);
+  opacity: 0.85;
 }
 
-/* CHECKOUT / MODAL */
+/* MODALS */
 .modal {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.75);
-  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
   z-index: 200;
   align-items: center;
   justify-content: center;
@@ -477,36 +536,37 @@ header {
 }
 
 .modal-content {
-  background: var(--bg-card);
+  background: var(--surface);
   width: 100%;
-  max-width: 500px;
+  max-width: 490px;
   max-height: 90vh;
   overflow-y: auto;
-  border-radius: 20px;
-  border: 1px solid var(--gold);
-  padding: 28px 24px;
+  border-radius: 24px;
+  border: 1px solid var(--border-lux);
+  padding: 30px 26px;
   position: relative;
-  color: var(--cream-light);
+  color: var(--cream-pure);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
 }
 
 .close-btn {
   position: absolute;
-  top: 16px;
-  right: 18px;
+  top: 18px;
+  right: 20px;
   background: none;
   border: none;
   font-size: 26px;
   cursor: pointer;
-  color: var(--gold);
+  color: var(--gold-text);
 }
 
 .upi-box {
-  background: var(--bg-black);
-  border: 1px dashed var(--gold);
+  background: #0d0a0a;
+  border: 1px dashed var(--gold-text);
   padding: 16px;
-  border-radius: 12px;
+  border-radius: 14px;
   text-align: center;
-  margin: 15px 0;
+  margin: 16px 0;
 }
 
 .direct-pay-btn {
@@ -524,16 +584,16 @@ header {
   width: 140px;
   height: 140px;
   border-radius: 8px;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--border-lux);
   margin: 6px 0;
 }
 
 .utr-box {
-  background: #201313;
+  background: #1f1414;
   border: 1px solid #4a2828;
   padding: 12px;
-  border-radius: 10px;
-  margin-bottom: 14px;
+  border-radius: 12px;
+  margin-bottom: 16px;
 }
 
 .submit-btn {
@@ -552,27 +612,19 @@ header {
   gap: 8px;
 }
 
-/* VIP ID PASS CARD UI */
 .vip-pass-card {
-  background: linear-gradient(135deg, #2a1f1f, #140f0f);
-  border: 1.5px solid var(--gold);
-  border-radius: 14px;
-  padding: 16px;
-  margin-bottom: 16px;
+  background: linear-gradient(135deg, #241c19, #120e0d);
+  border: 1px solid var(--border-lux);
+  border-radius: 16px;
+  padding: 18px;
+  margin-bottom: 18px;
 }
 
-.vip-id-num {
-  font-size: 13px;
-  letter-spacing: 1px;
-  color: var(--gold);
-  font-weight: bold;
-}
-
-/* FLOATING BAR */
+/* FLOATING SHORTCUTS */
 .floating-actions {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 22px;
+  right: 22px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -580,21 +632,21 @@ header {
 }
 
 .float-btn {
-  padding: 11px 18px;
-  border-radius: 25px;
+  padding: 11px 20px;
+  border-radius: 30px;
   font-size: 12.5px;
   font-weight: 700;
   border: none;
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   gap: 6px;
 }
 
 .float-cart-btn {
-  background: var(--gold);
-  color: var(--bg-black);
+  background: var(--gold-metallic);
+  color: #120e0b;
 }
 
 .float-wa-btn {
@@ -606,11 +658,16 @@ header {
   .hero-box {
     grid-template-columns: 1fr;
   }
+  .hero-text {
+    padding: 45px 28px;
+  }
   .product-single-card {
     grid-template-columns: 1fr;
+    padding: 24px;
   }
   .reviews-grid {
     grid-template-columns: 1fr;
+    padding: 24px;
   }
   .nav-links {
     display: none;
@@ -621,62 +678,61 @@ header {
 
 <body>
 
-<!-- TOP GANESH SHLOK BAR -->
+<!-- TOP SPIRITUAL BAR -->
 <div class="topbar">
-  ॥ श्री गणेशाय नमः ॥ &nbsp;•&nbsp; Special Offer: Jhumka Combo Box at ₹899 Only &nbsp;•&nbsp; Free Shipping Across India
+  <span>॥ श्री गणेशाय नमः ॥</span> • <span>Festive Privilege: Jhumka Combo Box at ₹899</span> • <span>Free Express Delivery Across India</span>
 </div>
 
 <header>
   <nav class="nav">
     <a href="#" class="brand-wrapper">
-      <div class="ganesh-logo-symbol">ॐ</div>
+      <div class="ganesh-symbol">ॐ</div>
       <div class="brand-text-block">
         <div class="brand-name">Jhumka<span>wala</span></div>
-        <div class="brand-sub">Traditional • Elegant • Timeless</div>
+        <div class="brand-sub">Curated Ethnic Fashion</div>
       </div>
     </a>
 
-    <!-- MENU -->
     <div class="nav-links">
       <a href="#home">Home</a>
       <a href="#product">Combo Details</a>
-      <a href="#reviews">Customer Reviews</a>
-      <a href="https://wa.me/919971566545" target="_blank">Support</a>
+      <a href="#reviews">Verified Reviews</a>
+      <a href="https://wa.me/919971566545" target="_blank">Concierge</a>
     </div>
 
     <div class="nav-actions">
       <button class="vip-id-btn" onclick="openProfileModal()">
-        <span id="navVipLabel">👤 VIP ID</span>
+        <span id="navVipLabel">👤 VIP Patron</span>
       </button>
 
       <button class="nav-cart-btn" onclick="openCheckout()">
-        🛒 Bag (<span id="cartCount">1</span>)
+        🛍️ Bag (<span id="cartCount">1</span>)
       </button>
     </div>
   </nav>
 </header>
 
 <main id="home">
-  <!-- HERO SECTION -->
+  <!-- HERO -->
   <section class="hero">
     <div class="hero-box">
       <div class="hero-text">
         <div class="shlok-banner">
           ॥ वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ। निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥
         </div>
-        <h1 class="hero-title">Timeless Jhumka <span>Combo Box</span></h1>
+        <h1 class="hero-title">Timeless Jhumka <em>Combo Box</em></h1>
         <p class="hero-desc">
-          Get multiple trendy, lightweight fashion jhumkas in one single curated box. Handcrafted traditional charm for weddings, festive pujas, college, and ethnic styling.
+          Get multiple trendy, lightweight fashion jhumkas in one curated statement box. Designed for graceful college style, festive pujas, and wedding events.
         </p>
 
         <div class="price-row">
           <span class="curr-price">₹899</span>
           <span class="old-price">₹1,199</span>
-          <span class="save-badge">Save ₹300 (Limited Offer)</span>
+          <span class="save-badge">Save ₹300 • Festive Offer</span>
         </div>
 
         <button class="cta-btn" onclick="openCheckout()">
-          Buy Jhumka Combo Box →
+          Acquire Combo Box →
         </button>
       </div>
 
@@ -686,11 +742,11 @@ header {
     </div>
   </section>
 
-  <!-- PRODUCT DETAILS -->
+  <!-- PRODUCT SPOTLIGHT -->
   <section class="section" id="product">
     <div class="section-head">
-      <h2>The Curated Jhumka Box</h2>
-      <p>✦ All-In-One Ethnic Earring Collection ✦</p>
+      <h2>The Curated Box</h2>
+      <p>Aesthetic Ethnic Earring Edition</p>
     </div>
 
     <div class="product-single-card">
@@ -699,18 +755,18 @@ header {
       </div>
 
       <div class="product-info-col">
-        <span style="font-size:11px;font-weight:700;color:var(--gold);letter-spacing:1px;text-transform:uppercase;">Combo Edition</span>
-        <h3 style="font-family:'Cinzel',serif;font-size:24px;margin:4px 0 10px;color:var(--cream-light);">Fashion Jhumka Combo Box</h3>
+        <span style="font-size:11px;font-weight:700;color:var(--gold-text);letter-spacing:1px;text-transform:uppercase;">Curated Festive Set</span>
+        <h3 style="font-family:'Italiana',serif;font-size:28px;margin:4px 0 12px;color:var(--cream-pure);">Fashion Jhumka Combo Box</h3>
         
         <ul class="product-specs-list">
-          <li>✨ <b>Styles Included:</b> Curated Traditional &amp; Trendy Jhumka Pairs</li>
-          <li>🪶 <b>Feel:</b> Lightweight and comfortable for prolonged festive wear</li>
-          <li>🌸 <b>Occasions:</b> Perfect for College, Festivals, Weddings, and Gifts</li>
-          <li>🔒 <b>Closure:</b> Smooth Push-Back post with silicone stoppers</li>
-          <li>📦 <b>Packaging:</b> Shipped safely in a rigid combo protective box</li>
+          <li>✨ <b>Curated Styles:</b> Multiple Trending Traditional Jhumka Pairs</li>
+          <li>🪶 <b>Lightweight Feel:</b> Balanced comfort for prolonged celebration wear</li>
+          <li>🌸 <b>Versatility:</b> Seamless pairing with Sarees, Suits, and Indo-Western wear</li>
+          <li>🔒 <b>Fastening:</b> Smooth push-back posts with protective silicone locks</li>
+          <li>📦 <b>Safe Transport:</b> Encased safely in an aesthetic protective box</li>
         </ul>
 
-        <div class="price-row" style="margin-bottom:15px;">
+        <div class="price-row" style="margin-bottom:18px;">
           <span class="curr-price">₹899</span>
           <span class="old-price">₹1,199</span>
         </div>
@@ -722,18 +778,17 @@ header {
     </div>
   </section>
 
-  <!-- REVIEWS & LIVE RATING -->
+  <!-- REVIEWS -->
   <section class="section" id="reviews">
     <div class="section-head">
-      <h2>Customer Feedback</h2>
-      <p>✦ Real thoughts from genuine buyers ✦</p>
+      <h2>Patron Feedback</h2>
+      <p>Authentic reviews from verified buyers</p>
     </div>
 
     <div class="reviews-grid">
-      <!-- Write Form -->
       <div class="review-form-side">
-        <h3 style="font-family:'Cinzel',serif;font-size:20px;margin-bottom:6px;color:var(--cream-light);">Leave a Review</h3>
-        <p style="font-size:12.5px;color:var(--text-muted);margin-bottom:14px;">Share your genuine experience with this combo:</p>
+        <h3 style="font-family:'Italiana',serif;font-size:24px;margin-bottom:6px;color:var(--cream-pure);">Leave a Review</h3>
+        <p style="font-size:12.5px;color:var(--cream-soft);opacity:0.8;margin-bottom:14px;">Share your personal styling thoughts with us:</p>
 
         <form id="newReviewForm" onsubmit="submitNewReview(event)">
           <div class="form-group">
@@ -753,13 +808,13 @@ header {
           </div>
 
           <div class="form-group">
-            <label>Your City *</label>
-            <input type="text" class="input-box" id="revCity" placeholder="e.g. Delhi, Jaipur" required>
+            <label>City *</label>
+            <input type="text" class="input-box" id="revCity" placeholder="e.g. Delhi, Lucknow" required>
           </div>
 
           <div class="form-group">
             <label>Review Comment *</label>
-            <textarea class="input-box" id="revComment" rows="3" placeholder="Write about the design, packaging, and feel..." required></textarea>
+            <textarea class="input-box" id="revComment" rows="3" placeholder="How did the earrings look and complement your style?" required></textarea>
           </div>
 
           <button type="submit" class="cta-btn" style="width:100%;justify-content:center;padding:12px;">
@@ -768,10 +823,7 @@ header {
         </form>
       </div>
 
-      <!-- Feed -->
-      <div class="reviews-feed" id="reviewFeed">
-        <!-- Rendered by JavaScript -->
-      </div>
+      <div class="reviews-feed" id="reviewFeed"></div>
     </div>
   </section>
 </main>
@@ -786,18 +838,18 @@ header {
   </a>
 </div>
 
-<!-- 1. VIP CUSTOMER PROFILE / ID MODAL -->
+<!-- VIP PROFILE MODAL -->
 <div class="modal" id="profileModal">
   <div class="modal-content">
     <button class="close-btn" onclick="closeProfileModal()">×</button>
     
-    <h3 style="font-family:'Cinzel',serif;font-size:22px;color:var(--gold);margin-bottom:4px;">VIP Member ID</h3>
-    <p style="font-size:12px;color:var(--text-muted);margin-bottom:14px;">Save your delivery details for 1-click checkout</p>
+    <h3 style="font-family:'Italiana',serif;font-size:26px;color:var(--gold-text);margin-bottom:4px;">VIP Patron ID</h3>
+    <p style="font-size:12px;color:var(--cream-soft);opacity:0.8;margin-bottom:14px;">Store your delivery address for swift checkouts</p>
 
     <div class="vip-pass-card">
-      <div style="font-size:9px;letter-spacing:2px;color:var(--gold);text-transform:uppercase;">✦ Jhumkawala Privileged Patron ✦</div>
-      <h4 id="vipCardName" style="font-size:18px;color:var(--cream-light);margin:4px 0;">Guest Customer</h4>
-      <div class="vip-id-num" id="vipCardId">ID: JW-NOT-REGISTERED</div>
+      <div style="font-size:9px;letter-spacing:2px;color:var(--gold-text);text-transform:uppercase;">✦ Jhumkawala Privileged Patron ✦</div>
+      <h4 id="vipCardName" style="font-size:18px;color:var(--cream-pure);margin:4px 0;">Guest Customer</h4>
+      <div id="vipCardId" style="font-size:12.5px;color:var(--gold-text);font-weight:600;">ID: JW-NOT-REGISTERED</div>
     </div>
 
     <form id="profileForm" onsubmit="saveProfile(event)">
@@ -834,24 +886,23 @@ header {
       </div>
 
       <button type="submit" class="cta-btn" style="width:100%;justify-content:center;margin-top:10px;">
-        Save VIP ID Profile 💾
+        Save VIP Profile 💾
       </button>
     </form>
   </div>
 </div>
 
-<!-- 2. CHECKOUT MODAL -->
+<!-- CHECKOUT MODAL -->
 <div class="modal" id="checkoutModal">
   <div class="modal-content">
     <button class="close-btn" onclick="closeCheckout()">×</button>
     
-    <h3 style="font-family:'Cinzel',serif;font-size:22px;color:var(--gold);margin-bottom:4px;">Checkout</h3>
-    <p style="font-size:12px;color:var(--text-muted);margin-bottom:14px;">100% Secure Prepaid Booking &amp; Free Home Delivery</p>
+    <h3 style="font-family:'Italiana',serif;font-size:26px;color:var(--gold-text);margin-bottom:4px;">Express Checkout</h3>
+    <p style="font-size:12px;color:var(--cream-soft);opacity:0.8;margin-bottom:14px;">100% Secure Prepaid Booking &amp; Free Home Delivery</p>
 
-    <!-- Item Row -->
-    <div style="background:var(--bg-black);border:1px solid var(--border-color);padding:10px 14px;border-radius:10px;display:flex;justify-content:space-between;align-items:center;font-size:13px;margin-bottom:15px;">
+    <div style="background:#0d0a0a;border:1px solid var(--border-lux);padding:10px 14px;border-radius:12px;display:flex;justify-content:space-between;align-items:center;font-size:13px;margin-bottom:15px;">
       <span><b>1x Jhumka Combo Box</b></span>
-      <b style="color:var(--gold);">₹899 (Free Delivery)</b>
+      <b style="color:var(--gold-text);">₹899 (Free Delivery)</b>
     </div>
 
     <form id="orderForm" onsubmit="handleOrderSubmission(event)">
@@ -889,18 +940,18 @@ header {
 
       <!-- Step 1: Pay Online -->
       <div class="upi-box">
-        <b style="font-size:12px;color:var(--gold);text-transform:uppercase;">Step 1: Pay Online via UPI</b>
+        <b style="font-size:12px;color:var(--gold-text);text-transform:uppercase;letter-spacing:1px;">Step 1: Pay Online via UPI</b>
         <a id="directUpiLink" class="direct-pay-btn" href="#">⚡ Pay Directly via UPI App (GPay / PhonePe / Paytm)</a>
         
-        <p style="font-size:11.5px;color:var(--text-muted);margin:4px 0;">Or scan QR code to pay:</p>
+        <p style="font-size:11.5px;color:var(--cream-soft);opacity:0.8;margin:4px 0;">Or scan QR code using any UPI app:</p>
         <img id="upiQr" class="qr-code-img" src="" alt="UPI QR">
-        <p style="font-size:12px;font-weight:700;color:var(--gold);">UPI ID: 9971566545@pthdfc</p>
+        <p style="font-size:12px;font-weight:700;color:var(--gold-text);">UPI ID: 9971566545@pthdfc</p>
       </div>
 
       <!-- Step 2: UTR -->
       <div class="utr-box">
-        <label style="font-size:11px;font-weight:700;color:#f08080;display:block;">Step 2: Enter 12-Digit UPI Transaction / UTR No. *</label>
-        <small style="font-size:10.5px;color:var(--text-muted);display:block;margin-bottom:6px;">Find the UTR / Ref No in your GPay / PhonePe payment receipt:</small>
+        <label style="font-size:11px;font-weight:700;color:#f09898;display:block;">Step 2: Enter 12-Digit UPI Transaction / UTR No. *</label>
+        <small style="font-size:10.5px;color:var(--cream-soft);opacity:0.8;display:block;margin-bottom:6px;">Find the UTR / Ref No in your payment receipt:</small>
         <input type="text" class="input-box" id="custUtr" placeholder="Enter 12-digit UTR No." maxlength="22" required>
       </div>
 
@@ -925,7 +976,7 @@ window.addEventListener('DOMContentLoaded', () => {
   pickStars(5);
 });
 
-// ================= VIP PROFILE LOGIC =================
+// VIP PROFILE
 function loadVIPProfile() {
   const saved = localStorage.getItem("jhumkawala_user");
   if (saved) {
@@ -968,7 +1019,7 @@ function saveProfile(e) {
   const profileData = { name, phone, pin, address, city, state, vipId };
   localStorage.setItem("jhumkawala_user", JSON.stringify(profileData));
 
-  alert("VIP Profile & ID successfully saved! ✨");
+  alert("VIP Profile saved successfully! ✨");
   loadVIPProfile();
   closeProfileModal();
 }
@@ -981,7 +1032,7 @@ function closeProfileModal() {
   document.getElementById("profileModal").classList.remove("active");
 }
 
-// ================= STAR RATING & REVIEWS LOGIC =================
+// STARS & REVIEWS
 function pickStars(num) {
   currentRating = num;
   const stars = document.querySelectorAll("#starSelector span");
@@ -1000,8 +1051,8 @@ function renderReviews() {
 
   if (stored.length === 0) {
     feed.innerHTML = `
-      <div style="text-align:center;padding:30px 10px;color:var(--text-muted);font-size:13px;">
-        No reviews yet. Be the first customer to share your rating! ✦
+      <div style="text-align:center;padding:30px 10px;color:var(--cream-soft);opacity:0.6;font-size:13px;">
+        No reviews yet. Be the first patron to share your styling experience! ✦
       </div>
     `;
     return;
@@ -1028,13 +1079,13 @@ function submitNewReview(e) {
   stored.unshift({ author, city, comment, stars: currentRating });
   localStorage.setItem("jhumka_real_reviews", JSON.stringify(stored));
 
-  alert("धन्यवाद! आपका रिव्यू सफलतापूर्वक जोड़ दिया गया है 🌟");
+  alert("Thank you! Your feedback has been shared. 🌟");
   document.getElementById("newReviewForm").reset();
   pickStars(5);
   renderReviews();
 }
 
-// ================= CHECKOUT & UPI PAYMENT =================
+// CHECKOUT & UPI
 function setupUpiDetails() {
   const upiUrl = `upi://pay?pa=${UPI_ID}&pn=Jhumkawala&am=${AMOUNT}&cu=INR`;
   document.getElementById("directUpiLink").href = upiUrl;
@@ -1065,7 +1116,7 @@ function handleOrderSubmission(e) {
   const utr = document.getElementById("custUtr").value.trim();
 
   if (!utr || utr.length < 8) {
-    alert("कृपया भुगतान के बाद 12-अंकों का मान्य UTR / Transaction No दर्ज करें।");
+    alert("Please enter a valid 12-digit UTR/Transaction number after paying.");
     return;
   }
 
