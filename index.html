@@ -76,7 +76,7 @@ header {
 .nav {
   max-width: 1280px;
   margin: auto;
-  min-height: 86px;
+  min-height: 84px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -90,8 +90,8 @@ header {
 }
 
 .brand-symbol {
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
   border: 1.5px solid var(--gold-primary);
   border-radius: 50%;
   display: flex;
@@ -103,14 +103,9 @@ header {
   color: var(--royal-maroon);
 }
 
-.brand-details {
-  display: flex;
-  flex-direction: column;
-}
-
 .brand-name {
   font-family: 'Cinzel Decorative', Georgia, serif;
-  font-size: 27px;
+  font-size: 26px;
   letter-spacing: 1px;
   color: var(--royal-maroon);
   font-weight: 700;
@@ -141,19 +136,8 @@ header {
   font-weight: 500;
 }
 
-.links a {
-  position: relative;
-  transition: color 0.3s ease;
-}
-
 .links a:hover {
   color: var(--gold-border);
-}
-
-.nav-actions {
-  display: flex;
-  align-items: center;
-  gap: 12px;
 }
 
 .nav-cart-btn {
@@ -188,7 +172,7 @@ header {
   font-weight: 700;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
   max-width: 1280px;
   margin: 30px auto;
@@ -204,19 +188,6 @@ header {
   grid-template-columns: 1.15fr 1fr;
   overflow: hidden;
   position: relative;
-}
-
-.hero-box::before {
-  content: "ROYAL HERITAGE";
-  position: absolute;
-  top: 30px;
-  right: -50px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 70px;
-  font-weight: 900;
-  color: rgba(212, 175, 55, 0.05);
-  letter-spacing: 15px;
-  pointer-events: none;
 }
 
 .hero-text {
@@ -258,7 +229,6 @@ header {
   color: var(--text-muted);
   max-width: 520px;
   margin-bottom: 25px;
-  font-weight: 400;
 }
 
 .offer-ribbon {
@@ -303,7 +273,6 @@ header {
   font-weight: 700;
   padding: 10px 16px;
   border-radius: 10px;
-  letter-spacing: 1px;
 }
 
 .hero-cta {
@@ -320,15 +289,14 @@ header {
   font-weight: 600;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  box-shadow: 0 10px 30px rgba(46, 8, 11, 0.25);
   width: fit-content;
+  box-shadow: 0 10px 30px rgba(46, 8, 11, 0.25);
   transition: all 0.3s ease;
 }
 
 .hero-cta:hover {
   background: #5b0f14;
   transform: translateY(-3px);
-  box-shadow: 0 14px 35px rgba(46, 8, 11, 0.35);
 }
 
 .hero-image-wrap {
@@ -347,11 +315,7 @@ header {
   transition: transform 0.6s ease;
 }
 
-.hero-image-wrap:hover img {
-  transform: scale(1.04);
-}
-
-/* SECTION HEADINGS */
+/* SECTION */
 .section {
   max-width: 1280px;
   margin: 75px auto;
@@ -484,11 +448,6 @@ header {
   margin-bottom: 12px;
 }
 
-.rating-count {
-  color: var(--text-muted);
-  font-size: 11px;
-}
-
 .card-pricing {
   display: flex;
   align-items: baseline;
@@ -533,16 +492,15 @@ header {
 .add-btn:hover {
   background: var(--burgundy);
   color: var(--gold-glow);
-  box-shadow: 0 4px 15px rgba(73, 14, 19, 0.3);
 }
 
-/* MODAL / CHECKOUT DRAWER */
+/* ROYAL CHECKOUT DRAWER / MODAL */
 .checkout-modal {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(18, 3, 4, 0.75);
-  backdrop-filter: blur(6px);
+  background: rgba(18, 3, 4, 0.82);
+  backdrop-filter: blur(8px);
   z-index: 200;
   align-items: center;
   justify-content: center;
@@ -556,23 +514,23 @@ header {
 .modal-content {
   background: #fdfaf3;
   width: 100%;
-  max-width: 580px;
-  max-height: 92vh;
+  max-width: 540px;
+  max-height: 94vh;
   overflow-y: auto;
-  border-radius: 22px;
+  border-radius: 24px;
   border: 1.5px solid var(--gold-primary);
-  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.4);
-  padding: 32px 30px;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5);
+  padding: 30px 26px;
   position: relative;
 }
 
 .modal-close {
   position: absolute;
-  top: 20px;
-  right: 22px;
+  top: 18px;
+  right: 20px;
   background: transparent;
   border: none;
-  font-size: 30px;
+  font-size: 32px;
   color: var(--royal-maroon);
   cursor: pointer;
   line-height: 1;
@@ -580,22 +538,22 @@ header {
 
 .modal-head {
   text-align: center;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .modal-head h3 {
   font-family: 'Cinzel Decorative', Georgia, serif;
-  font-size: 26px;
+  font-size: 24px;
   color: var(--royal-maroon);
 }
 
 .order-items-box {
-  background: #f5eedf;
+  background: #f7efe1;
   border-radius: 12px;
-  border: 1px solid rgba(197, 155, 39, 0.3);
-  padding: 14px 18px;
-  margin-bottom: 22px;
-  max-height: 160px;
+  border: 1px solid rgba(197, 155, 39, 0.35);
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  max-height: 150px;
   overflow-y: auto;
 }
 
@@ -605,7 +563,7 @@ header {
   align-items: center;
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
-  padding: 8px 0;
+  padding: 7px 0;
   border-bottom: 1px dashed rgba(197, 155, 39, 0.3);
 }
 
@@ -616,8 +574,9 @@ header {
 .item-remove {
   color: #ad2b2b;
   cursor: pointer;
-  font-size: 16px;
-  margin-left: 8px;
+  font-size: 15px;
+  margin-left: 10px;
+  font-weight: bold;
 }
 
 .cart-total-bar {
@@ -627,36 +586,36 @@ header {
   font-size: 15px;
   font-weight: 700;
   color: var(--royal-maroon);
-  margin-top: 10px;
+  margin-top: 8px;
   padding-top: 8px;
   border-top: 1.5px solid var(--gold-border);
 }
 
 /* FORM FIELDS */
 .form-group {
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .form-group label {
   display: block;
   font-family: 'Montserrat', sans-serif;
-  font-size: 11.5px;
-  font-weight: 600;
+  font-size: 11px;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--royal-maroon);
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 }
 
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  gap: 10px;
 }
 
 .input-field {
   width: 100%;
-  padding: 12px 14px;
+  padding: 11px 13px;
   border-radius: 8px;
   border: 1.5px solid #d8c29b;
   background: #fff;
@@ -664,12 +623,129 @@ header {
   font-size: 13px;
   color: var(--text-dark);
   outline: none;
-  transition: border-color 0.25s ease;
+  transition: 0.2s;
 }
 
 .input-field:focus {
   border-color: var(--gold-primary);
   box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
+}
+
+/* LUXURY IN-APP UPI PAYMENT BOX */
+.payment-card {
+  margin: 18px 0;
+  border: 2px dashed var(--gold-border);
+  background: #fffdf8;
+  padding: 16px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.08);
+}
+
+.payment-card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--royal-maroon);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.direct-upi-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #1a73e8, #0b57d0);
+  color: #fff;
+  text-decoration: none;
+  padding: 13px 20px;
+  border-radius: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  margin: 10px auto;
+  box-shadow: 0 4px 14px rgba(26, 115, 232, 0.35);
+  transition: transform 0.2s ease;
+}
+
+.direct-upi-btn:hover {
+  transform: translateY(-2px);
+}
+
+.qr-box {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qr-frame {
+  padding: 8px;
+  background: #fff;
+  border: 1px solid #d9c49a;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.qr-frame img {
+  width: 145px;
+  height: 145px;
+  display: block;
+}
+
+.upi-id-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #f4ebd6;
+  border: 1px solid #d9c49a;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--royal-maroon);
+  margin-top: 10px;
+}
+
+.copy-btn {
+  background: var(--royal-maroon);
+  color: #fff;
+  border: none;
+  font-size: 10px;
+  padding: 3px 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* STEP 2: UTR INPUT CARD */
+.utr-card {
+  background: #fff6f6;
+  border: 1.5px solid #f1c5c5;
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 16px;
+}
+
+.utr-card label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #8c1d1d;
+  display: block;
+}
+
+.utr-card small {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  color: #695252;
+  display: block;
+  margin: 3px 0 8px;
 }
 
 .submit-order-btn {
@@ -688,7 +764,6 @@ header {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin-top: 18px;
   box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
   transition: all 0.3s ease;
 }
@@ -705,7 +780,7 @@ header {
   right: 22px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
   z-index: 95;
 }
 
@@ -713,7 +788,7 @@ header {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 13px 22px;
+  padding: 12px 20px;
   border-radius: 30px;
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
@@ -772,7 +847,7 @@ header {
 
 <!-- TOP ANNOUNCEMENT -->
 <div class="topbar">
-  ✦ Grand Festive Sale ✦ FLAT ₹300 OFF • FREE SHIPPING ACROSS INDIA
+  ✦ Grand Festive Sale ✦ FLAT ₹300 OFF • 100% PREPAID VIP DISPATCH • FREE SHIPPING
 </div>
 
 <!-- HEADER -->
@@ -788,8 +863,8 @@ header {
 
     <div class="links">
       <a href="#collection">Collection</a>
-      <a href="#special">Exclusive Combos</a>
-      <a href="#contact">Contact</a>
+      <a href="#about">Heritage</a>
+      <a href="#contact">Support</a>
     </div>
 
     <div class="nav-actions">
@@ -826,7 +901,6 @@ header {
       </div>
 
       <div class="hero-image-wrap">
-        <!-- Root directory image path -->
         <img src="./jhumka-combo-1.png" alt="Royal Jhumka Collection">
       </div>
     </div>
@@ -851,7 +925,7 @@ header {
         <div class="card-info">
           <h3>Classic Heritage Combo</h3>
           <div class="rating-bar">
-            ★★★★★ <span class="rating-count">(4.9/5)</span>
+            ★★★★★ <span style="color:var(--text-muted);font-size:11px;">(4.9/5)</span>
           </div>
           <div class="card-pricing">
             <span class="card-striked">₹1,199</span>
@@ -872,7 +946,7 @@ header {
         <div class="card-info">
           <h3>Royal Rajputana Combo</h3>
           <div class="rating-bar">
-            ★★★★★ <span class="rating-count">(5.0/5)</span>
+            ★★★★★ <span style="color:var(--text-muted);font-size:11px;">(5.0/5)</span>
           </div>
           <div class="card-pricing">
             <span class="card-striked">₹1,199</span>
@@ -893,7 +967,7 @@ header {
         <div class="card-info">
           <h3>Meenakari Velvet Combo</h3>
           <div class="rating-bar">
-            ★★★★★ <span class="rating-count">(4.8/5)</span>
+            ★★★★★ <span style="color:var(--text-muted);font-size:11px;">(4.8/5)</span>
           </div>
           <div class="card-pricing">
             <span class="card-striked">₹1,199</span>
@@ -914,7 +988,7 @@ header {
         <div class="card-info">
           <h3>Kundan Floral Combo</h3>
           <div class="rating-bar">
-            ★★★★★ <span class="rating-count">(4.9/5)</span>
+            ★★★★★ <span style="color:var(--text-muted);font-size:11px;">(4.9/5)</span>
           </div>
           <div class="card-pricing">
             <span class="card-striked">₹1,199</span>
@@ -940,19 +1014,19 @@ header {
   </a>
 </div>
 
-<!-- CHECKOUT / ADDRESS MODAL -->
+<!-- CHECKOUT + PREPAID UPI MODAL -->
 <div class="checkout-modal" id="orderModal">
   <div class="modal-content">
     <button class="modal-close" onclick="closeOrderModal()">×</button>
     
     <div class="modal-head">
-      <h3>Complete Your Order</h3>
+      <h3>Royal Checkout</h3>
       <p style="font-family:'Montserrat',sans-serif;font-size:12px;color:var(--text-muted);margin-top:4px;">
-        कृपया डिलीवरी के लिए अपनी पूरी जानकारी भरें
+        100% सुरक्षित प्रीपेड बुकिंग व फ्री होम डिलीवरी
       </p>
     </div>
 
-    <!-- Items Preview -->
+    <!-- Items in Bag -->
     <div class="order-items-box" id="cartContent">
       <p style="font-family:'Montserrat',sans-serif;font-size:13px;color:var(--text-muted);text-align:center;">
         आपकी शॉपिंग बैग अभी खाली है।
@@ -961,9 +1035,10 @@ header {
 
     <!-- Customer Form -->
     <form id="orderForm" onsubmit="handleOrderSubmit(event)">
+      
       <div class="form-group">
         <label>Full Name (पूरा नाम) *</label>
-        <input type="text" class="input-field" id="custName" placeholder="उदा. प्रिया शर्मा" required>
+        <input type="text" class="input-field" id="custName" placeholder="उदा. अनुष्का शर्मा" required>
       </div>
 
       <div class="form-row">
@@ -973,13 +1048,13 @@ header {
         </div>
         <div class="form-group">
           <label>Pincode (पिनकोड) *</label>
-          <input type="text" class="input-field" id="custPin" placeholder="उदा. 110001" required>
+          <input type="text" class="input-field" id="custPin" placeholder="उदा. 110059" required>
         </div>
       </div>
 
       <div class="form-group">
-        <label>Full Delivery Address (मकान नं, गली, इलाका) *</label>
-        <textarea class="input-field" id="custAddress" rows="2" placeholder="पूरा पता लिखें..." required></textarea>
+        <label>Full Delivery Address (पूरा पता) *</label>
+        <textarea class="input-field" id="custAddress" rows="2" placeholder="मकान नं, गली/रोड, लैंडमार्क..." required></textarea>
       </div>
 
       <div class="form-row">
@@ -993,15 +1068,48 @@ header {
         </div>
       </div>
 
+      <!-- UPI STEP 1: PAYMENT -->
+      <div class="payment-card">
+        <span class="payment-card-title">💳 Step 1: Pay Online (Instant UPI)</span>
+        
+        <a id="directUpiBtn" class="direct-upi-btn" href="#">
+          ⚡ Pay Directly via UPI App (GPay / PhonePe / Paytm)
+        </a>
+
+        <div class="qr-box">
+          <p style="font-family:'Montserrat',sans-serif;font-size:11.5px;color:var(--text-muted);margin-bottom:6px;">
+            या किसी भी UPI App से QR Scan करके पे करें:
+          </p>
+          <div class="qr-frame">
+            <img id="upiQrImg" src="" alt="Jhumkawala UPI QR">
+          </div>
+          <div class="upi-id-badge">
+            <span>UPI ID: <b>9971566545@pthdfc</b></span>
+            <button type="button" class="copy-btn" onclick="copyUpi()">Copy</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- UPI STEP 2: UTR ENTRY -->
+      <div class="utr-card">
+        <label>📝 Step 2: UPI Transaction / UTR No. *</label>
+        <small>पेमेंट करने के बाद PhonePe / Google Pay / Paytm की रसीद से 12-अंकों का UTR / Ref No. दर्ज करें:</small>
+        <input type="text" class="input-field" id="custUtr" placeholder="उदा. 4256XXXXXXXX (12 Digits)" maxlength="24" required>
+      </div>
+
       <button type="submit" class="submit-order-btn">
-        <span>Proceed to WhatsApp Order</span> 💬
+        <span>Confirm Order & Send via WhatsApp</span> 💬
       </button>
     </form>
   </div>
 </div>
 
 <script>
-// CART LOGIC
+// CONFIG
+const UPI_ID = "9971566545@pthdfc"; // आपका UPI ID
+const MERCHANT_NAME = "Jhumkawala";
+const WA_PHONE = "919971566545";
+
 let cart = [];
 
 function addToCart(title, price) {
@@ -1026,6 +1134,7 @@ function updateCartUI() {
         आपकी शॉपिंग बैग अभी खाली है।
       </p>
     `;
+    updatePaymentDetails(0);
     return;
   }
 
@@ -1036,19 +1145,39 @@ function updateCartUI() {
       <span><b>${idx + 1}.</b> ${item.title}</span>
       <span>
         ₹${item.price}
-        <span class="item-remove" onclick="removeFromCart(${idx})" title="हटाएं">✕</span>
+        <span class="item-remove" onclick="removeFromCart(${idx})" title="Remove item">✕</span>
       </span>
     </div>
   `).join('');
 
   html += `
     <div class="cart-total-bar">
-      <span>कुल राशि (Total Amount):</span>
+      <span>Total Payable (कुल राशि):</span>
       <span>₹${total}</span>
     </div>
   `;
 
   container.innerHTML = html;
+  updatePaymentDetails(total);
+}
+
+function updatePaymentDetails(total) {
+  const upiUrl = `upi://pay?pa=${UPI_ID}&pn=${encodeURIComponent(MERCHANT_NAME)}&am=${total}&cu=INR`;
+  const upiBtn = document.getElementById('directUpiBtn');
+  const upiImg = document.getElementById('upiQrImg');
+
+  if (total > 0) {
+    upiBtn.href = upiUrl;
+    upiImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=${encodeURIComponent(upiUrl)}`;
+  } else {
+    upiBtn.href = "#";
+    upiImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=upi://pay?pa=${UPI_ID}`;
+  }
+}
+
+function copyUpi() {
+  navigator.clipboard.writeText(UPI_ID);
+  alert("UPI ID कॉपी हो गई: " + UPI_ID);
 }
 
 function openOrderModal() {
@@ -1059,14 +1188,14 @@ function closeOrderModal() {
   document.getElementById('orderModal').classList.remove('active');
 }
 
-// Close on outside click
+// Click outside to close
 document.getElementById('orderModal').addEventListener('click', function(e) {
   if (e.target === this) {
     closeOrderModal();
   }
 });
 
-// WHATSAPP REDIRECTION WITH CUSTOMER DETAILS
+// SUBMIT ORDER
 function handleOrderSubmit(e) {
   e.preventDefault();
 
@@ -1081,26 +1210,35 @@ function handleOrderSubmit(e) {
   const address = document.getElementById('custAddress').value.trim();
   const city = document.getElementById('custCity').value.trim();
   const state = document.getElementById('custState').value.trim();
+  const utr = document.getElementById('custUtr').value.trim();
+
+  if (!utr || utr.length < 8) {
+    alert("⚠️ कृपया मान्य UPI Transaction ID / UTR दर्ज करें ताकि आपका ऑर्डर वैरिफाई हो सके!");
+    document.getElementById('custUtr').focus();
+    return;
+  }
 
   let total = cart.reduce((acc, item) => acc + item.price, 0);
-
-  let itemsText = cart.map((item, idx) => `${idx + 1}. ${item.title} (₹${item.price})`).join("%0A");
+  let itemsText = cart.map((item, idx) => `• ${idx + 1}. ${item.title} (₹${item.price})`).join("%0A");
 
   let waMessage = 
-    `*✨ NEW ORDER - JHUMKAWALA ✨*%0A%0A` +
+    `*👑 NEW PREPAID ORDER - JHUMKAWALA 👑*%0A` +
+    `============================%0A` +
     `*📦 ORDER DETAILS:*%0A${itemsText}%0A%0A` +
     `*💰 TOTAL AMOUNT:* ₹${total}%0A` +
-    `*🚚 DELIVERY CHARGES:* FREE%0A%0A` +
-    `*👤 CUSTOMER DETAILS:*%0A` +
-    `• *Name:* ${name}%0A` +
-    `• *Phone:* ${phone}%0A` +
+    `*💳 PAYMENT STATUS:* PAID ONLINE ✅%0A` +
+    `*🔢 UTR / TXN ID:* ${utr}%0A` +
+    `============================%0A` +
+    `*👤 DELIVERY DETAILS:*%0A` +
+    `• *Customer:* ${name}%0A` +
+    `• *Mobile:* ${phone}%0A` +
     `• *Address:* ${address}%0A` +
-    `• *City:* ${city}%0A` +
-    `• *State:* ${state}%0A` +
-    `• *Pincode:* ${pin}%0A%0A` +
-    `_कृपया ऑर्डर कन्फर्म करके पेमेंट और शिपिंग डिटेल शेयर करें._`;
+    `• *City:* ${city}, ${state}%0A` +
+    `• *Pincode:* ${pin}%0A` +
+    `============================%0A` +
+    `_कृपया पेमेंट व UTR वैरिफाई करके ऑर्डर डिस्पैच करें._`;
 
-  window.open(`https://wa.me/919971566545?text=${waMessage}`, '_blank');
+  window.open(`https://wa.me/${WA_PHONE}?text=${waMessage}`, '_blank');
 }
 </script>
 
