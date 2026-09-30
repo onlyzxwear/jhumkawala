@@ -3,29 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jhumkawala | Curated Fashion Jhumka Box</title>
-<meta name="description" content="Jhumkawala - Handcrafted & Curated Ethnic Fashion Jhumkas.">
+<title>Jhumkawala | Traditional • Elegant • Timeless</title>
+<meta name="description" content="Jhumkawala - Traditional, Elegant & Timeless Fashion Jhumka Combo Box.">
 
-<!-- Luxury Editorial Fonts -->
+<!-- Royal Aesthetic Typography -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,600;0,6..96,800;1,6..96,500&family=Italiana&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Italiana&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 :root {
-  /* Ultra-Premium Obsidian & Champagne Palette */
-  --noir: #0c0a0a;             /* Deepest velvet black */
-  --surface: #141111;          /* Card black */
-  --surface-tint: #1c1817;     /* Elevated element surface */
-  --border-lux: rgba(226, 185, 126, 0.22);
-  --border-hover: rgba(226, 185, 126, 0.5);
-
-  --cream-pure: #fffbf5;       /* Warm silk cream */
-  --cream-soft: #ede2d3;       /* Muted silk cream */
-  --gold-metallic: linear-gradient(135deg, #f5d8a0 0%, #d4a762 50%, #9e7330 100%);
-  --gold-text: #e2b97e;
-  --gold-glow: rgba(226, 185, 126, 0.18);
+  /* Logo Matched Royal Wine & Gold Theme */
+  --burgundy-noir: #180306;
+  --wine-dark: #29060b;
+  --wine-card: #200508;
+  --surface-tint: #320a0f;
   
+  --gold-primary: #d4a762;
+  --gold-glow: #f8df9f;
+  --gold-metallic: linear-gradient(135deg, #fae2b4 0%, #d4a762 50%, #9a6d2f 100%);
+  --gold-border: rgba(212, 167, 98, 0.35);
+  
+  --cream-pure: #fffaf3;
+  --cream-soft: #ebd8c5;
+  --text-muted: #b59f9c;
   --wa-green: #25D366;
 }
 
@@ -41,14 +42,13 @@ html {
 
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  background-color: var(--noir);
+  background-color: var(--burgundy-noir);
   background-image: 
-    radial-gradient(circle at 50% 0%, #1f1715 0%, transparent 45%),
-    radial-gradient(circle at 100% 100%, #1a1211 0%, transparent 40%);
+    radial-gradient(circle at 50% 0%, #3a080f 0%, transparent 55%),
+    radial-gradient(circle at 100% 100%, #2e060c 0%, transparent 40%);
   color: var(--cream-soft);
   min-height: 100vh;
   line-height: 1.6;
-  letter-spacing: 0.2px;
 }
 
 a {
@@ -58,58 +58,49 @@ a {
 
 /* TOP SPIRITUAL BAR */
 .topbar {
-  background: #060505;
-  color: var(--gold-text);
-  padding: 9px 18px;
+  background: #110204;
+  color: var(--gold-primary);
+  padding: 8px 16px;
   text-align: center;
   font-size: 11.5px;
   letter-spacing: 2px;
-  border-bottom: 1px solid var(--border-lux);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  border-bottom: 1px solid var(--gold-border);
 }
 
 /* NAVBAR */
 header {
-  background: rgba(12, 10, 10, 0.88);
+  background: rgba(24, 3, 6, 0.92);
   backdrop-filter: blur(14px);
-  border-bottom: 1px solid var(--border-lux);
+  border-bottom: 1px solid var(--gold-border);
   position: sticky;
   top: 0;
   z-index: 100;
 }
 
 .nav {
-  max-width: 1220px;
+  max-width: 1240px;
   margin: auto;
-  height: 86px;
+  height: 90px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 24px;
 }
 
-/* HIGH-END LOGO BRANDING */
+/* BRANDING & LOGO */
 .brand-wrapper {
   display: flex;
   align-items: center;
   gap: 14px;
 }
 
-.ganesh-symbol {
-  width: 44px;
-  height: 44px;
-  border: 1px solid var(--gold-text);
+.brand-logo-img {
+  width: 58px;
+  height: 58px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  color: var(--gold-text);
-  background: radial-gradient(circle, #211917, #0f0c0c);
-  box-shadow: 0 0 16px var(--gold-glow);
+  object-fit: cover;
+  border: 1.5px solid var(--gold-primary);
+  box-shadow: 0 0 16px rgba(212, 167, 98, 0.4);
 }
 
 .brand-text-block {
@@ -118,30 +109,36 @@ header {
 }
 
 .brand-name {
-  font-family: 'Bodoni Moda', serif;
-  font-size: 30px;
-  font-weight: 800;
+  font-family: 'Cinzel Decorative', Georgia, serif;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1;
   color: var(--cream-pure);
-  letter-spacing: 1.5px;
-  line-height: 0.95;
+  letter-spacing: 1px;
 }
 
 .brand-name span {
   background: var(--gold-metallic);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-style: italic;
-  font-weight: 500;
 }
 
 .brand-sub {
   font-size: 8.5px;
-  letter-spacing: 4px;
+  letter-spacing: 3.5px;
   text-transform: uppercase;
-  color: var(--gold-text);
+  color: var(--gold-primary);
   margin-top: 5px;
-  font-weight: 600;
-  opacity: 0.9;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.brand-sub::before,
+.brand-sub::after {
+  content: "•";
+  font-size: 10px;
 }
 
 /* NAV LINKS */
@@ -150,17 +147,13 @@ header {
   gap: 28px;
   font-size: 13px;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
   color: var(--cream-soft);
 }
 
-.nav-links a {
-  transition: color 0.3s;
-}
-
 .nav-links a:hover {
-  color: var(--gold-text);
+  color: var(--gold-primary);
 }
 
 .nav-actions {
@@ -171,57 +164,57 @@ header {
 
 .vip-id-btn {
   background: transparent;
-  color: var(--gold-text);
-  border: 1px solid var(--border-lux);
+  color: var(--gold-primary);
+  border: 1px solid var(--gold-border);
   padding: 8px 16px;
-  border-radius: 24px;
+  border-radius: 20px;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: 0.3s;
 }
 
 .vip-id-btn:hover {
-  border-color: var(--gold-text);
-  box-shadow: 0 0 12px var(--gold-glow);
+  background: rgba(212, 167, 98, 0.15);
+  border-color: var(--gold-primary);
 }
 
 .nav-cart-btn {
   background: var(--gold-metallic);
-  color: #120e0b;
+  color: #1a0307;
   border: none;
   padding: 10px 20px;
   border-radius: 25px;
   cursor: pointer;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 800;
   display: flex;
   align-items: center;
   gap: 6px;
-  box-shadow: 0 4px 18px rgba(226, 185, 126, 0.25);
-  transition: all 0.3s;
+  box-shadow: 0 4px 18px rgba(212, 167, 98, 0.3);
+  transition: 0.3s;
 }
 
 .nav-cart-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(226, 185, 126, 0.4);
+  box-shadow: 0 6px 24px rgba(212, 167, 98, 0.45);
 }
 
 /* HERO SECTION */
 .hero {
-  max-width: 1220px;
-  margin: 35px auto 50px;
+  max-width: 1240px;
+  margin: 35px auto 55px;
   padding: 0 20px;
 }
 
 .hero-box {
-  background: linear-gradient(145deg, #161211 0%, #0e0b0b 100%);
+  background: linear-gradient(145deg, #2b060c 0%, #1a0307 100%);
   border-radius: 28px;
-  border: 1px solid var(--border-lux);
+  border: 1.5px solid var(--gold-border);
   display: grid;
   grid-template-columns: 1.15fr 1fr;
   overflow: hidden;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 25px 65px rgba(0, 0, 0, 0.7);
   position: relative;
 }
 
@@ -231,8 +224,8 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--gold-text), transparent);
+  height: 1.5px;
+  background: linear-gradient(90deg, transparent, var(--gold-primary), transparent);
 }
 
 .hero-text {
@@ -243,11 +236,11 @@ header {
 }
 
 .shlok-banner {
-  color: var(--gold-text);
+  color: var(--gold-primary);
   font-size: 13px;
   font-style: italic;
   margin-bottom: 14px;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .hero-title {
@@ -259,8 +252,8 @@ header {
 }
 
 .hero-title em {
-  font-family: 'Bodoni Moda', serif;
-  font-style: italic;
+  font-family: 'Cinzel Decorative', serif;
+  font-style: normal;
   background: var(--gold-metallic);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -269,10 +262,9 @@ header {
 .hero-desc {
   font-size: 14.5px;
   color: var(--cream-soft);
-  opacity: 0.8;
+  opacity: 0.85;
   margin-bottom: 28px;
   max-width: 480px;
-  font-weight: 300;
 }
 
 .price-row {
@@ -283,35 +275,33 @@ header {
 }
 
 .curr-price {
-  font-family: 'Bodoni Moda', serif;
   font-size: 34px;
-  font-weight: 700;
-  color: var(--gold-text);
+  font-weight: 800;
+  color: var(--gold-glow);
 }
 
 .old-price {
   text-decoration: line-through;
-  color: #695e59;
+  color: #7d595c;
   font-size: 18px;
 }
 
 .save-badge {
-  background: rgba(226, 185, 126, 0.1);
-  color: var(--gold-text);
-  border: 1px solid var(--border-lux);
+  background: rgba(212, 167, 98, 0.15);
+  color: var(--gold-primary);
+  border: 1px solid var(--gold-border);
   font-size: 11.5px;
-  font-weight: 600;
+  font-weight: 700;
   padding: 4px 10px;
   border-radius: 20px;
-  letter-spacing: 0.5px;
 }
 
 .cta-btn {
   background: var(--gold-metallic);
-  color: #120e0b;
+  color: #1a0307;
   padding: 15px 36px;
   border-radius: 30px;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 13.5px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
@@ -321,22 +311,21 @@ header {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  box-shadow: 0 6px 22px rgba(226, 185, 126, 0.3);
+  box-shadow: 0 6px 22px rgba(212, 167, 98, 0.3);
   transition: all 0.3s;
 }
 
 .cta-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(226, 185, 126, 0.45);
+  box-shadow: 0 8px 30px rgba(212, 167, 98, 0.45);
 }
 
 .hero-image-box {
-  background: #110e0e;
-  position: relative;
-  overflow: hidden;
+  background: #140205;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .hero-image-box img {
@@ -351,9 +340,9 @@ header {
   transform: scale(1.04);
 }
 
-/* SPOTLIGHT SECTION */
+/* PRODUCT SPOTLIGHT */
 .section {
-  max-width: 1220px;
+  max-width: 1240px;
   margin: 70px auto;
   padding: 0 20px;
 }
@@ -370,32 +359,32 @@ header {
 }
 
 .section-head p {
-  font-size: 13px;
-  letter-spacing: 2px;
+  font-size: 12.5px;
+  letter-spacing: 3px;
   text-transform: uppercase;
-  color: var(--gold-text);
+  color: var(--gold-primary);
   margin-top: 6px;
 }
 
 .product-single-card {
-  max-width: 860px;
+  max-width: 880px;
   margin: auto;
-  background: var(--surface);
+  background: var(--wine-card);
   border-radius: 24px;
-  border: 1px solid var(--border-lux);
+  border: 1.5px solid var(--gold-border);
   padding: 34px;
   display: grid;
   grid-template-columns: 1fr 1.25fr;
   gap: 35px;
-  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.5);
 }
 
 .product-img-wrap {
   aspect-ratio: 1/1;
   border-radius: 16px;
   overflow: hidden;
-  background: #0f0c0c;
-  border: 1px solid var(--border-lux);
+  background: #140205;
+  border: 1px solid var(--gold-border);
 }
 
 .product-img-wrap img {
@@ -413,21 +402,20 @@ header {
 }
 
 .product-specs-list li {
-  font-size: 13px;
+  font-size: 13.5px;
   color: var(--cream-soft);
-  opacity: 0.85;
+  opacity: 0.9;
 }
 
 .product-specs-list li b {
   color: var(--cream-pure);
-  font-weight: 600;
 }
 
 /* REVIEWS SECTION */
 .reviews-grid {
-  background: var(--surface);
+  background: var(--wine-card);
   border-radius: 24px;
-  border: 1px solid var(--border-lux);
+  border: 1.5px solid var(--gold-border);
   padding: 34px;
   display: grid;
   grid-template-columns: 1fr 1.3fr;
@@ -438,13 +426,13 @@ header {
   display: flex;
   gap: 8px;
   font-size: 26px;
-  color: #382e2c;
+  color: #4f1d24;
   cursor: pointer;
   margin-bottom: 14px;
 }
 
 .star-rating-widget span.active {
-  color: var(--gold-text);
+  color: var(--gold-primary);
 }
 
 .form-group {
@@ -454,18 +442,18 @@ header {
 .form-group label {
   display: block;
   font-size: 11px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: var(--gold-text);
+  color: var(--gold-primary);
   margin-bottom: 5px;
 }
 
 .input-box {
   width: 100%;
   padding: 12px 14px;
-  background: #0f0c0c;
-  border: 1px solid var(--border-lux);
+  background: #150205;
+  border: 1px solid var(--gold-border);
   border-radius: 10px;
   font-size: 13px;
   color: var(--cream-pure);
@@ -475,7 +463,7 @@ header {
 }
 
 .input-box:focus {
-  border-color: var(--gold-text);
+  border-color: var(--gold-primary);
 }
 
 .reviews-feed {
@@ -489,7 +477,7 @@ header {
 
 .single-review-box {
   background: var(--surface-tint);
-  border: 1px solid var(--border-lux);
+  border: 1px solid var(--gold-border);
   padding: 16px 18px;
   border-radius: 14px;
 }
@@ -502,13 +490,13 @@ header {
 }
 
 .review-author-name {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 13px;
   color: var(--cream-pure);
 }
 
 .review-stars {
-  color: var(--gold-text);
+  color: var(--gold-primary);
   font-size: 13px;
 }
 
@@ -523,7 +511,7 @@ header {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(10, 1, 2, 0.85);
   backdrop-filter: blur(8px);
   z-index: 200;
   align-items: center;
@@ -536,17 +524,17 @@ header {
 }
 
 .modal-content {
-  background: var(--surface);
+  background: var(--wine-card);
   width: 100%;
   max-width: 490px;
   max-height: 90vh;
   overflow-y: auto;
   border-radius: 24px;
-  border: 1px solid var(--border-lux);
+  border: 1.5px solid var(--gold-primary);
   padding: 30px 26px;
   position: relative;
   color: var(--cream-pure);
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 25px 65px rgba(0, 0, 0, 0.8);
 }
 
 .close-btn {
@@ -557,12 +545,12 @@ header {
   border: none;
   font-size: 26px;
   cursor: pointer;
-  color: var(--gold-text);
+  color: var(--gold-primary);
 }
 
 .upi-box {
-  background: #0d0a0a;
-  border: 1px dashed var(--gold-text);
+  background: #140205;
+  border: 1px dashed var(--gold-primary);
   padding: 16px;
   border-radius: 14px;
   text-align: center;
@@ -584,13 +572,13 @@ header {
   width: 140px;
   height: 140px;
   border-radius: 8px;
-  border: 1px solid var(--border-lux);
+  border: 1px solid var(--gold-border);
   margin: 6px 0;
 }
 
 .utr-box {
-  background: #1f1414;
-  border: 1px solid #4a2828;
+  background: #35090f;
+  border: 1px solid #631c26;
   padding: 12px;
   border-radius: 12px;
   margin-bottom: 16px;
@@ -603,7 +591,7 @@ header {
   border: none;
   padding: 14px;
   border-radius: 30px;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 14px;
   cursor: pointer;
   display: flex;
@@ -613,8 +601,8 @@ header {
 }
 
 .vip-pass-card {
-  background: linear-gradient(135deg, #241c19, #120e0d);
-  border: 1px solid var(--border-lux);
+  background: linear-gradient(135deg, #380b12, #1a0306);
+  border: 1px solid var(--gold-primary);
   border-radius: 16px;
   padding: 18px;
   margin-bottom: 18px;
@@ -646,7 +634,7 @@ header {
 
 .float-cart-btn {
   background: var(--gold-metallic);
-  color: #120e0b;
+  color: #1a0307;
 }
 
 .float-wa-btn {
@@ -680,16 +668,17 @@ header {
 
 <!-- TOP SPIRITUAL BAR -->
 <div class="topbar">
-  <span>॥ श्री गणेशाय नमः ॥</span> • <span>Festive Privilege: Jhumka Combo Box at ₹899</span> • <span>Free Express Delivery Across India</span>
+  <span>॥ श्री गणेशाय नमः ॥</span> &nbsp;•&nbsp; <span>Festive Privilege: Jhumka Combo Box at ₹899</span> &nbsp;•&nbsp; <span>Free Express Delivery Across India</span>
 </div>
 
 <header>
   <nav class="nav">
-    <a href="#" class="brand-wrapper">
-      <div class="ganesh-symbol">ॐ</div>
+    <a href="#home" class="brand-wrapper">
+      <!-- Uploaded logo.png will fit here seamlessly -->
+      <img src="./logo.png" alt="Jhumkawala Royal Emblem" class="brand-logo-img" onerror="this.style.display='none'">
       <div class="brand-text-block">
         <div class="brand-name">Jhumka<span>wala</span></div>
-        <div class="brand-sub">Curated Ethnic Fashion</div>
+        <div class="brand-sub">Traditional • Elegant • Timeless</div>
       </div>
     </a>
 
@@ -722,7 +711,7 @@ header {
         </div>
         <h1 class="hero-title">Timeless Jhumka <em>Combo Box</em></h1>
         <p class="hero-desc">
-          Get multiple trendy, lightweight fashion jhumkas in one curated statement box. Designed for graceful college style, festive pujas, and wedding events.
+          Multiple curated traditional &amp; trendy fashion jhumkas inside one statement box. Thoughtfully designed for graceful college styling, festive occasions, and wedding functions.
         </p>
 
         <div class="price-row">
@@ -737,7 +726,7 @@ header {
       </div>
 
       <div class="hero-image-box">
-        <img src="./jhumka-combo-1.png" alt="Jhumkawala Premium Combo">
+        <img src="./jhumka-combo-1.png" alt="Jhumkawala Curated Combo">
       </div>
     </div>
   </section>
@@ -746,7 +735,7 @@ header {
   <section class="section" id="product">
     <div class="section-head">
       <h2>The Curated Box</h2>
-      <p>Aesthetic Ethnic Earring Edition</p>
+      <p>Traditional • Elegant • Timeless</p>
     </div>
 
     <div class="product-single-card">
@@ -755,7 +744,7 @@ header {
       </div>
 
       <div class="product-info-col">
-        <span style="font-size:11px;font-weight:700;color:var(--gold-text);letter-spacing:1px;text-transform:uppercase;">Curated Festive Set</span>
+        <span style="font-size:11px;font-weight:700;color:var(--gold-primary);letter-spacing:1.5px;text-transform:uppercase;">Statement Collection</span>
         <h3 style="font-family:'Italiana',serif;font-size:28px;margin:4px 0 12px;color:var(--cream-pure);">Fashion Jhumka Combo Box</h3>
         
         <ul class="product-specs-list">
@@ -782,7 +771,7 @@ header {
   <section class="section" id="reviews">
     <div class="section-head">
       <h2>Patron Feedback</h2>
-      <p>Authentic reviews from verified buyers</p>
+      <p>Authentic thoughts from verified buyers</p>
     </div>
 
     <div class="reviews-grid">
@@ -843,13 +832,13 @@ header {
   <div class="modal-content">
     <button class="close-btn" onclick="closeProfileModal()">×</button>
     
-    <h3 style="font-family:'Italiana',serif;font-size:26px;color:var(--gold-text);margin-bottom:4px;">VIP Patron ID</h3>
+    <h3 style="font-family:'Italiana',serif;font-size:26px;color:var(--gold-primary);margin-bottom:4px;">VIP Patron ID</h3>
     <p style="font-size:12px;color:var(--cream-soft);opacity:0.8;margin-bottom:14px;">Store your delivery address for swift checkouts</p>
 
     <div class="vip-pass-card">
-      <div style="font-size:9px;letter-spacing:2px;color:var(--gold-text);text-transform:uppercase;">✦ Jhumkawala Privileged Patron ✦</div>
+      <div style="font-size:9px;letter-spacing:2px;color:var(--gold-primary);text-transform:uppercase;">✦ Jhumkawala Privileged Patron ✦</div>
       <h4 id="vipCardName" style="font-size:18px;color:var(--cream-pure);margin:4px 0;">Guest Customer</h4>
-      <div id="vipCardId" style="font-size:12.5px;color:var(--gold-text);font-weight:600;">ID: JW-NOT-REGISTERED</div>
+      <div id="vipCardId" style="font-size:12.5px;color:var(--gold-glow);font-weight:600;">ID: JW-NOT-REGISTERED</div>
     </div>
 
     <form id="profileForm" onsubmit="saveProfile(event)">
@@ -897,12 +886,12 @@ header {
   <div class="modal-content">
     <button class="close-btn" onclick="closeCheckout()">×</button>
     
-    <h3 style="font-family:'Italiana',serif;font-size:26px;color:var(--gold-text);margin-bottom:4px;">Express Checkout</h3>
+    <h3 style="font-family:'Italiana',serif;font-size:26px;color:var(--gold-primary);margin-bottom:4px;">Express Checkout</h3>
     <p style="font-size:12px;color:var(--cream-soft);opacity:0.8;margin-bottom:14px;">100% Secure Prepaid Booking &amp; Free Home Delivery</p>
 
-    <div style="background:#0d0a0a;border:1px solid var(--border-lux);padding:10px 14px;border-radius:12px;display:flex;justify-content:space-between;align-items:center;font-size:13px;margin-bottom:15px;">
-      <span><b>1x Jhumka Combo Box</b></span>
-      <b style="color:var(--gold-text);">₹899 (Free Delivery)</b>
+    <div style="background:#150205;border:1px solid var(--gold-border);padding:10px 14px;border-radius:12px;display:flex;justify-content:space-between;align-items:center;font-size:13px;margin-bottom:15px;">
+      <span><b>1x Fashion Jhumka Combo Box</b></span>
+      <b style="color:var(--gold-primary);">₹899 (Free Delivery)</b>
     </div>
 
     <form id="orderForm" onsubmit="handleOrderSubmission(event)">
@@ -940,17 +929,17 @@ header {
 
       <!-- Step 1: Pay Online -->
       <div class="upi-box">
-        <b style="font-size:12px;color:var(--gold-text);text-transform:uppercase;letter-spacing:1px;">Step 1: Pay Online via UPI</b>
+        <b style="font-size:12px;color:var(--gold-primary);text-transform:uppercase;letter-spacing:1px;">Step 1: Pay Online via UPI</b>
         <a id="directUpiLink" class="direct-pay-btn" href="#">⚡ Pay Directly via UPI App (GPay / PhonePe / Paytm)</a>
         
         <p style="font-size:11.5px;color:var(--cream-soft);opacity:0.8;margin:4px 0;">Or scan QR code using any UPI app:</p>
         <img id="upiQr" class="qr-code-img" src="" alt="UPI QR">
-        <p style="font-size:12px;font-weight:700;color:var(--gold-text);">UPI ID: 9971566545@pthdfc</p>
+        <p style="font-size:12px;font-weight:700;color:var(--gold-primary);">UPI ID: 9971566545@pthdfc</p>
       </div>
 
       <!-- Step 2: UTR -->
       <div class="utr-box">
-        <label style="font-size:11px;font-weight:700;color:#f09898;display:block;">Step 2: Enter 12-Digit UPI Transaction / UTR No. *</label>
+        <label style="font-size:11px;font-weight:700;color:#f39999;display:block;">Step 2: Enter 12-Digit UPI Transaction / UTR No. *</label>
         <small style="font-size:10.5px;color:var(--cream-soft);opacity:0.8;display:block;margin-bottom:6px;">Find the UTR / Ref No in your payment receipt:</small>
         <input type="text" class="input-box" id="custUtr" placeholder="Enter 12-digit UTR No." maxlength="22" required>
       </div>
