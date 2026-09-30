@@ -3,1959 +3,1105 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jhumkawala | Royal Heritage Jewellery</title>
+<meta name="description" content="Jhumkawala - Handcrafted Heritage Jhumka Boxes. Timeless Royal Elegance.">
 
-<title>Jhumkawala | Premium Jhumka Collection</title>
-
-<meta name="description" content="Jhumkawala - Traditional, Elegant & Timeless Jhumka Collection. Special Offer ₹899.">
+<!-- Premium Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-
-:root{
-  --maroon:#4b0f12;
-  --dark:#250608;
-  --cream:#fff8eb;
-  --cream2:#f8ead3;
-  --gold:#c89532;
-  --gold2:#e8c46b;
-  --text:#321d16;
-  --white:#fffdf8;
-  --border:#dfbd7b;
+:root {
+  --burgundy: #2e080b;
+  --royal-maroon: #490e13;
+  --velvet: #190305;
+  --gold-primary: #d4af37;
+  --gold-glow: #f3e5ab;
+  --gold-border: #c59b27;
+  --cream-bg: #fdfbf7;
+  --cream-card: #f9f5ec;
+  --text-dark: #221513;
+  --text-muted: #6e5d59;
+  --whatsapp-green: #25D366;
 }
 
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-html{
-  scroll-behavior:smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-  font-family:Georgia,"Times New Roman",serif;
-  background:
-    radial-gradient(circle at top,#fffdf7 0,#fff8eb 45%,#f7e8cf 100%);
-  color:var(--text);
+body {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  background: radial-gradient(circle at 50% 0%, #fffbf2 0%, #f6ecd9 60%, #eedbc0 100%);
+  color: var(--text-dark);
+  min-height: 100vh;
+  line-height: 1.5;
 }
 
-a{
-  text-decoration:none;
-  color:inherit;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-button{
-  font-family:inherit;
+/* TOP ANNOUNCEMENT */
+.topbar {
+  background: linear-gradient(90deg, #1b0305, #440d12, #1b0305);
+  color: var(--gold-glow);
+  padding: 10px 15px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11.5px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
 }
 
-/* TOP BAR */
-
-.topbar{
-  background:var(--dark);
-  color:#f8e7bd;
-  padding:10px 15px;
-  text-align:center;
-  font-family:Arial,sans-serif;
-  font-size:13px;
-  letter-spacing:.5px;
+/* NAVBAR */
+header {
+  background: rgba(253, 251, 247, 0.96);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(197, 155, 39, 0.35);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 25px rgba(46, 8, 11, 0.08);
 }
 
-/* HEADER */
-
-header{
-  background:rgba(255,250,238,.97);
-  border-bottom:1px solid var(--border);
-  position:sticky;
-  top:0;
-  z-index:100;
-  box-shadow:0 4px 20px rgba(67,26,10,.08);
+.nav {
+  max-width: 1280px;
+  margin: auto;
+  min-height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 24px;
 }
 
-.nav{
-  max-width:1250px;
-  margin:auto;
-  min-height:82px;
-  display:flex;
-  align-items:center;
-  padding:10px 22px;
-  gap:25px;
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-/* LOGO */
-
-.brand{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  min-width:260px;
+.brand-symbol {
+  width: 50px;
+  height: 50px;
+  border: 1.5px solid var(--gold-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, #fffaf0, #f2e2c5);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.25);
+  font-size: 20px;
+  color: var(--royal-maroon);
 }
 
-.logo-icon{
-  width:58px;
-  height:58px;
-  border:2px solid var(--gold);
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background:#fff8e9;
-  box-shadow:inset 0 0 0 4px #f8ecd5;
+.brand-details {
+  display: flex;
+  flex-direction: column;
 }
 
-.jhumka-symbol{
-  position:relative;
-  width:24px;
-  height:31px;
+.brand-name {
+  font-family: 'Cinzel Decorative', Georgia, serif;
+  font-size: 27px;
+  letter-spacing: 1px;
+  color: var(--royal-maroon);
+  font-weight: 700;
+  line-height: 1;
 }
 
-.jhumka-symbol:before{
-  content:"";
-  position:absolute;
-  top:0;
-  left:9px;
-  width:8px;
-  height:8px;
-  border:2px solid var(--gold);
-  border-radius:50%;
+.brand-name span {
+  color: var(--gold-border);
 }
 
-.jhumka-symbol:after{
-  content:"";
-  position:absolute;
-  left:2px;
-  top:9px;
-  width:20px;
-  height:17px;
-  background:linear-gradient(135deg,#e7c26d,#a66b16);
-  border-radius:50% 50% 45% 45%;
-  border:2px solid #9a6415;
-  box-shadow:
-    0 5px 0 -2px #d4a94d,
-    0 9px 0 -3px #b98224;
+.brand-sub {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: #7d6032;
+  margin-top: 5px;
+  font-weight: 600;
 }
 
-.brand-name{
-  font-size:36px;
-  line-height:.9;
-  color:var(--maroon);
-  font-weight:bold;
+.links {
+  display: flex;
+  gap: 28px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 500;
 }
 
-.brand-name span{
-  color:var(--gold);
+.links a {
+  position: relative;
+  transition: color 0.3s ease;
 }
 
-.brand-tag{
-  font-family:Arial,sans-serif;
-  font-size:9px;
-  letter-spacing:3px;
-  color:#87642e;
-  margin-top:6px;
+.links a:hover {
+  color: var(--gold-border);
 }
 
-/* NAV LINKS */
-
-.links{
-  display:flex;
-  gap:25px;
-  margin-left:auto;
-  font-family:Arial,sans-serif;
-  font-size:14px;
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-.links a{
-  position:relative;
-  padding:8px 2px;
+.nav-cart-btn {
+  background: var(--royal-maroon);
+  color: var(--gold-glow);
+  border: 1px solid var(--gold-primary);
+  padding: 10px 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(73, 14, 19, 0.2);
 }
 
-.links a:hover{
-  color:var(--maroon);
+.nav-cart-btn:hover {
+  background: var(--burgundy);
+  transform: translateY(-2px);
 }
 
-.links a:after{
-  content:"";
-  position:absolute;
-  left:0;
-  bottom:0;
-  width:0;
-  height:2px;
-  background:var(--gold);
-  transition:.3s;
+.cart-pill {
+  background: var(--gold-primary);
+  color: var(--velvet);
+  font-size: 11px;
+  padding: 2px 7px;
+  border-radius: 12px;
+  font-weight: 700;
 }
 
-.links a:hover:after{
-  width:100%;
+/* HERO SECTION */
+.hero {
+  max-width: 1280px;
+  margin: 30px auto;
+  padding: 0 20px;
 }
 
-.nav-actions{
-  display:flex;
-  gap:8px;
+.hero-box {
+  background: linear-gradient(135deg, #fffcf6 0%, #f7ecd7 50%, #ebd3af 100%);
+  border-radius: 28px;
+  border: 1.5px solid rgba(212, 175, 55, 0.45);
+  box-shadow: 0 20px 60px rgba(46, 8, 11, 0.12);
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  overflow: hidden;
+  position: relative;
 }
 
-.nav-btn{
-  border:1px solid #d9bd83;
-  background:#fffaf0;
-  width:42px;
-  height:42px;
-  border-radius:50%;
-  cursor:pointer;
-  font-size:18px;
+.hero-box::before {
+  content: "ROYAL HERITAGE";
+  position: absolute;
+  top: 30px;
+  right: -50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 70px;
+  font-weight: 900;
+  color: rgba(212, 175, 55, 0.05);
+  letter-spacing: 15px;
+  pointer-events: none;
 }
 
-/* HERO */
-
-.hero{
-  max-width:1250px;
-  margin:22px auto;
-  padding:0 18px;
+.hero-text {
+  padding: 65px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.hero-box{
-  min-height:500px;
-  border-radius:25px;
-  overflow:hidden;
-  display:grid;
-  grid-template-columns:1fr 1.08fr;
-  background:#f7ead4;
-  border:1px solid var(--gold);
-  box-shadow:0 18px 55px rgba(67,26,10,.18);
-  position:relative;
+.mantra {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold-border);
+  font-weight: 600;
+  margin-bottom: 12px;
 }
 
-.hero-box:before,
-.hero-box:after{
-  content:"✦";
-  position:absolute;
-  color:var(--gold);
-  font-size:40px;
-  z-index:3;
+.hero-title {
+  font-family: 'Cinzel Decorative', Georgia, serif;
+  font-size: clamp(38px, 5.5vw, 68px);
+  color: var(--royal-maroon);
+  line-height: 1.05;
+  margin-bottom: 14px;
 }
 
-.hero-box:before{
-  top:15px;
-  left:20px;
+.hero-tagline {
+  font-size: 26px;
+  font-style: italic;
+  color: #64442d;
+  margin-bottom: 16px;
 }
 
-.hero-box:after{
-  bottom:15px;
-  right:20px;
+.hero-description {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: var(--text-muted);
+  max-width: 520px;
+  margin-bottom: 25px;
+  font-weight: 400;
 }
 
-.hero-text{
-  padding:55px 45px;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  background:
-    radial-gradient(circle at 20% 15%,#fff7e4 0,#f7e8cf 45%,#edd6b1 100%);
-  position:relative;
+.offer-ribbon {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 
-.sanskrit{
-  color:var(--maroon);
-  font-size:18px;
-  margin-bottom:14px;
+.pricing-card {
+  background: var(--royal-maroon);
+  border: 1.5px solid var(--gold-primary);
+  padding: 10px 22px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(46, 8, 11, 0.25);
+  color: #fff;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
 }
 
-.hero-small{
-  color:#8a652b;
-  letter-spacing:3px;
-  font-family:Arial,sans-serif;
-  font-size:11px;
-  font-weight:bold;
-  text-transform:uppercase;
+.striked {
+  text-decoration: line-through;
+  color: #c4a9a9;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
 }
 
-.hero-title{
-  font-size:clamp(48px,6vw,75px);
-  line-height:.95;
-  color:var(--maroon);
-  margin:12px 0;
+.deal-price {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--gold-glow);
 }
 
-.hero-title span{
-  color:var(--gold);
+.save-chip {
+  background: var(--gold-primary);
+  color: var(--velvet);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 10px 16px;
+  border-radius: 10px;
+  letter-spacing: 1px;
 }
 
-.hero-sub{
-  font-size:19px;
-  line-height:1.6;
-  max-width:500px;
-  color:#624332;
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--burgundy);
+  color: var(--gold-glow);
+  border: 1px solid var(--gold-primary);
+  padding: 16px 36px;
+  border-radius: 35px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13.5px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  box-shadow: 0 10px 30px rgba(46, 8, 11, 0.25);
+  width: fit-content;
+  transition: all 0.3s ease;
 }
 
-.offer{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  margin:23px 0;
-  flex-wrap:wrap;
+.hero-cta:hover {
+  background: #5b0f14;
+  transform: translateY(-3px);
+  box-shadow: 0 14px 35px rgba(46, 8, 11, 0.35);
 }
 
-.offer-box{
-  background:var(--maroon);
-  color:white;
-  padding:12px 22px;
-  border-radius:8px;
-  border:2px solid var(--gold);
-  box-shadow:0 5px 15px #4b0f1230;
+.hero-image-wrap {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle, #fff7eb 0%, #ebd4b0 100%);
 }
 
-.offer-box small{
-  display:block;
-  font-family:Arial,sans-serif;
-  color:#f5d57f;
-  font-size:11px;
-  text-transform:uppercase;
-  letter-spacing:1px;
+.hero-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
 }
 
-.old-price{
-  text-decoration:line-through;
-  color:#b9b0a3;
-  font-size:20px;
-  margin-right:8px;
+.hero-image-wrap:hover img {
+  transform: scale(1.04);
 }
 
-.new-price{
-  color:#fff0ae;
-  font-size:31px;
-  font-weight:bold;
+/* SECTION HEADINGS */
+.section {
+  max-width: 1280px;
+  margin: 75px auto;
+  padding: 0 20px;
 }
 
-.save{
-  background:#d6a83e;
-  color:#3b1709;
-  padding:12px 17px;
-  border-radius:8px;
-  font-weight:bold;
+.section-head {
+  text-align: center;
+  margin-bottom: 45px;
 }
 
-.shop-btn{
-  display:inline-block;
-  width:max-content;
-  background:var(--maroon);
-  color:white;
-  padding:15px 28px;
-  border-radius:30px;
-  border:1px solid var(--gold);
-  font-family:Arial,sans-serif;
-  font-weight:bold;
-  transition:.25s;
+.subtitle-badge {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold-border);
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 8px;
 }
 
-.shop-btn:hover{
-  background:#6c181d;
-  transform:translateY(-2px);
+.section-head h2 {
+  font-family: 'Cinzel Decorative', Georgia, serif;
+  font-size: clamp(28px, 4vw, 42px);
+  color: var(--royal-maroon);
+  font-weight: 700;
 }
 
-.hero-image{
-  min-height:500px;
-  overflow:hidden;
-  background:#eee0c8;
+.section-divider {
+  width: 70px;
+  height: 2px;
+  background: var(--gold-primary);
+  margin: 14px auto 0;
+  position: relative;
 }
 
-.hero-image img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-}
-
-/* FEATURES */
-
-.features{
-  max-width:1250px;
-  margin:20px auto;
-  padding:0 18px;
-  display:grid;
-  grid-template-columns:repeat(5,1fr);
-  gap:10px;
-}
-
-.feature{
-  background:#fffdf7;
-  border:1px solid #e3c991;
-  padding:17px 10px;
-  text-align:center;
-  border-radius:12px;
-}
-
-.feature-icon{
-  width:38px;
-  height:38px;
-  border-radius:50%;
-  background:var(--maroon);
-  color:#f2cb72;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  margin:0 auto 8px;
-  font-size:18px;
-}
-
-.feature strong{
-  display:block;
-  color:var(--maroon);
-  font-size:14px;
-}
-
-.feature span{
-  font-family:Arial,sans-serif;
-  color:#806d5c;
-  font-size:11px;
-}
-
-/* SECTION */
-
-.section{
-  max-width:1250px;
-  margin:70px auto;
-  padding:0 18px;
-}
-
-.section-title{
-  text-align:center;
-  margin-bottom:35px;
-}
-
-.section-title .small{
-  font-family:Arial,sans-serif;
-  color:var(--gold);
-  font-size:12px;
-  letter-spacing:3px;
-  font-weight:bold;
-}
-
-.section-title h2{
-  color:var(--maroon);
-  font-size:42px;
-  margin:8px 0;
-}
-
-.section-title p{
-  color:#806c5b;
-  font-family:Arial,sans-serif;
+.section-divider::before {
+  content: "♦";
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #f8ecda;
+  padding: 0 6px;
+  color: var(--gold-primary);
+  font-size: 13px;
 }
 
 /* PRODUCT GRID */
-
-.products{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:18px;
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
 }
 
-.product{
-  background:#fffdf8;
-  border:1px solid #dfc083;
-  border-radius:17px;
-  overflow:hidden;
-  box-shadow:0 10px 30px rgba(62,29,8,.08);
-  transition:.3s;
+.product-card {
+  background: #fffdf9;
+  border-radius: 20px;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(46, 8, 11, 0.06);
+  transition: all 0.35s ease;
+  display: flex;
+  flex-direction: column;
 }
 
-.product:hover{
-  transform:translateY(-6px);
-  box-shadow:0 18px 40px rgba(62,29,8,.15);
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(46, 8, 11, 0.16);
+  border-color: var(--gold-primary);
 }
 
-.product-photo{
-  aspect-ratio:1/1;
-  position:relative;
-  overflow:hidden;
-  background:#eee1ce;
+.card-image-box {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #f5e9d5;
 }
 
-.product-photo img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  transition:.4s;
+.card-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
 }
 
-.product:hover .product-photo img{
-  transform:scale(1.05);
+.product-card:hover .card-image-box img {
+  transform: scale(1.08);
 }
 
-.badge{
-  position:absolute;
-  top:12px;
-  left:12px;
-  z-index:2;
-  background:var(--maroon);
-  color:#f8d77f;
-  padding:7px 10px;
-  border-radius:5px;
-  font-family:Arial,sans-serif;
-  font-size:10px;
-  font-weight:bold;
+.exclusive-tag {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: var(--royal-maroon);
+  color: var(--gold-glow);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(212, 175, 55, 0.4);
 }
 
-.product-info{
-  padding:16px;
+.card-info {
+  padding: 22px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
-.product-info h3{
-  color:var(--maroon);
-  font-size:19px;
-  margin-bottom:7px;
+.card-info h3 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--royal-maroon);
+  margin-bottom: 6px;
 }
 
-.rating{
-  color:#d49b22;
-  font-family:Arial,sans-serif;
-  font-size:13px;
-  margin-bottom:8px;
+.rating-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: var(--gold-border);
+  margin-bottom: 12px;
 }
 
-.price-row{
-  display:flex;
-  align-items:center;
-  gap:8px;
-  margin:8px 0 13px;
+.rating-count {
+  color: var(--text-muted);
+  font-size: 11px;
 }
 
-.real-price{
-  text-decoration:line-through;
-  color:#9d9185;
-  font-family:Arial,sans-serif;
-  font-size:14px;
+.card-pricing {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 18px;
 }
 
-.offer-price{
-  color:var(--maroon);
-  font-size:23px;
-  font-weight:bold;
+.card-striked {
+  text-decoration: line-through;
+  color: #9c8a85;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
 }
 
-.save-mini{
-  background:#f2dfb1;
-  color:#79571e;
-  font-family:Arial,sans-serif;
-  font-size:10px;
-  padding:5px 7px;
-  border-radius:5px;
+.card-final-price {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--royal-maroon);
 }
 
-.cart-btn{
-  width:100%;
-  border:0;
-  background:var(--maroon);
-  color:#fff;
-  padding:12px;
-  border-radius:25px;
-  cursor:pointer;
-  font-family:Arial,sans-serif;
-  font-weight:bold;
+.add-btn {
+  margin-top: auto;
+  background: var(--royal-maroon);
+  color: #fff;
+  border: 1px solid var(--gold-primary);
+  padding: 13px;
+  border-radius: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
-.cart-btn:hover{
-  background:#70171d;
+.add-btn:hover {
+  background: var(--burgundy);
+  color: var(--gold-glow);
+  box-shadow: 0 4px 15px rgba(73, 14, 19, 0.3);
 }
 
-/* CULTURE SECTION */
-
-.culture{
-  display:grid;
-  grid-template-columns:1.1fr .9fr;
-  gap:20px;
+/* MODAL / CHECKOUT DRAWER */
+.checkout-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(18, 3, 4, 0.75);
+  backdrop-filter: blur(6px);
+  z-index: 200;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
 }
 
-.culture-card{
-  min-height:300px;
-  border-radius:20px;
-  overflow:hidden;
-  position:relative;
-  border:1px solid var(--gold);
+.checkout-modal.active {
+  display: flex;
 }
 
-.culture-image{
-  width:100%;
-  height:100%;
-  object-fit:cover;
+.modal-content {
+  background: #fdfaf3;
+  width: 100%;
+  max-width: 580px;
+  max-height: 92vh;
+  overflow-y: auto;
+  border-radius: 22px;
+  border: 1.5px solid var(--gold-primary);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.4);
+  padding: 32px 30px;
+  position: relative;
 }
 
-.culture-overlay{
-  position:absolute;
-  inset:0;
-  background:linear-gradient(90deg,rgba(58,7,10,.85),rgba(58,7,10,.15));
-  color:#fff;
-  padding:45px;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 22px;
+  background: transparent;
+  border: none;
+  font-size: 30px;
+  color: var(--royal-maroon);
+  cursor: pointer;
+  line-height: 1;
 }
 
-.culture-overlay h2{
-  font-size:40px;
-  margin:10px 0;
+.modal-head {
+  text-align: center;
+  margin-bottom: 22px;
 }
 
-.culture-overlay p{
-  max-width:480px;
-  line-height:1.7;
-  font-family:Arial,sans-serif;
+.modal-head h3 {
+  font-family: 'Cinzel Decorative', Georgia, serif;
+  font-size: 26px;
+  color: var(--royal-maroon);
 }
 
-.sanskrit-card{
-  background:var(--maroon);
-  color:#f5d47d;
-  border-radius:20px;
-  padding:35px;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  border:1px solid var(--gold);
-  box-shadow:inset 0 0 60px #1d0204;
+.order-items-box {
+  background: #f5eedf;
+  border-radius: 12px;
+  border: 1px solid rgba(197, 155, 39, 0.3);
+  padding: 14px 18px;
+  margin-bottom: 22px;
+  max-height: 160px;
+  overflow-y: auto;
 }
 
-.ganesha{
-  font-size:75px;
-  margin-bottom:12px;
+.cart-item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  padding: 8px 0;
+  border-bottom: 1px dashed rgba(197, 155, 39, 0.3);
 }
 
-.sanskrit-card h3{
-  font-size:23px;
-  color:#f8d983;
-  margin-bottom:18px;
+.cart-item-row:last-child {
+  border-bottom: none;
 }
 
-.sanskrit-card p{
-  font-size:21px;
-  line-height:1.8;
+.item-remove {
+  color: #ad2b2b;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 8px;
 }
 
-/* REVIEWS */
-
-.review-section{
-  background:#f5e7cf;
-  border:1px solid #dfc083;
-  border-radius:22px;
-  padding:35px;
+.cart-total-bar {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--royal-maroon);
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1.5px solid var(--gold-border);
 }
 
-.reviews{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:15px;
+/* FORM FIELDS */
+.form-group {
+  margin-bottom: 14px;
 }
 
-.review{
-  background:#fffdf8;
-  border-radius:15px;
-  padding:22px;
-  border:1px solid #e3cfaa;
+.form-group label {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--royal-maroon);
+  margin-bottom: 5px;
 }
 
-.review-stars{
-  color:#d29a21;
-  letter-spacing:2px;
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
 }
 
-.review p{
-  line-height:1.7;
-  color:#665549;
-  font-family:Arial,sans-serif;
-  font-size:14px;
-  margin:12px 0;
+.input-field {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1.5px solid #d8c29b;
+  background: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  color: var(--text-dark);
+  outline: none;
+  transition: border-color 0.25s ease;
 }
 
-.reviewer{
-  color:var(--maroon);
-  font-weight:bold;
+.input-field:focus {
+  border-color: var(--gold-primary);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
 }
 
-/* CONTACT */
-
-.contact{
-  background:var(--maroon);
-  color:#fff;
-  border-radius:22px;
-  padding:40px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
-  border:1px solid var(--gold);
+.submit-order-btn {
+  width: 100%;
+  background: var(--whatsapp-green);
+  color: #fff;
+  border: none;
+  padding: 15px;
+  border-radius: 35px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 18px;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+  transition: all 0.3s ease;
 }
 
-.contact h2{
-  font-size:34px;
-  margin-bottom:8px;
+.submit-order-btn:hover {
+  background: #1eb855;
+  transform: translateY(-2px);
 }
 
-.contact p{
-  color:#ecdcc5;
-  font-family:Arial,sans-serif;
+/* FLOATING BAR */
+.floating-actions {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 95;
 }
 
-.whatsapp-btn{
-  background:#25D366;
-  color:#fff;
-  padding:15px 25px;
-  border-radius:30px;
-  font-family:Arial,sans-serif;
-  font-weight:bold;
-  white-space:nowrap;
+.floating-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 22px;
+  border-radius: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  border: none;
 }
 
-/* FOOTER */
-
-footer{
-  margin-top:80px;
-  background:#250608;
-  color:#eee;
-  border-top:3px solid var(--gold);
+.float-wa {
+  background: var(--whatsapp-green);
+  color: white;
 }
 
-.footer{
-  max-width:1250px;
-  margin:auto;
-  padding:50px 20px;
-  display:grid;
-  grid-template-columns:2fr 1fr 1fr 1.3fr;
-  gap:35px;
+.float-cart {
+  background: var(--royal-maroon);
+  color: var(--gold-glow);
+  border: 1.5px solid var(--gold-primary);
 }
 
-.footer-brand{
-  font-size:36px;
-  color:#f2cc73;
-}
-
-.footer-brand span{
-  color:#fff0bd;
-}
-
-.footer p{
-  color:#bda99b;
-  font-family:Arial,sans-serif;
-  line-height:1.7;
-  margin-top:10px;
-}
-
-.footer h3{
-  color:#f0ca6e;
-  margin-bottom:15px;
-}
-
-.footer a{
-  display:block;
-  color:#cdbdb1;
-  margin:10px 0;
-  font-family:Arial,sans-serif;
-  font-size:13px;
-}
-
-.footer a:hover{
-  color:#f0ca6e;
-}
-
-.copyright{
-  border-top:1px solid #573237;
-  padding:18px;
-  text-align:center;
-  color:#a89488;
-  font-family:Arial,sans-serif;
-  font-size:12px;
-}
-
-/* FLOATING WHATSAPP */
-
-.floating-whatsapp{
-  position:fixed;
-  left:18px;
-  bottom:18px;
-  background:#25D366;
-  color:white;
-  padding:14px 20px;
-  border-radius:30px;
-  z-index:80;
-  font-family:Arial,sans-serif;
-  font-weight:bold;
-  box-shadow:0 8px 25px #0004;
-}
-
-/* CART */
-
-.floating-cart{
-  position:fixed;
-  right:18px;
-  bottom:18px;
-  background:var(--maroon);
-  color:#fff;
-  padding:14px 20px;
-  border-radius:30px;
-  border:1px solid var(--gold);
-  z-index:80;
-  cursor:pointer;
-  font-family:Arial,sans-serif;
-  box-shadow:0 8px 25px #0004;
-}
-
-.cart-count{
-  background:#e3b94f;
-  color:#3d1508;
-  border-radius:50%;
-  padding:3px 7px;
-  margin-left:5px;
-}
-
-/* MODAL */
-
-.modal{
-  display:none;
-  position:fixed;
-  inset:0;
-  background:#0009;
-  z-index:200;
-  align-items:center;
-  justify-content:center;
-  padding:20px;
-}
-
-.modal.show{
-  display:flex;
-}
-
-.modal-box{
-  background:#fffaf0;
-  width:100%;
-  max-width:450px;
-  border-radius:20px;
-  padding:30px;
-  border:1px solid var(--gold);
-  position:relative;
-}
-
-.modal-box h2{
-  color:var(--maroon);
-  margin-bottom:15px;
-}
-
-.close{
-  position:absolute;
-  right:18px;
-  top:12px;
-  background:none;
-  border:0;
-  font-size:28px;
-  cursor:pointer;
-  color:var(--maroon);
-}
-
-.input{
-  width:100%;
-  border:1px solid #dcc69d;
-  border-radius:10px;
-  padding:13px;
-  margin:7px 0;
-  font-family:Arial,sans-serif;
-}
-
-.modal-btn{
-  width:100%;
-  border:0;
-  background:var(--maroon);
-  color:white;
-  padding:13px;
-  border-radius:25px;
-  margin-top:10px;
-  cursor:pointer;
-}
-
-/* MOBILE */
-
-@media(max-width:950px){
-
-  .links{
-    display:none;
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .hero-box {
+    grid-template-columns: 1fr;
   }
-
-  .brand{
-    min-width:auto;
+  .hero-image-wrap {
+    min-height: 380px;
   }
-
-  .brand-name{
-    font-size:28px;
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
-
-  .products{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .features{
-    grid-template-columns:repeat(3,1fr);
-  }
-
-  .hero-box{
-    grid-template-columns:1fr;
-  }
-
-  .hero-image{
-    min-height:380px;
-  }
-
-  .culture{
-    grid-template-columns:1fr;
-  }
-
-  .reviews{
-    grid-template-columns:1fr;
-  }
-
-  .footer{
-    grid-template-columns:1fr 1fr;
-  }
-
-}
-
-@media(max-width:600px){
-
-  .topbar{
-    font-size:11px;
-  }
-
-  .nav{
-    min-height:70px;
-    padding:8px 12px;
-  }
-
-  .logo-icon{
-    width:45px;
-    height:45px;
-  }
-
-  .brand-name{
-    font-size:24px;
-  }
-
-  .brand-tag{
-    font-size:7px;
-    letter-spacing:2px;
-  }
-
-  .nav-actions{
-    margin-left:auto;
-  }
-
-  .nav-btn{
-    width:37px;
-    height:37px;
-  }
-
-  .hero{
-    margin-top:10px;
-  }
-
-  .hero-text{
-    padding:40px 25px;
-  }
-
-  .hero-title{
-    font-size:48px;
-  }
-
-  .hero-sub{
-    font-size:16px;
-  }
-
-  .offer-box{
-    padding:10px 15px;
-  }
-
-  .new-price{
-    font-size:26px;
-  }
-
-  .features{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .products{
-    grid-template-columns:1fr 1fr;
-    gap:10px;
-  }
-
-  .product-info{
-    padding:11px;
-  }
-
-  .product-info h3{
-    font-size:16px;
-  }
-
-  .offer-price{
-    font-size:19px;
-  }
-
-  .real-price{
-    font-size:11px;
-  }
-
-  .save-mini{
-    display:none;
-  }
-
-  .section-title h2{
-    font-size:32px;
-  }
-
-  .culture-overlay{
-    padding:30px;
-  }
-
-  .culture-overlay h2{
-    font-size:30px;
-  }
-
-  .contact{
-    display:block;
-    padding:28px;
-  }
-
-  .whatsapp-btn{
-    display:inline-block;
-    margin-top:20px;
-  }
-
-  .footer{
-    grid-template-columns:1fr;
-  }
-
-  .floating-whatsapp{
-    bottom:15px;
-    left:12px;
-    font-size:12px;
-  }
-
-  .floating-cart{
-    bottom:15px;
-    right:12px;
-    font-size:12px;
+  .links {
+    display: none;
   }
 }
 
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .hero-text {
+    padding: 40px 22px;
+  }
+  .hero-title {
+    font-size: 38px;
+  }
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 </head>
 
 <body>
 
-<!-- TOP OFFER BAR -->
-
+<!-- TOP ANNOUNCEMENT -->
 <div class="topbar">
-  ✨ SPECIAL OFFER — Jhumka Combo ₹899 | MRP ₹1,199 | SAVE ₹300 ✨
+  ✦ Grand Festive Sale ✦ FLAT ₹300 OFF • FREE SHIPPING ACROSS INDIA
 </div>
-
 
 <!-- HEADER -->
-
 <header>
+  <nav class="nav">
+    <a href="#" class="brand">
+      <div class="brand-symbol">❖</div>
+      <div class="brand-details">
+        <div class="brand-name">Jhumka<span>wala</span></div>
+        <div class="brand-sub">Royalty In Every Chime</div>
+      </div>
+    </a>
 
-<nav class="nav">
-
-  <a href="#home" class="brand">
-
-    <div class="logo-icon">
-      <div class="jhumka-symbol"></div>
+    <div class="links">
+      <a href="#collection">Collection</a>
+      <a href="#special">Exclusive Combos</a>
+      <a href="#contact">Contact</a>
     </div>
 
-    <div>
-      <div class="brand-name">
-        Jhumka<span>wala</span>
-      </div>
-
-      <div class="brand-tag">
-        TRADITIONAL • ELEGANT • TIMELESS
-      </div>
+    <div class="nav-actions">
+      <button class="nav-cart-btn" onclick="openOrderModal()">
+        🛍️ Cart (<span id="topCartCount">0</span>)
+      </button>
     </div>
-
-  </a>
-
-
-  <div class="links">
-    <a href="#home">Home</a>
-    <a href="#collection">Shop</a>
-    <a href="#collection">Combo Boxes</a>
-    <a href="#reviews">Reviews</a>
-    <a href="#about">About Us</a>
-    <a href="#contact">Contact</a>
-  </div>
-
-
-  <div class="nav-actions">
-    <button class="nav-btn" onclick="openCart()">🛒</button>
-  </div>
-
-</nav>
-
+  </nav>
 </header>
 
-
-<main id="home">
-
-
-<!-- HERO -->
-
-<section class="hero">
-
-<div class="hero-box">
-
-  <div class="hero-text">
-
-    <div class="sanskrit">
-      ॥ श्री गणेशाय नमः ॥
-    </div>
-
-    <div class="hero-small">
-      Premium Indian Jhumka Collection
-    </div>
-
-    <h1 class="hero-title">
-      Jhumka<span>wala</span>
-    </h1>
-
-    <div style="font-size:22px;color:#6c4934;margin-bottom:10px;">
-      Traditional Beauty • Modern Style
-    </div>
-
-    <p class="hero-sub">
-      हर खास मौके के लिए खूबसूरत Jhumka Combo Boxes —
-      एक ही box में अलग-अलग designs, traditional charm और elegant style.
-    </p>
-
-
-    <div class="offer">
-
-      <div class="offer-box">
-        <small>Special Offer</small>
-
-        <span class="old-price">
-          ₹1,199
-        </span>
-
-        <span class="new-price">
-          ₹899
-        </span>
-      </div>
-
-      <div class="save">
-        SAVE ₹300
-      </div>
-
-    </div>
-
-
-    <a href="#collection" class="shop-btn">
-      Shop Now → 
-    </a>
-
-  </div>
-
-
-  <div class="hero-image">
-
-    <img
-      src="images/jhumka-combo-1.png"
-      alt="Jhumkawala Premium Jhumka Combo"
-    >
-
-  </div>
-
-</div>
-
-</section>
-
-
-
-<!-- FEATURES -->
-
-<section class="features">
-
-  <div class="feature">
-    <div class="feature-icon">✦</div>
-    <strong>Beautiful Designs</strong>
-    <span>Traditional jhumka styles</span>
-  </div>
-
-  <div class="feature">
-    <div class="feature-icon">♢</div>
-    <strong>Premium Look</strong>
-    <span>Elegant presentation</span>
-  </div>
-
-  <div class="feature">
-    <div class="feature-icon">🚚</div>
-    <strong>Easy Delivery</strong>
-    <span>Order through WhatsApp</span>
-  </div>
-
-  <div class="feature">
-    <div class="feature-icon">🎁</div>
-    <strong>Gift Ready</strong>
-    <span>Perfect for special occasions</span>
-  </div>
-
-  <div class="feature">
-    <div class="feature-icon">♡</div>
-    <strong>Jhumka Love</strong>
-    <span>Made for Indian style</span>
-  </div>
-
-</section>
-
-
-
-<!-- COLLECTION -->
-
-<section class="section" id="collection">
-
-  <div class="section-title">
-
-    <div class="small">
-      ✦ JHUMKAWALA COLLECTION ✦
-    </div>
-
-    <h2>
-      Our Jhumka Combo Boxes
-    </h2>
-
-    <p>
-      More Styles • More Choices • More Love
-    </p>
-
-  </div>
-
-
-  <div class="products">
-
-
-    <!-- PRODUCT 1 -->
-
-    <article class="product">
-
-      <div class="product-photo">
-
-        <span class="badge">
-          BEST SELLER
-        </span>
-
-        <img
-          src="images/jhumka-combo-1.png"
-          alt="Classic Jhumka Combo"
-        >
-
-      </div>
-
-      <div class="product-info">
-
-        <h3>
-          Classic Jhumka Combo
-        </h3>
-
-        <div class="rating">
-          ★★★★★ <span style="color:#777">(4.8)</span>
-        </div>
-
-        <div class="price-row">
-
-          <span class="real-price">
-            ₹1,199
-          </span>
-
-          <span class="offer-price">
-            ₹899
-          </span>
-
-          <span class="save-mini">
-            SAVE ₹300
-          </span>
-
-        </div>
-
-        <button
-          class="cart-btn"
-          onclick="addCart('Classic Jhumka Combo')"
-        >
-          🛒 Add to Cart
-        </button>
-
-      </div>
-
-    </article>
-
-
-
-    <!-- PRODUCT 2 -->
-
-    <article class="product">
-
-      <div class="product-photo">
-
-        <span class="badge">
-          MOST POPULAR
-        </span>
-
-        <img
-          src="images/jhumka-combo-2.png"
-          alt="Traditional Jhumka Combo"
-        >
-
-      </div>
-
-      <div class="product-info">
-
-        <h3>
-          Traditional Jhumka Combo
-        </h3>
-
-        <div class="rating">
-          ★★★★★ <span style="color:#777">(4.9)</span>
-        </div>
-
-        <div class="price-row">
-
-          <span class="real-price">
-            ₹1,199
-          </span>
-
-          <span class="offer-price">
-            ₹899
-          </span>
-
-          <span class="save-mini">
-            SAVE ₹300
-          </span>
-
-        </div>
-
-        <button
-          class="cart-btn"
-          onclick="addCart('Traditional Jhumka Combo')"
-        >
-          🛒 Add to Cart
-        </button>
-
-      </div>
-
-    </article>
-
-
-
-    <!-- PRODUCT 3 -->
-
-    <article class="product">
-
-      <div class="product-photo">
-
-        <span class="badge">
-          TRENDING
-        </span>
-
-        <img
-          src="images/jhumka-combo-3.png"
-          alt="Premium Jhumka Combo"
-        >
-
-      </div>
-
-      <div class="product-info">
-
-        <h3>
-          Premium Jhumka Combo
-        </h3>
-
-        <div class="rating">
-          ★★★★★ <span style="color:#777">(4.7)</span>
-        </div>
-
-        <div class="price-row">
-
-          <span class="real-price">
-            ₹1,199
-          </span>
-
-          <span class="offer-price">
-            ₹899
-          </span>
-
-          <span class="save-mini">
-            SAVE ₹300
-          </span>
-
-        </div>
-
-        <button
-          class="cart-btn"
-          onclick="addCart('Premium Jhumka Combo')"
-        >
-          🛒 Add to Cart
-        </button>
-
-      </div>
-
-    </article>
-
-
-
-    <!-- PRODUCT 4 -->
-
-    <article class="product">
-
-      <div class="product-photo">
-
-        <span class="badge">
-          NEW ARRIVAL
-        </span>
-
-        <img
-          src="images/jhumka-combo-4.png"
-          alt="Designer Jhumka Combo"
-        >
-
-      </div>
-
-      <div class="product-info">
-
-        <h3>
-          Designer Jhumka Combo
-        </h3>
-
-        <div class="rating">
-          ★★★★★ <span style="color:#777">(4.9)</span>
-        </div>
-
-        <div class="price-row">
-
-          <span class="real-price">
-            ₹1,199
-          </span>
-
-          <span class="offer-price">
-            ₹899
-          </span>
-
-          <span class="save-mini">
-            SAVE ₹300
-          </span>
-
-        </div>
-
-        <button
-          class="cart-btn"
-          onclick="addCart('Designer Jhumka Combo')"
-        >
-          🛒 Add to Cart
-        </button>
-
-      </div>
-
-    </article>
-
-
-  </div>
-
-</section>
-
-
-
-<!-- CULTURE -->
-
-<section class="section" id="about">
-
-  <div class="culture">
-
-
-    <div class="culture-card">
-
-      <img
-        class="culture-image"
-        src="images/jhumka-combo-2.png"
-        alt="Traditional Jhumka"
-      >
-
-      <div class="culture-overlay">
-
-        <div style="letter-spacing:3px;font-family:Arial;font-size:11px;color:#f0cb72;">
-          TRADITIONAL BEAUTY
-        </div>
-
-        <h2>
-          हर Jhumka में<br>
-          एक कहानी।
-        </h2>
-
-        <p>
-          भारतीय परंपरा, खूबसूरत designs और modern styling
-          का एक elegant combination.
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-box">
+      <div class="hero-text">
+        <div class="mantra">॥ श्री गणेशाय नमः ॥ &nbsp;•&nbsp; Artisanal Heritage</div>
+        <h1 class="hero-title">Timeless Jhumkas</h1>
+        <div class="hero-tagline">Crafted for Royal Elegance</div>
+        <p class="hero-description">
+          पारंपरिक नज़ाकत और आधुनिक शान का बेमिसाल संगम। विशेष रूप से तैयार किए गए Premium Jhumka Combo Boxes जो हर शादी, त्योहार और खास पल को यादगार बनाएं।
         </p>
 
+        <div class="offer-ribbon">
+          <div class="pricing-card">
+            <span class="striked">₹1,199</span>
+            <span class="deal-price">₹899</span>
+          </div>
+          <div class="save-chip">LIMITED FESTIVE OFFER</div>
+        </div>
+
+        <a href="#collection" class="hero-cta">
+          Explore Collection ✦
+        </a>
       </div>
 
+      <div class="hero-image-wrap">
+        <!-- Root directory image path -->
+        <img src="./jhumka-combo-1.png" alt="Royal Jhumka Collection">
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS COLLECTION -->
+  <section class="section" id="collection">
+    <div class="section-head">
+      <span class="subtitle-badge">Royal Treasury</span>
+      <h2>Curated Combo Boxes</h2>
+      <div class="section-divider"></div>
     </div>
 
+    <div class="product-grid">
 
-    <div class="sanskrit-card">
+      <!-- PRODUCT 1 -->
+      <article class="product-card">
+        <div class="card-image-box">
+          <span class="exclusive-tag">Bestseller</span>
+          <img src="./jhumka-combo-1.png" alt="Classic Jhumka Combo">
+        </div>
+        <div class="card-info">
+          <h3>Classic Heritage Combo</h3>
+          <div class="rating-bar">
+            ★★★★★ <span class="rating-count">(4.9/5)</span>
+          </div>
+          <div class="card-pricing">
+            <span class="card-striked">₹1,199</span>
+            <span class="card-final-price">₹899</span>
+          </div>
+          <button class="add-btn" onclick="addToCart('Classic Heritage Combo', 899)">
+            Add To Bag ✦
+          </button>
+        </div>
+      </article>
 
-      <div class="ganesha">
-        ॐ
-      </div>
+      <!-- PRODUCT 2 -->
+      <article class="product-card">
+        <div class="card-image-box">
+          <span class="exclusive-tag">Trending</span>
+          <img src="./jhumka-combo-2.png" alt="Traditional Jhumka Combo">
+        </div>
+        <div class="card-info">
+          <h3>Royal Rajputana Combo</h3>
+          <div class="rating-bar">
+            ★★★★★ <span class="rating-count">(5.0/5)</span>
+          </div>
+          <div class="card-pricing">
+            <span class="card-striked">₹1,199</span>
+            <span class="card-final-price">₹899</span>
+          </div>
+          <button class="add-btn" onclick="addToCart('Royal Rajputana Combo', 899)">
+            Add To Bag ✦
+          </button>
+        </div>
+      </article>
 
-      <h3>
-        ॥ श्री गणेशाय नमः ॥
-      </h3>
+      <!-- PRODUCT 3 -->
+      <article class="product-card">
+        <div class="card-image-box">
+          <span class="exclusive-tag">Festive Special</span>
+          <img src="./jhumka-combo-3.png" alt="Premium Jhumka Combo">
+        </div>
+        <div class="card-info">
+          <h3>Meenakari Velvet Combo</h3>
+          <div class="rating-bar">
+            ★★★★★ <span class="rating-count">(4.8/5)</span>
+          </div>
+          <div class="card-pricing">
+            <span class="card-striked">₹1,199</span>
+            <span class="card-final-price">₹899</span>
+          </div>
+          <button class="add-btn" onclick="addToCart('Meenakari Velvet Combo', 899)">
+            Add To Bag ✦
+          </button>
+        </div>
+      </article>
 
-      <p>
-        "परंपरा में सुंदरता,<br>
-        सुंदरता में अपनी पहचान।"
-      </p>
-
-      <div style="margin-top:20px;color:#d9b85e;">
-        ✦ JHUMKAWALA ✦
-      </div>
+      <!-- PRODUCT 4 -->
+      <article class="product-card">
+        <div class="card-image-box">
+          <span class="exclusive-tag">New Edition</span>
+          <img src="./jhumka-combo-4.png" alt="Designer Jhumka Combo">
+        </div>
+        <div class="card-info">
+          <h3>Kundan Floral Combo</h3>
+          <div class="rating-bar">
+            ★★★★★ <span class="rating-count">(4.9/5)</span>
+          </div>
+          <div class="card-pricing">
+            <span class="card-striked">₹1,199</span>
+            <span class="card-final-price">₹899</span>
+          </div>
+          <button class="add-btn" onclick="addToCart('Kundan Floral Combo', 899)">
+            Add To Bag ✦
+          </button>
+        </div>
+      </article>
 
     </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- REVIEWS -->
-
-<section class="section" id="reviews">
-
-  <div class="review-section">
-
-    <div class="section-title" style="margin-bottom:25px;">
-
-      <div class="small">
-        CUSTOMER LOVE
-      </div>
-
-      <h2>
-        What Our Customers Say
-      </h2>
-
-    </div>
-
-
-    <div class="reviews">
-
-      <div class="review">
-
-        <div class="review-stars">
-          ★★★★★
-        </div>
-
-        <p>
-          "Jhumka designs बहुत सुंदर हैं।
-          Combo box का concept काफी अच्छा लगा।"
-        </p>
-
-        <div class="reviewer">
-          — Priya S.
-        </div>
-
-      </div>
-
-
-      <div class="review">
-
-        <div class="review-stars">
-          ★★★★★
-        </div>
-
-        <p>
-          "Traditional look के लिए बहुत खूबसूरत
-          collection है।"
-        </p>
-
-        <div class="reviewer">
-          — Neha R.
-        </div>
-
-      </div>
-
-
-      <div class="review">
-
-        <div class="review-stars">
-          ★★★★★
-        </div>
-
-        <p>
-          "एक ही box में इतने सारे jhumka styles
-          होना काफी अच्छा लगा।"
-        </p>
-
-        <div class="reviewer">
-          — Anjali K.
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- CONTACT -->
-
-<section class="section" id="contact">
-
-  <div class="contact">
-
-    <div>
-
-      <div style="color:#e5c36d;letter-spacing:3px;font-family:Arial;font-size:11px;">
-        ORDER / ENQUIRY
-      </div>
-
-      <h2>
-        Jhumka पसंद आया?
-      </h2>
-
-      <p>
-        WhatsApp पर message करके order और product details पूछें.
-      </p>
-
-      <p style="margin-top:8px;font-weight:bold;">
-        📞 9971566545
-      </p>
-
-    </div>
-
-
-    <a
-      class="whatsapp-btn"
-      href="https://wa.me/919971566545?text=Hi%20Jhumkawala%2C%20mujhe%20Jhumka%20Combo%20ke%20baare%20mein%20jaankari%20chahiye."
-      target="_blank"
-      rel="noopener"
-    >
-      💬 Chat on WhatsApp →
-    </a>
-
-  </div>
-
-</section>
-
-
+  </section>
 </main>
 
+<!-- FLOATING QUICK ACTIONS -->
+<div class="floating-actions">
+  <button class="floating-btn float-cart" onclick="openOrderModal()">
+    🛍️ Bag (<span id="floatCartCount">0</span>)
+  </button>
+  <a class="floating-btn float-wa" href="https://wa.me/919971566545?text=Hi%20Jhumkawala%2C%20mujhe%20jhumka%20ke%20designs%20dekhne%20hain." target="_blank">
+    💬 WhatsApp
+  </a>
+</div>
 
-
-<!-- FOOTER -->
-
-<footer>
-
-<div class="footer">
-
-  <div>
-
-    <div class="footer-brand">
-      Jhumka<span>wala</span>
+<!-- CHECKOUT / ADDRESS MODAL -->
+<div class="checkout-modal" id="orderModal">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeOrderModal()">×</button>
+    
+    <div class="modal-head">
+      <h3>Complete Your Order</h3>
+      <p style="font-family:'Montserrat',sans-serif;font-size:12px;color:var(--text-muted);margin-top:4px;">
+        कृपया डिलीवरी के लिए अपनी पूरी जानकारी भरें
+      </p>
     </div>
 
-    <p>
-      Traditional • Elegant • Timeless
-    </p>
-
-    <p>
-      खूबसूरत Indian Jhumka Collection
-      आपके traditional और modern looks के लिए.
-    </p>
-
-  </div>
-
-
-  <div>
-
-    <h3>
-      Shop
-    </h3>
-
-    <a href="#collection">
-      Combo Boxes
-    </a>
-
-    <a href="#collection">
-      Best Sellers
-    </a>
-
-    <a href="#collection">
-      New Arrivals
-    </a>
-
-  </div>
-
-
-  <div>
-
-    <h3>
-      Quick Links
-    </h3>
-
-    <a href="#home">
-      Home
-    </a>
-
-    <a href="#about">
-      About Us
-    </a>
-
-    <a href="#reviews">
-      Reviews
-    </a>
-
-    <a href="#contact">
-      Contact
-    </a>
-
-  </div>
-
-
-  <div>
-
-    <h3>
-      Contact Us
-    </h3>
-
-    <a href="https://wa.me/919971566545" target="_blank">
-      💬 WhatsApp
-    </a>
-
-    <a href="tel:9971566545">
-      📞 9971566545
-    </a>
-
-    <a href="#contact">
-      Shipping Info
-    </a>
-
-  </div>
-
-</div>
-
-
-<div class="copyright">
-  © 2026 Jhumkawala • Traditional • Elegant • Timeless
-</div>
-
-</footer>
-
-
-
-<!-- FLOATING WHATSAPP -->
-
-<a
-  class="floating-whatsapp"
-  href="https://wa.me/919971566545?text=Hi%20Jhumkawala%2C%20mujhe%20Jhumka%20Combo%20ke%20baare%20mein%20jaankari%20chahiye."
-  target="_blank"
-  rel="noopener"
->
-  💬 WhatsApp
-</a>
-
-
-
-<!-- FLOATING CART -->
-
-<button
-  class="floating-cart"
-  onclick="openCart()"
->
-  🛒 Cart
-  <span class="cart-count" id="cartCount">
-    0
-  </span>
-</button>
-
-
-
-<!-- CART MODAL -->
-
-<div class="modal" id="cartModal">
-
-  <div class="modal-box">
-
-    <button
-      class="close"
-      onclick="closeCart()"
-    >
-      ×
-    </button>
-
-    <h2>
-      Your Jhumka Cart
-    </h2>
-
-    <div id="cartItems">
-      Cart अभी खाली है.
+    <!-- Items Preview -->
+    <div class="order-items-box" id="cartContent">
+      <p style="font-family:'Montserrat',sans-serif;font-size:13px;color:var(--text-muted);text-align:center;">
+        आपकी शॉपिंग बैग अभी खाली है।
+      </p>
     </div>
 
-    <button
-      class="modal-btn"
-      onclick="checkout()"
-    >
-      WhatsApp पर Order करें
-    </button>
+    <!-- Customer Form -->
+    <form id="orderForm" onsubmit="handleOrderSubmit(event)">
+      <div class="form-group">
+        <label>Full Name (पूरा नाम) *</label>
+        <input type="text" class="input-field" id="custName" placeholder="उदा. प्रिया शर्मा" required>
+      </div>
 
+      <div class="form-row">
+        <div class="form-group">
+          <label>Phone Number (मोबाइल नंबर) *</label>
+          <input type="tel" class="input-field" id="custPhone" placeholder="10 अंकों का नंबर" pattern="[0-9]{10}" required>
+        </div>
+        <div class="form-group">
+          <label>Pincode (पिनकोड) *</label>
+          <input type="text" class="input-field" id="custPin" placeholder="उदा. 110001" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Full Delivery Address (मकान नं, गली, इलाका) *</label>
+        <textarea class="input-field" id="custAddress" rows="2" placeholder="पूरा पता लिखें..." required></textarea>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>City (शहर) *</label>
+          <input type="text" class="input-field" id="custCity" placeholder="उदा. नई दिल्ली" required>
+        </div>
+        <div class="form-group">
+          <label>State (राज्य) *</label>
+          <input type="text" class="input-field" id="custState" placeholder="उदा. दिल्ली" required>
+        </div>
+      </div>
+
+      <button type="submit" class="submit-order-btn">
+        <span>Proceed to WhatsApp Order</span> 💬
+      </button>
+    </form>
   </div>
-
 </div>
-
-
 
 <script>
-
+// CART LOGIC
 let cart = [];
 
-
-/* ADD TO CART */
-
-function addCart(name){
-
-  cart.push(name);
-
-  document.getElementById("cartCount").innerText =
-    cart.length;
-
-  alert(
-    name +
-    " cart में add हो गया! 🛍️"
-  );
-
+function addToCart(title, price) {
+  cart.push({ title, price });
+  updateCartUI();
+  openOrderModal();
 }
 
-
-/* OPEN CART */
-
-function openCart(){
-
-  let modal =
-    document.getElementById("cartModal");
-
-  let items =
-    document.getElementById("cartItems");
-
-
-  if(cart.length === 0){
-
-    items.innerHTML =
-      '<p style="color:#777;font-family:Arial">आपका cart अभी खाली है.</p>';
-
-  }else{
-
-    items.innerHTML =
-      cart.map(function(item,index){
-
-        return `
-        <div style="
-          padding:12px 0;
-          border-bottom:1px solid #e6d7bb;
-          font-family:Arial;
-        ">
-
-          <b>${index+1}. ${item}</b>
-
-          <div style="
-            margin-top:5px;
-            color:#7b6657;
-          ">
-            MRP:
-            <span style="text-decoration:line-through">
-              ₹1,199
-            </span>
-
-            &nbsp;
-
-            <strong style="color:#4b0f12">
-              Offer ₹899
-            </strong>
-          </div>
-
-        </div>
-        `;
-
-      }).join("");
-
-  }
-
-  modal.classList.add("show");
-
+function removeFromCart(index) {
+  cart.splice(index, 1);
+  updateCartUI();
 }
 
+function updateCartUI() {
+  document.getElementById('topCartCount').innerText = cart.length;
+  document.getElementById('floatCartCount').innerText = cart.length;
 
-/* CLOSE CART */
-
-function closeCart(){
-
-  document
-    .getElementById("cartModal")
-    .classList.remove("show");
-
-}
-
-
-/* WHATSAPP CHECKOUT */
-
-function checkout(){
-
-  if(cart.length === 0){
-
-    alert("पहले कोई Jhumka Combo cart में add करें.");
-
+  const container = document.getElementById('cartContent');
+  if (cart.length === 0) {
+    container.innerHTML = `
+      <p style="font-family:'Montserrat',sans-serif;font-size:13px;color:var(--text-muted);text-align:center;">
+        आपकी शॉपिंग बैग अभी खाली है।
+      </p>
+    `;
     return;
-
   }
 
+  let total = cart.reduce((acc, item) => acc + item.price, 0);
 
-  let message =
-    "Hi Jhumkawala!%0A%0A" +
-    "Mujhe ye Jhumka Combo order karna hai:%0A%0A" +
-    cart.map(function(item,i){
+  let html = cart.map((item, idx) => `
+    <div class="cart-item-row">
+      <span><b>${idx + 1}.</b> ${item.title}</span>
+      <span>
+        ₹${item.price}
+        <span class="item-remove" onclick="removeFromCart(${idx})" title="हटाएं">✕</span>
+      </span>
+    </div>
+  `).join('');
 
-      return (i+1) + ". " + item +
-      " - ₹899";
+  html += `
+    <div class="cart-total-bar">
+      <span>कुल राशि (Total Amount):</span>
+      <span>₹${total}</span>
+    </div>
+  `;
 
-    }).join("%0A") +
-
-    "%0A%0ATotal Items: " +
-    cart.length +
-
-    "%0A%0APlease share order details.";
-
-
-  window.open(
-    "https://wa.me/919971566545?text=" +
-    message,
-    "_blank"
-  );
-
+  container.innerHTML = html;
 }
 
+function openOrderModal() {
+  document.getElementById('orderModal').classList.add('active');
+}
 
-/* CLOSE MODAL ON OUTSIDE CLICK */
+function closeOrderModal() {
+  document.getElementById('orderModal').classList.remove('active');
+}
 
-document
-  .getElementById("cartModal")
-  .addEventListener("click",function(e){
+// Close on outside click
+document.getElementById('orderModal').addEventListener('click', function(e) {
+  if (e.target === this) {
+    closeOrderModal();
+  }
+});
 
-    if(e.target === this){
+// WHATSAPP REDIRECTION WITH CUSTOMER DETAILS
+function handleOrderSubmit(e) {
+  e.preventDefault();
 
-      closeCart();
+  if (cart.length === 0) {
+    alert("कृपया पहले कम से कम एक Jhumka Combo चुनें!");
+    return;
+  }
 
-    }
+  const name = document.getElementById('custName').value.trim();
+  const phone = document.getElementById('custPhone').value.trim();
+  const pin = document.getElementById('custPin').value.trim();
+  const address = document.getElementById('custAddress').value.trim();
+  const city = document.getElementById('custCity').value.trim();
+  const state = document.getElementById('custState').value.trim();
 
-  });
+  let total = cart.reduce((acc, item) => acc + item.price, 0);
 
+  let itemsText = cart.map((item, idx) => `${idx + 1}. ${item.title} (₹${item.price})`).join("%0A");
+
+  let waMessage = 
+    `*✨ NEW ORDER - JHUMKAWALA ✨*%0A%0A` +
+    `*📦 ORDER DETAILS:*%0A${itemsText}%0A%0A` +
+    `*💰 TOTAL AMOUNT:* ₹${total}%0A` +
+    `*🚚 DELIVERY CHARGES:* FREE%0A%0A` +
+    `*👤 CUSTOMER DETAILS:*%0A` +
+    `• *Name:* ${name}%0A` +
+    `• *Phone:* ${phone}%0A` +
+    `• *Address:* ${address}%0A` +
+    `• *City:* ${city}%0A` +
+    `• *State:* ${state}%0A` +
+    `• *Pincode:* ${pin}%0A%0A` +
+    `_कृपया ऑर्डर कन्फर्म करके पेमेंट और शिपिंग डिटेल शेयर करें._`;
+
+  window.open(`https://wa.me/919971566545?text=${waMessage}`, '_blank');
+}
 </script>
 
 </body>
