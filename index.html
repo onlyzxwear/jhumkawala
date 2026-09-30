@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jhumkawala — Jhumka Combo Collection</title>
+<meta name="description" content="Jhumkawala — stylish jhumka combo boxes and traditional earrings.">
+<style>
+:root{--ink:#17130f;--gold:#b8872b;--gold2:#e4c27a;--cream:#fbf7ef;--rose:#f3e5df;--card:#fffdf8;--line:#eadfce}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--cream)}
+a{text-decoration:none;color:inherit}.top{background:#17130f;color:#fff;text-align:center;padding:8px 12px;font-size:13px;letter-spacing:.5px}
+header{position:sticky;top:0;z-index:20;background:rgba(255,253,248,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{max-width:1180px;margin:auto;height:76px;display:flex;align-items:center;gap:22px;padding:0 18px}
+.logo{font-family:Georgia,serif;font-size:30px;font-weight:800;letter-spacing:-1px}.logo span{color:var(--gold)}
+.logo small{display:block;font:600 9px system-ui;letter-spacing:3px;text-align:center;margin-top:-5px;color:#80663d}
+.links{display:flex;gap:26px;margin-left:auto;font-size:14px}.links a:hover{color:var(--gold)}
+.actions{display:flex;gap:8px;margin-left:12px}.icon{border:1px solid var(--line);background:white;border-radius:999px;padding:9px 12px;cursor:pointer}
+.hero{max-width:1180px;margin:22px auto 0;padding:0 18px}
+.heroBox{display:grid;grid-template-columns:1.05fr .95fr;min-height:470px;border-radius:28px;overflow:hidden;background:#201b17;color:white}
+.heroText{padding:65px 55px;background:radial-gradient(circle at 20% 10%,#55412c 0,#201b17 50%);display:flex;flex-direction:column;justify-content:center}
+.kicker{color:var(--gold2);letter-spacing:3px;font-size:12px;font-weight:800;text-transform:uppercase}
+h1{font:800 clamp(42px,6vw,72px)/.95 Georgia,serif;margin:14px 0}.heroText p{font-size:17px;line-height:1.7;color:#e9dfd3;max-width:520px}
+.btn{display:inline-block;border:0;border-radius:999px;padding:13px 21px;background:var(--gold);color:#fff;font-weight:800;cursor:pointer;margin-top:12px}.btn.alt{background:white;color:var(--ink);margin-left:8px}
+.heroImg{background:#e8e0d4;display:flex;align-items:center;justify-content:center}.heroImg img{width:100%;height:100%;object-fit:cover}
+.features{max-width:1180px;margin:24px auto;padding:0 18px;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.feature{background:white;border:1px solid var(--line);border-radius:16px;padding:18px;text-align:center}.feature b{display:block;margin-bottom:5px}.feature span{font-size:12px;color:#766c60}
+.section{max-width:1180px;margin:60px auto;padding:0 18px}.sectionHead{display:flex;justify-content:space-between;align-items:end;margin-bottom:22px}.eyebrow{color:var(--gold);font-weight:800;letter-spacing:2px;font-size:12px}.section h2{font:700 40px Georgia,serif;margin:7px 0 0}.muted{color:#756c62}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 8px 30px rgba(56,36,15,.06)}
+.photo{aspect-ratio:1/1;overflow:hidden;background:#eee}.photo img{width:100%;height:100%;object-fit:cover;transition:.35s}.card:hover img{transform:scale(1.035)}
+.info{padding:16px}.badge{display:inline-block;font-size:10px;font-weight:800;letter-spacing:1px;background:#f1e2c2;color:#74501d;padding:6px 9px;border-radius:999px}.info h3{font:700 20px Georgia,serif;margin:12px 0 7px}.rating{color:#d29b21;font-size:14px}.price{font-size:18px;font-weight:800;margin:10px 0}.price em{font-size:12px;color:#82786d;font-style:normal;font-weight:500}.full{width:100%;margin-top:4px}
+.reviewWrap{background:#f0e6d9;border-radius:26px;padding:35px}.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.review{background:white;border-radius:18px;padding:20px;border:1px solid var(--line)}.stars{color:#d49a22;letter-spacing:2px}.review p{line-height:1.65;color:#625a51}.person{font-weight:800}.verified{font-size:11px;color:#6c806a}
+.news{background:#211a14;color:#fff;border-radius:25px;padding:42px;display:flex;justify-content:space-between;align-items:center;gap:25px}.news h2{font:700 38px Georgia,serif;margin:0 0 8px}.news p{color:#d9cfc4;margin:0}
+footer{margin-top:70px;background:#17130f;color:#eee}.foot{max-width:1180px;margin:auto;padding:45px 18px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:30px}.foot h3{color:var(--gold2);margin-top:0}.foot a{display:block;color:#c9c0b6;margin:10px 0;font-size:14px}.copy{border-top:1px solid #393029;text-align:center;padding:16px;color:#9c9389;font-size:12px}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:50;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.box{background:white;border-radius:24px;max-width:450px;width:100%;padding:28px}.box h2{font:700 30px Georgia,serif;margin-top:0}.field{width:100%;padding:13px;border:1px solid var(--line);border-radius:12px;margin:8px 0;font-size:15px}.close{float:right;border:0;background:none;font-size:25px;cursor:pointer}
+.whatsapp{position:fixed;left:18px;bottom:18px;background:#17130f;color:white;border-radius:999px;padding:14px 18px;z-index:30;box-shadow:0 10px 30px #0003}.contactBox{margin-top:18px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;display:flex;justify-content:space-between;align-items:center;gap:18px}.contactBox strong{font-size:18px}.cart{position:fixed;right:18px;bottom:18px;background:#17130f;color:white;border-radius:999px;padding:14px 18px;z-index:30;box-shadow:0 10px 30px #0003}.count{background:var(--gold);padding:3px 7px;border-radius:99px;margin-left:5px}
+@media(max-width:850px){.links{display:none}.heroBox{grid-template-columns:1fr}.heroImg{min-height:320px}.features{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:repeat(2,1fr)}.reviews{grid-template-columns:1fr}.foot{grid-template-columns:1fr 1fr}.heroText{padding:42px 28px}}
+@media(max-width:520px){.nav{height:66px}.logo{font-size:25px}.features{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr 1fr;gap:10px}.info{padding:12px}.info h3{font-size:16px}.section h2{font-size:32px}.heroText h1{font-size:48px}.heroText p{font-size:15px}.btn.alt{margin-left:0}.foot{grid-template-columns:1fr}.news{padding:28px;display:block}}
+</style>
+</head>
+<body>
+<div class="top">✨ JHUMKAWALA — Traditional Jhumka Combo Boxes • All Jhumka Combo Boxes ₹899</div>
+<header>
+<nav class="nav">
+  <a class="logo" href="#">Jhumka<span>wala</span><small>THE JHUMKA COLLECTION</small></a>
+  <div class="links"><a href="#home">Home</a><a href="#combos">Combo Boxes</a><a href="#reviews">Reviews</a><a href="#about">About</a></div>
+  <div class="actions"><button class="icon" onclick="openAccount()">👤</button><button class="icon" onclick="openCart()">🛍️</button></div>
+</nav>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="heroBox">
+    <div class="heroText">
+      <div class="kicker">Handpicked • Traditional • Stylish</div>
+      <h1>Har Look Ke Liye<br>Ek Jhumka.</h1>
+      <p>Jhumkawala में पाएँ खूबसूरत traditional jhumka combo boxes — gifting, festive looks और daily styling के लिए एक ही box में कई designs.</p>
+      <div><a class="btn" href="#combos">Shop Combo Boxes</a><a class="btn alt" href="#reviews">See Reviews</a></div>
+    </div>
+    <div class="heroImg"><img src="images/jhumka-combo-1.png" alt="Jhumkawala jhumka combo box"></div>
+  </div>
+</section>
+
+<section class="features">
+ <div class="feature">✨<b>Curated Combos</b><span>Multiple jhumka designs in one box</span></div>
+ <div class="feature">💎<b>Traditional Style</b><span>Oxidised & colourful designs</span></div>
+ <div class="feature">🎁<b>Gift Ready</b><span>Beautiful combo-box presentation</span></div>
+ <div class="feature">⭐<b>Customer Reviews</b><span>Rate and review your purchase</span></div>
+</section>
+
+<section class="section" id="combos">
+ <div class="sectionHead"><div><div class="eyebrow">JHUMKAWALA COLLECTION</div><h2>Jhumka Combo Boxes</h2><div class="muted">सभी Jhumka Combo Boxes की कीमत ₹899 है.</div></div></div>
+ <div class="grid">
+  <article class="card"><div class="photo"><img src="images/jhumka-combo-1.png" alt="Classic oxidised jhumka combo"></div><div class="info"><span class="badge">BESTSELLER</span><h3>Classic Oxidised Combo</h3><div class="rating">★★★★★ <span class="muted">(New)</span></div><div class="price">₹899 <em>Free shipping*</em></div><button class="btn full" onclick="addCart('Classic Oxidised Combo')">Add to Cart</button></div></article>
+  <article class="card"><div class="photo"><img src="images/jhumka-combo-2.png" alt="Premium jhumka box"></div><div class="info"><span class="badge">PREMIUM BOX</span><h3>Premium Jhumka Box</h3><div class="rating">★★★★★ <span class="muted">(New)</span></div><div class="price">₹899 <em>Free shipping*</em></div><button class="btn full" onclick="addCart('Premium Jhumka Box')">Add to Cart</button></div></article>
+  <article class="card"><div class="photo"><img src="images/jhumka-combo-3.png" alt="Colour accent jhumka combo"></div><div class="info"><span class="badge">TRENDING</span><h3>Colour Accent Combo</h3><div class="rating">★★★★★ <span class="muted">(New)</span></div><div class="price">₹899 <em>Free shipping*</em></div><button class="btn full" onclick="addCart('Colour Accent Combo')">Add to Cart</button></div></article>
+  <article class="card"><div class="photo"><img src="images/jhumka-combo-4.png" alt="Festive jhumka collection"></div><div class="info"><span class="badge">FESTIVE</span><h3>Festive Jhumka Collection</h3><div class="rating">★★★★★ <span class="muted">(New)</span></div><div class="price">₹899 <em>Free shipping*</em></div><button class="btn full" onclick="addCart('Festive Jhumka Collection')">Add to Cart</button></div></article>
+ </div>
+</section>
+
+<section class="section" id="reviews">
+ <div class="reviewWrap"><div class="sectionHead"><div><div class="eyebrow">CUSTOMER LOVE</div><h2>Ratings & Reviews</h2></div><button class="btn" onclick="openReview()">Write a Review</button></div>
+ <div class="reviews">
+  <div class="review"><div class="stars">★★★★★</div><p>“Designs बहुत सुंदर हैं और एक ही box में इतनी varieties मिलती हैं.”</p><div class="person">Priya S.</div><div class="verified">✓ Verified Buyer</div></div>
+  <div class="review"><div class="stars">★★★★★</div><p>“Festive wear के लिए बहुत अच्छा collection. Packaging भी premium रखी जा सकती है.”</p><div class="person">Neha R.</div><div class="verified">✓ Verified Buyer</div></div>
+  <div class="review"><div class="stars">★★★★★</div><p>“Traditional look पसंद करने वालों के लिए nice combo concept.”</p><div class="person">Anjali K.</div><div class="verified">✓ Verified Buyer</div></div>
+ </div></div>
+</section>
+
+<section class="section" id="about">
+ <div class="news"><div><div class="eyebrow">JHUMKAWALA</div><h2>Apna style, apna jhumka.</h2><p>एक जगह पर curated jhumka combo boxes. आगे चलकर यहाँ आपके products, prices, offers और delivery information जोड़ी जा सकती है.</p></div><button class="btn" onclick="openAccount()">Create Jhumka ID</button></div>
+</section>
+
+<section class="section" id="contact">
+ <div class="contactBox">
+  <div>
+   <div class="eyebrow">CONTACT JHUMKAWALA</div>
+   <strong>WhatsApp / Mobile: 9971566545</strong>
+   <div class="muted" style="margin-top:5px">Order और product enquiries के लिए WhatsApp करें.</div>
+  </div>
+  <a class="btn" href="https://wa.me/919971566545?text=Hi%20Jhumkawala%2C%20mujhe%20Jhumka%20Combo%20ke%20baare%20mein%20jaankari%20chahiye." target="_blank" rel="noopener">💬 WhatsApp Us</a>
+ </div>
+</section>
+
+</main>
+
+<footer><div class="foot">
+ <div><a class="logo" href="#">Jhumka<span>wala</span></a><p style="color:#aaa;line-height:1.7">Traditional jhumka combo boxes, curated for modern Indian looks.</p></div>
+ <div><h3>Shop</h3><a href="#combos">Combo Boxes</a><a href="#reviews">Reviews</a></div>
+ <div><h3>Account</h3><a href="#" onclick="openAccount();return false">Jhumka ID</a><a href="#" onclick="openCart();return false">My Cart</a></div>
+ <div><h3>Support</h3><a href="https://wa.me/919971566545" target="_blank" rel="noopener">WhatsApp: 9971566545</a><a href="#">Shipping Policy</a><a href="#">Return Policy</a></div>
+</div><div class="copy">© 2026 Jhumkawala. All rights reserved.</div></footer>
+
+<a class="whatsapp" href="https://wa.me/919971566545?text=Hi%20Jhumkawala%2C%20mujhe%20Jhumka%20Combo%20ke%20baare%20mein%20jaankari%20chahiye." target="_blank" rel="noopener">💬 WhatsApp</a>
+<button class="cart" onclick="openCart()">🛍️ Cart <span class="count" id="cartCount">0</span></button>
+
+<div class="modal" id="accountModal"><div class="box"><button class="close" onclick="closeModal('accountModal')">×</button><h2>Create Jhumka ID</h2><p class="muted">Customer account का demo. Live website में इसे database/login से connect किया जा सकता है.</p><input class="field" placeholder="Your name"><input class="field" placeholder="Mobile number"><input class="field" type="email" placeholder="Email"><input class="field" type="password" placeholder="Create password"><button class="btn full" onclick="alert('Demo account created! Live version में account database से जुड़ेगा.');closeModal('accountModal')">Create Account</button></div></div>
+<div class="modal" id="reviewModal"><div class="box"><button class="close" onclick="closeModal('reviewModal')">×</button><h2>Write a Review</h2><input class="field" placeholder="Your name"><select class="field"><option>★★★★★ — 5 Stars</option><option>★★★★ — 4 Stars</option><option>★★★ — 3 Stars</option><option>★★ — 2 Stars</option><option>★ — 1 Star</option></select><textarea class="field" rows="5" placeholder="Your review"></textarea><button class="btn full" onclick="alert('Thanks for your review! Live version में यह database में save होगा.');closeModal('reviewModal')">Submit Review</button></div></div>
+<div class="modal" id="cartModal"><div class="box"><button class="close" onclick="closeModal('cartModal')">×</button><h2>Your Cart</h2><div id="cartItems" class="muted">Your cart is empty.</div><button class="btn full" onclick="alert('Checkout demo. Live version में address, COD/UPI/card payment और order creation जोड़ा जाएगा.')">Proceed to Checkout</button></div></div>
+
+<script>
+let cart=[];
+function addCart(name){cart.push(name);document.getElementById('cartCount').textContent=cart.length;alert(name+' added to cart!')}
+function openAccount(){document.getElementById('accountModal').classList.add('open')}
+function openReview(){document.getElementById('reviewModal').classList.add('open')}
+function openCart(){let e=document.getElementById('cartItems');e.innerHTML=cart.length?cart.map((x,i)=>`<div style="padding:10px 0;border-bottom:1px solid #eee"><b>${i+1}. ${x}</b><div class="muted">Price: ₹899</div></div>`).join(''):'Your cart is empty.';document.getElementById('cartModal').classList.add('open')}
+function closeModal(id){document.getElementById(id).classList.remove('open')}
+document.querySelectorAll('.modal').forEach(m=>m.addEventListener('click',e=>{if(e.target===m)m.classList.remove('open')}))
+</script>
+</body>
+</html>
