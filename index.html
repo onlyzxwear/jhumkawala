@@ -3,24 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jhumkawala | Trendy Fashion Jhumka Combo</title>
-<meta name="description" content="Affordable & Aesthetic Fashion Jhumka Combo Boxes. Perfect for College, Festivals & Parties.">
+<title>Jhumkawala | Handcrafted Fashion Jhumka Collection</title>
+<meta name="description" content="Jhumkawala - Traditional, Elegant & Timeless Fashion Jhumka Combo Box.">
 
-<!-- Clean Aesthetic Modern Fonts -->
+<!-- Premium Aesthetic Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 :root {
-  --bg-soft: #fcfbf9;
-  --bg-card: #ffffff;
-  --accent: #8b3a42;
-  --accent-light: #f7ede8;
-  --champagne: #d4a373;
-  --border-color: #ecdcd3;
-  --text-dark: #231815;
-  --text-muted: #6e6259;
+  --bg-black: #110e0e;
+  --bg-card: #1c1616;
+  --bg-card-light: #251e1e;
+  --cream-light: #fff8ed;
+  --cream-soft: #f4e8d3;
+  --gold: #d4a359;
+  --gold-glow: #f5d496;
+  --border-color: #3d2f2f;
+  --text-muted: #bdaea1;
   --wa-green: #25D366;
 }
 
@@ -36,8 +37,8 @@ html {
 
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  background-color: var(--bg-soft);
-  color: var(--text-dark);
+  background-color: var(--bg-black);
+  color: var(--cream-light);
   line-height: 1.6;
 }
 
@@ -46,21 +47,20 @@ a {
   color: inherit;
 }
 
-/* TOP NOTIFICATION */
+/* TOP GANESH SHLOK BAR */
 .topbar {
-  background: var(--accent);
-  color: #fff;
+  background: #0a0808;
+  color: var(--gold);
   padding: 8px 16px;
   text-align: center;
   font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #2a2020;
 }
 
 /* NAVBAR */
 header {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(17, 14, 14, 0.95);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border-color);
   position: sticky;
@@ -69,109 +69,170 @@ header {
 }
 
 .nav {
-  max-width: 1150px;
+  max-width: 1200px;
   margin: auto;
-  height: 75px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
 }
 
-.brand {
-  font-family: 'Playfair Display', serif;
-  font-size: 26px;
-  font-weight: 700;
-  color: var(--accent);
-  letter-spacing: 0.5px;
-}
-
-.brand span {
-  color: var(--champagne);
-}
-
-.links {
+.brand-wrapper {
   display: flex;
-  gap: 25px;
+  align-items: center;
+  gap: 12px;
+}
+
+.ganesh-logo-symbol {
+  width: 48px;
+  height: 48px;
+  border: 1.5px solid var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: var(--gold);
+  background: radial-gradient(circle, #2a2020, #140f0f);
+  box-shadow: 0 0 12px rgba(212, 163, 89, 0.2);
+}
+
+.brand-text-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-name {
+  font-family: 'Cinzel', serif;
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--cream-light);
+  letter-spacing: 1.5px;
+  line-height: 1;
+}
+
+.brand-name span {
+  color: var(--gold);
+}
+
+.brand-sub {
+  font-size: 8.5px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-top: 4px;
+  font-weight: 600;
+}
+
+/* NAVIGATION MENU */
+.nav-links {
+  display: flex;
+  gap: 24px;
   font-size: 13.5px;
   font-weight: 600;
-  color: var(--text-muted);
+  color: var(--cream-soft);
 }
 
-.links a:hover {
-  color: var(--accent);
+.nav-links a {
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: var(--gold);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.vip-id-btn {
+  background: transparent;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.vip-id-btn:hover {
+  background: var(--gold);
+  color: var(--bg-black);
 }
 
 .nav-cart-btn {
-  background: var(--accent-light);
-  color: var(--accent);
-  border: 1px solid var(--border-color);
+  background: var(--gold);
+  color: var(--bg-black);
+  border: none;
   padding: 9px 18px;
-  border-radius: 25px;
+  border-radius: 20px;
   cursor: pointer;
   font-size: 13px;
   font-weight: 700;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   transition: 0.2s;
 }
 
 .nav-cart-btn:hover {
-  background: var(--accent);
-  color: #fff;
+  background: var(--gold-glow);
+  transform: translateY(-2px);
 }
 
 /* HERO SECTION */
 .hero {
-  max-width: 1150px;
+  max-width: 1200px;
   margin: 35px auto;
   padding: 0 20px;
 }
 
-.hero-card {
-  background: #fff;
+.hero-box {
+  background: linear-gradient(135deg, #1c1616 0%, #151010 100%);
   border-radius: 24px;
   border: 1px solid var(--border-color);
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
+  grid-template-columns: 1.15fr 1fr;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
-.hero-content {
-  padding: 50px 40px;
+.hero-text {
+  padding: 55px 45px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.tagline-chip {
-  display: inline-block;
-  background: var(--accent-light);
-  color: var(--accent);
-  padding: 5px 12px;
-  border-radius: 20px;
-  font-size: 11px;
-  font-weight: 700;
+.shlok-banner {
+  color: var(--gold);
+  font-size: 12.5px;
   letter-spacing: 1px;
-  text-transform: uppercase;
-  width: fit-content;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  font-style: italic;
 }
 
 .hero-title {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(34px, 4.5vw, 48px);
+  font-family: 'Cinzel', serif;
+  font-size: clamp(32px, 4.5vw, 48px);
+  color: var(--cream-light);
   line-height: 1.15;
-  color: var(--text-dark);
   margin-bottom: 12px;
 }
 
+.hero-title span {
+  color: var(--gold);
+}
+
 .hero-desc {
-  font-size: 15px;
+  font-size: 14.5px;
   color: var(--text-muted);
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 .price-row {
@@ -184,29 +245,29 @@ header {
 .curr-price {
   font-size: 32px;
   font-weight: 800;
-  color: var(--accent);
+  color: var(--gold);
 }
 
 .old-price {
   text-decoration: line-through;
-  color: #a89f99;
+  color: #7a6e6e;
   font-size: 18px;
-  font-weight: 600;
 }
 
-.discount-badge {
-  background: #eef8f2;
-  color: #2b824c;
-  font-size: 12px;
+.save-badge {
+  background: rgba(212, 163, 89, 0.15);
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  font-size: 11.5px;
   font-weight: 700;
   padding: 4px 10px;
   border-radius: 6px;
 }
 
 .cta-btn {
-  background: var(--accent);
-  color: #fff;
-  padding: 15px 32px;
+  background: var(--gold);
+  color: var(--bg-black);
+  padding: 14px 32px;
   border-radius: 30px;
   font-weight: 700;
   font-size: 14px;
@@ -215,116 +276,101 @@ header {
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  box-shadow: 0 4px 15px rgba(139, 58, 66, 0.25);
+  gap: 8px;
+  box-shadow: 0 4px 15px rgba(212, 163, 89, 0.3);
   transition: 0.2s;
 }
 
 .cta-btn:hover {
-  background: #732f36;
+  background: var(--gold-glow);
   transform: translateY(-2px);
 }
 
-.hero-media {
-  background: #fbf7f4;
+.hero-image-box {
+  background: #141010;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
 }
 
-.hero-media img {
+.hero-image-box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-/* SINGLE PRODUCT SECTION */
+/* PRODUCT SPOTLIGHT SECTION */
 .section {
-  max-width: 1150px;
+  max-width: 1200px;
   margin: 60px auto;
   padding: 0 20px;
 }
 
-.section-title {
+.section-head {
   text-align: center;
   margin-bottom: 35px;
 }
 
-.section-title h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 32px;
-  color: var(--text-dark);
+.section-head h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 30px;
+  color: var(--cream-light);
 }
 
-.section-title p {
-  font-size: 14px;
-  color: var(--text-muted);
+.section-head p {
+  font-size: 13.5px;
+  color: var(--gold);
   margin-top: 4px;
 }
 
-.single-product-container {
+.product-single-card {
   max-width: 820px;
   margin: auto;
-  background: #fff;
+  background: var(--bg-card);
   border-radius: 20px;
   border: 1px solid var(--border-color);
-  padding: 28px;
+  padding: 30px;
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: 30px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.02);
 }
 
-.single-product-img {
-  aspect-ratio: 1 / 1;
+.product-img-wrap {
+  aspect-ratio: 1/1;
   border-radius: 14px;
   overflow: hidden;
-  background: #f5ece7;
+  background: #140f0f;
+  border: 1px solid var(--border-color);
 }
 
-.single-product-img img {
+.product-img-wrap img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.single-product-details {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.single-product-details h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 26px;
-  margin-bottom: 8px;
-}
-
-.spec-list {
+.product-specs-list {
   list-style: none;
-  margin: 16px 0 22px;
+  margin: 15px 0 22px;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.spec-list li {
+.product-specs-list li {
   font-size: 13px;
   color: var(--text-muted);
-  display: flex;
-  align-items: center;
-  gap: 8px;
 }
 
-.spec-list li b {
-  color: var(--text-dark);
+.product-specs-list li b {
+  color: var(--cream-soft);
 }
 
 /* REVIEWS SECTION */
-.reviews-box {
-  background: #fff;
+.reviews-grid {
+  background: var(--bg-card);
   border-radius: 20px;
   border: 1px solid var(--border-color);
   padding: 30px;
@@ -333,23 +379,17 @@ header {
   gap: 35px;
 }
 
-.review-form h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 22px;
-  margin-bottom: 6px;
-}
-
-.star-picker {
+.star-rating-widget {
   display: flex;
   gap: 6px;
-  font-size: 24px;
-  color: #ddd;
+  font-size: 26px;
+  color: #4a3e3e;
   cursor: pointer;
   margin-bottom: 14px;
 }
 
-.star-picker span.active {
-  color: #f4b400;
+.star-rating-widget span.active {
+  color: var(--gold);
 }
 
 .form-group {
@@ -361,70 +401,71 @@ header {
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: var(--gold);
   margin-bottom: 4px;
 }
 
 .input-box {
   width: 100%;
   padding: 10px 12px;
-  border: 1.5px solid var(--border-color);
+  background: var(--bg-black);
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   font-size: 13px;
+  color: var(--cream-light);
   font-family: inherit;
   outline: none;
 }
 
 .input-box:focus {
-  border-color: var(--accent);
+  border-color: var(--gold);
 }
 
-.review-feed {
+.reviews-feed {
   max-height: 380px;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  padding-right: 6px;
+  gap: 12px;
 }
 
-.review-card {
-  background: var(--bg-soft);
+.single-review-box {
+  background: var(--bg-card-light);
   border: 1px solid var(--border-color);
   padding: 14px 16px;
   border-radius: 12px;
 }
 
-.review-card-top {
+.review-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
+}
+
+.review-author-name {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--cream-light);
 }
 
 .review-stars {
-  color: #f4b400;
+  color: var(--gold);
   font-size: 14px;
 }
 
-.review-card-name {
-  font-weight: 700;
-  font-size: 13px;
-}
-
-.review-card-text {
+.review-comment {
   font-size: 13px;
   color: var(--text-muted);
-  line-height: 1.4;
 }
 
-/* CHECKOUT MODAL */
+/* CHECKOUT / MODAL */
 .modal {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(5px);
   z-index: 200;
   align-items: center;
   justify-content: center;
@@ -436,14 +477,16 @@ header {
 }
 
 .modal-content {
-  background: #fff;
+  background: var(--bg-card);
   width: 100%;
   max-width: 500px;
   max-height: 90vh;
   overflow-y: auto;
   border-radius: 20px;
+  border: 1px solid var(--gold);
   padding: 28px 24px;
   position: relative;
+  color: var(--cream-light);
 }
 
 .close-btn {
@@ -454,12 +497,12 @@ header {
   border: none;
   font-size: 26px;
   cursor: pointer;
-  color: var(--text-muted);
+  color: var(--gold);
 }
 
 .upi-box {
-  background: #fdf8f5;
-  border: 1.5px dashed var(--accent);
+  background: var(--bg-black);
+  border: 1px dashed var(--gold);
   padding: 16px;
   border-radius: 12px;
   text-align: center;
@@ -481,13 +524,13 @@ header {
   width: 140px;
   height: 140px;
   border-radius: 8px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
   margin: 6px 0;
 }
 
 .utr-box {
-  background: #fdf5f5;
-  border: 1px solid #f1cece;
+  background: #201313;
+  border: 1px solid #4a2828;
   padding: 12px;
   border-radius: 10px;
   margin-bottom: 14px;
@@ -509,6 +552,22 @@ header {
   gap: 8px;
 }
 
+/* VIP ID PASS CARD UI */
+.vip-pass-card {
+  background: linear-gradient(135deg, #2a1f1f, #140f0f);
+  border: 1.5px solid var(--gold);
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.vip-id-num {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: var(--gold);
+  font-weight: bold;
+}
+
 /* FLOATING BAR */
 .floating-actions {
   position: fixed;
@@ -527,15 +586,15 @@ header {
   font-weight: 700;
   border: none;
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
   display: flex;
   align-items: center;
   gap: 6px;
 }
 
 .float-cart-btn {
-  background: var(--accent);
-  color: #fff;
+  background: var(--gold);
+  color: var(--bg-black);
 }
 
 .float-wa-btn {
@@ -544,19 +603,16 @@ header {
 }
 
 @media (max-width: 850px) {
-  .hero-card {
+  .hero-box {
     grid-template-columns: 1fr;
   }
-  .hero-media {
-    min-height: 320px;
-  }
-  .single-product-container {
+  .product-single-card {
     grid-template-columns: 1fr;
   }
-  .reviews-box {
+  .reviews-grid {
     grid-template-columns: 1fr;
   }
-  .links {
+  .nav-links {
     display: none;
   }
 }
@@ -565,41 +621,58 @@ header {
 
 <body>
 
+<!-- TOP GANESH SHLOK BAR -->
 <div class="topbar">
-  Special Offer: Jhumka Combo Box at ₹899 Only • Free Delivery Across India
+  ॥ श्री गणेशाय नमः ॥ &nbsp;•&nbsp; Special Offer: Jhumka Combo Box at ₹899 Only &nbsp;•&nbsp; Free Shipping Across India
 </div>
 
 <header>
   <nav class="nav">
-    <a href="#" class="brand">Jhumka<span>wala</span></a>
+    <a href="#" class="brand-wrapper">
+      <div class="ganesh-logo-symbol">ॐ</div>
+      <div class="brand-text-block">
+        <div class="brand-name">Jhumka<span>wala</span></div>
+        <div class="brand-sub">Traditional • Elegant • Timeless</div>
+      </div>
+    </a>
 
-    <div class="links">
+    <!-- MENU -->
+    <div class="nav-links">
+      <a href="#home">Home</a>
       <a href="#product">Combo Details</a>
       <a href="#reviews">Customer Reviews</a>
-      <a href="#contact">WhatsApp Support</a>
+      <a href="https://wa.me/919971566545" target="_blank">Support</a>
     </div>
 
-    <button class="nav-cart-btn" onclick="openCheckout()">
-      🛒 Bag (<span id="cartCount">0</span>)
-    </button>
+    <div class="nav-actions">
+      <button class="vip-id-btn" onclick="openProfileModal()">
+        <span id="navVipLabel">👤 VIP ID</span>
+      </button>
+
+      <button class="nav-cart-btn" onclick="openCheckout()">
+        🛒 Bag (<span id="cartCount">1</span>)
+      </button>
+    </div>
   </nav>
 </header>
 
-<main>
+<main id="home">
   <!-- HERO SECTION -->
   <section class="hero">
-    <div class="hero-card">
-      <div class="hero-content">
-        <span class="tagline-chip">Aesthetic Fashion Jewellery</span>
-        <h1 class="hero-title">Elevate Your Everyday Traditional Look</h1>
+    <div class="hero-box">
+      <div class="hero-text">
+        <div class="shlok-banner">
+          ॥ वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ। निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥
+        </div>
+        <h1 class="hero-title">Timeless Jhumka <span>Combo Box</span></h1>
         <p class="hero-desc">
-          Get multiple trendy, lightweight fashion jhumkas in one single curated box. Crafted for college wear, festivals, weddings, and everyday elegance.
+          Get multiple trendy, lightweight fashion jhumkas in one single curated box. Handcrafted traditional charm for weddings, festive pujas, college, and ethnic styling.
         </p>
 
         <div class="price-row">
           <span class="curr-price">₹899</span>
           <span class="old-price">₹1,199</span>
-          <span class="discount-badge">Save ₹300</span>
+          <span class="save-badge">Save ₹300 (Limited Offer)</span>
         </div>
 
         <button class="cta-btn" onclick="openCheckout()">
@@ -607,34 +680,34 @@ header {
         </button>
       </div>
 
-      <div class="hero-media">
-        <img src="./jhumka-combo-1.png" alt="Jhumka Combo Box">
+      <div class="hero-image-box">
+        <img src="./jhumka-combo-1.png" alt="Jhumkawala Premium Combo">
       </div>
     </div>
   </section>
 
-  <!-- PRODUCT SPOTLIGHT -->
+  <!-- PRODUCT DETAILS -->
   <section class="section" id="product">
-    <div class="section-title">
-      <h2>The Jhumka Combo Box</h2>
-      <p>Everything you need for traditional & Indo-western styling</p>
+    <div class="section-head">
+      <h2>The Curated Jhumka Box</h2>
+      <p>✦ All-In-One Ethnic Earring Collection ✦</p>
     </div>
 
-    <div class="single-product-container">
-      <div class="single-product-img">
+    <div class="product-single-card">
+      <div class="product-img-wrap">
         <img src="./jhumka-combo-1.png" alt="Curated Jhumka Collection">
       </div>
 
-      <div class="single-product-details">
-        <span style="font-size:12px;font-weight:700;color:var(--champagne);text-transform:uppercase;">Curated Set</span>
-        <h3>Fashion Jhumka Combo Box</h3>
+      <div class="product-info-col">
+        <span style="font-size:11px;font-weight:700;color:var(--gold);letter-spacing:1px;text-transform:uppercase;">Combo Edition</span>
+        <h3 style="font-family:'Cinzel',serif;font-size:24px;margin:4px 0 10px;color:var(--cream-light);">Fashion Jhumka Combo Box</h3>
         
-        <ul class="spec-list">
-          <li>✨ <b>Styles Included:</b> Mixed Traditional & Trendy Jhumka Pairs</li>
-          <li>🪶 <b>Weight:</b> Lightweight & Comfortable for all-day wear</li>
-          <li>🌸 <b>Occasions:</b> Perfect for College, Festivals, Weddings & Gifts</li>
-          <li>🔒 <b>Fastening:</b> Standard Push-Back with safe stoppers</li>
-          <li>📦 <b>Packaging:</b> Stored in a protective combo box</li>
+        <ul class="product-specs-list">
+          <li>✨ <b>Styles Included:</b> Curated Traditional &amp; Trendy Jhumka Pairs</li>
+          <li>🪶 <b>Feel:</b> Lightweight and comfortable for prolonged festive wear</li>
+          <li>🌸 <b>Occasions:</b> Perfect for College, Festivals, Weddings, and Gifts</li>
+          <li>🔒 <b>Closure:</b> Smooth Push-Back post with silicone stoppers</li>
+          <li>📦 <b>Packaging:</b> Shipped safely in a rigid combo protective box</li>
         </ul>
 
         <div class="price-row" style="margin-bottom:15px;">
@@ -643,29 +716,29 @@ header {
         </div>
 
         <button class="cta-btn" style="width:100%;justify-content:center;" onclick="openCheckout()">
-          Order This Box Now
+          Order This Combo Box Now
         </button>
       </div>
     </div>
   </section>
 
-  <!-- REVIEWS SECTION -->
+  <!-- REVIEWS & LIVE RATING -->
   <section class="section" id="reviews">
-    <div class="section-title">
+    <div class="section-head">
       <h2>Customer Feedback</h2>
-      <p>Verified reviews from customers across India</p>
+      <p>✦ Real thoughts from genuine buyers ✦</p>
     </div>
 
-    <div class="reviews-box">
-      <!-- Write Review Form -->
-      <div class="review-form">
-        <h3>Leave a Review</h3>
-        <p style="font-size:13px;color:var(--text-muted);margin-bottom:14px;">Bought this combo? Share your genuine thoughts:</p>
+    <div class="reviews-grid">
+      <!-- Write Form -->
+      <div class="review-form-side">
+        <h3 style="font-family:'Cinzel',serif;font-size:20px;margin-bottom:6px;color:var(--cream-light);">Leave a Review</h3>
+        <p style="font-size:12.5px;color:var(--text-muted);margin-bottom:14px;">Share your genuine experience with this combo:</p>
 
         <form id="newReviewForm" onsubmit="submitNewReview(event)">
           <div class="form-group">
-            <label>Rating:</label>
-            <div class="star-picker" id="starSelector">
+            <label>Select Rating (स्टार चुनें):</label>
+            <div class="star-rating-widget" id="starSelector">
               <span onclick="pickStars(1)">★</span>
               <span onclick="pickStars(2)">★</span>
               <span onclick="pickStars(3)">★</span>
@@ -676,7 +749,7 @@ header {
 
           <div class="form-group">
             <label>Your Name *</label>
-            <input type="text" class="input-box" id="revAuthor" placeholder="e.g. Anjali Gupta" required>
+            <input type="text" class="input-box" id="revAuthor" placeholder="e.g. Priya Sharma" required>
           </div>
 
           <div class="form-group">
@@ -686,88 +759,148 @@ header {
 
           <div class="form-group">
             <label>Review Comment *</label>
-            <textarea class="input-box" id="revComment" rows="3" placeholder="How did the earrings look and feel?" required></textarea>
+            <textarea class="input-box" id="revComment" rows="3" placeholder="Write about the design, packaging, and feel..." required></textarea>
           </div>
 
           <button type="submit" class="cta-btn" style="width:100%;justify-content:center;padding:12px;">
-            Post Review
+            Post Review ✍️
           </button>
         </form>
       </div>
 
-      <!-- Live Reviews Feed -->
-      <div class="review-feed" id="reviewFeed">
+      <!-- Feed -->
+      <div class="reviews-feed" id="reviewFeed">
         <!-- Rendered by JavaScript -->
       </div>
     </div>
   </section>
 </main>
 
-<!-- FLOATING SHORTCUTS -->
+<!-- FLOATING BAR -->
 <div class="floating-actions">
   <button class="float-btn float-cart-btn" onclick="openCheckout()">
     🛍️ Buy Now (₹899)
   </button>
-  <a class="float-btn float-wa-btn" href="https://wa.me/919971566545?text=Hi%20Jhumkawala%2C%20I%20have%20a%20question%20about%20the%20combo%20box." target="_blank">
+  <a class="float-btn float-wa-btn" href="https://wa.me/919971566545?text=Hi%20Jhumkawala%2C%20I%20have%20a%20query%20about%20the%20combo%20box." target="_blank">
     💬 WhatsApp
   </a>
 </div>
 
-<!-- CHECKOUT / UPI PAYMENT MODAL -->
-<div class="modal" id="checkoutModal">
+<!-- 1. VIP CUSTOMER PROFILE / ID MODAL -->
+<div class="modal" id="profileModal">
   <div class="modal-content">
-    <button class="close-btn" onclick="closeCheckout()">×</button>
+    <button class="close-btn" onclick="closeProfileModal()">×</button>
     
-    <h3 style="font-family:'Playfair Display',serif;font-size:22px;margin-bottom:4px;">Checkout</h3>
-    <p style="font-size:12.5px;color:var(--text-muted);margin-bottom:15px;">Complete payment and submit delivery address</p>
+    <h3 style="font-family:'Cinzel',serif;font-size:22px;color:var(--gold);margin-bottom:4px;">VIP Member ID</h3>
+    <p style="font-size:12px;color:var(--text-muted);margin-bottom:14px;">Save your delivery details for 1-click checkout</p>
 
-    <!-- Item Preview -->
-    <div style="background:#fcf8f5;border:1px solid var(--border-color);padding:10px 14px;border-radius:10px;display:flex;justify-content:space-between;align-items:center;font-size:13px;margin-bottom:15px;">
-      <span><b>1x Jhumka Combo Box</b></span>
-      <b style="color:var(--accent);">₹899 (Free Delivery)</b>
+    <div class="vip-pass-card">
+      <div style="font-size:9px;letter-spacing:2px;color:var(--gold);text-transform:uppercase;">✦ Jhumkawala Privileged Patron ✦</div>
+      <h4 id="vipCardName" style="font-size:18px;color:var(--cream-light);margin:4px 0;">Guest Customer</h4>
+      <div class="vip-id-num" id="vipCardId">ID: JW-NOT-REGISTERED</div>
     </div>
 
-    <form id="orderForm" onsubmit="handleOrderSubmission(event)">
+    <form id="profileForm" onsubmit="saveProfile(event)">
       <div class="form-group">
-        <label>Your Full Name *</label>
-        <input type="text" class="input-box" id="custName" placeholder="e.g. Priya Sharma" required>
+        <label>Full Name *</label>
+        <input type="text" class="input-box" id="profName" placeholder="e.g. Ananya Mishra" required>
       </div>
 
-      <div class="form-group">
-        <label>Mobile Number *</label>
-        <input type="tel" class="input-box" id="custPhone" placeholder="10-digit phone number" pattern="[0-9]{10}" required>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+        <div class="form-group">
+          <label>Phone Number *</label>
+          <input type="tel" class="input-box" id="profPhone" placeholder="10-digit number" pattern="[0-9]{10}" required>
+        </div>
+        <div class="form-group">
+          <label>Pincode *</label>
+          <input type="text" class="input-box" id="profPin" placeholder="e.g. 110059" required>
+        </div>
       </div>
 
       <div class="form-group">
         <label>Delivery Address *</label>
-        <textarea class="input-box" id="custAddress" rows="2" placeholder="House no, Street, Landmark, Area..." required></textarea>
+        <textarea class="input-box" id="profAddress" rows="2" placeholder="House no, Street, Landmark..." required></textarea>
       </div>
 
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
         <div class="form-group">
           <label>City *</label>
-          <input type="text" class="input-box" id="custCity" placeholder="e.g. Delhi" required>
+          <input type="text" class="input-box" id="profCity" placeholder="e.g. New Delhi" required>
+        </div>
+        <div class="form-group">
+          <label>State *</label>
+          <input type="text" class="input-box" id="profState" placeholder="e.g. Delhi" required>
+        </div>
+      </div>
+
+      <button type="submit" class="cta-btn" style="width:100%;justify-content:center;margin-top:10px;">
+        Save VIP ID Profile 💾
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- 2. CHECKOUT MODAL -->
+<div class="modal" id="checkoutModal">
+  <div class="modal-content">
+    <button class="close-btn" onclick="closeCheckout()">×</button>
+    
+    <h3 style="font-family:'Cinzel',serif;font-size:22px;color:var(--gold);margin-bottom:4px;">Checkout</h3>
+    <p style="font-size:12px;color:var(--text-muted);margin-bottom:14px;">100% Secure Prepaid Booking &amp; Free Home Delivery</p>
+
+    <!-- Item Row -->
+    <div style="background:var(--bg-black);border:1px solid var(--border-color);padding:10px 14px;border-radius:10px;display:flex;justify-content:space-between;align-items:center;font-size:13px;margin-bottom:15px;">
+      <span><b>1x Jhumka Combo Box</b></span>
+      <b style="color:var(--gold);">₹899 (Free Delivery)</b>
+    </div>
+
+    <form id="orderForm" onsubmit="handleOrderSubmission(event)">
+      <div class="form-group">
+        <label>Full Name *</label>
+        <input type="text" class="input-box" id="custName" placeholder="e.g. Priya Sharma" required>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+        <div class="form-group">
+          <label>Mobile Number *</label>
+          <input type="tel" class="input-box" id="custPhone" placeholder="10-digit number" pattern="[0-9]{10}" required>
         </div>
         <div class="form-group">
           <label>Pincode *</label>
-          <input type="text" class="input-box" id="custPin" placeholder="e.g. 110001" required>
+          <input type="text" class="input-box" id="custPin" placeholder="e.g. 110059" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Delivery Address *</label>
+        <textarea class="input-box" id="custAddress" rows="2" placeholder="House no, Street, Landmark..." required></textarea>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+        <div class="form-group">
+          <label>City *</label>
+          <input type="text" class="input-box" id="custCity" placeholder="e.g. New Delhi" required>
+        </div>
+        <div class="form-group">
+          <label>State *</label>
+          <input type="text" class="input-box" id="custState" placeholder="e.g. Delhi" required>
         </div>
       </div>
 
       <!-- Step 1: Pay Online -->
       <div class="upi-box">
-        <b style="font-size:12px;color:var(--accent);text-transform:uppercase;">Step 1: Pay ₹899 via UPI</b>
-        <a id="directUpiLink" class="direct-pay-btn" href="#">⚡ Pay Directly via UPI App (GPay/PhonePe)</a>
+        <b style="font-size:12px;color:var(--gold);text-transform:uppercase;">Step 1: Pay Online via UPI</b>
+        <a id="directUpiLink" class="direct-pay-btn" href="#">⚡ Pay Directly via UPI App (GPay / PhonePe / Paytm)</a>
         
-        <p style="font-size:11.5px;color:var(--text-muted);margin:4px 0;">Or scan the QR code to pay:</p>
+        <p style="font-size:11.5px;color:var(--text-muted);margin:4px 0;">Or scan QR code to pay:</p>
         <img id="upiQr" class="qr-code-img" src="" alt="UPI QR">
-        <p style="font-size:12px;font-weight:700;color:var(--text-dark);">UPI ID: 9971566545@pthdfc</p>
+        <p style="font-size:12px;font-weight:700;color:var(--gold);">UPI ID: 9971566545@pthdfc</p>
       </div>
 
       <!-- Step 2: UTR -->
       <div class="utr-box">
-        <label style="font-size:11px;font-weight:700;color:#9b2c2c;display:block;">Step 2: Enter 12-Digit UPI Transaction / UTR No. *</label>
-        <small style="font-size:10.5px;color:var(--text-muted);display:block;margin-bottom:6px;">Find the UTR number in your payment app receipt:</small>
+        <label style="font-size:11px;font-weight:700;color:#f08080;display:block;">Step 2: Enter 12-Digit UPI Transaction / UTR No. *</label>
+        <small style="font-size:10.5px;color:var(--text-muted);display:block;margin-bottom:6px;">Find the UTR / Ref No in your GPay / PhonePe payment receipt:</small>
         <input type="text" class="input-box" id="custUtr" placeholder="Enter 12-digit UTR No." maxlength="22" required>
       </div>
 
@@ -785,13 +918,70 @@ const AMOUNT = 899;
 
 let currentRating = 5;
 
-// Load real reviews from LocalStorage
 window.addEventListener('DOMContentLoaded', () => {
+  loadVIPProfile();
   renderReviews();
   setupUpiDetails();
   pickStars(5);
 });
 
+// ================= VIP PROFILE LOGIC =================
+function loadVIPProfile() {
+  const saved = localStorage.getItem("jhumkawala_user");
+  if (saved) {
+    const user = JSON.parse(saved);
+    document.getElementById("navVipLabel").innerText = `👤 ${user.name.split(' ')[0]}`;
+    document.getElementById("vipCardName").innerText = user.name;
+    document.getElementById("vipCardId").innerText = `ID: ${user.vipId}`;
+
+    document.getElementById("profName").value = user.name || "";
+    document.getElementById("profPhone").value = user.phone || "";
+    document.getElementById("profPin").value = user.pin || "";
+    document.getElementById("profAddress").value = user.address || "";
+    document.getElementById("profCity").value = user.city || "";
+    document.getElementById("profState").value = user.state || "";
+
+    document.getElementById("custName").value = user.name || "";
+    document.getElementById("custPhone").value = user.phone || "";
+    document.getElementById("custPin").value = user.pin || "";
+    document.getElementById("custAddress").value = user.address || "";
+    document.getElementById("custCity").value = user.city || "";
+    document.getElementById("custState").value = user.state || "";
+  }
+}
+
+function saveProfile(e) {
+  e.preventDefault();
+  const name = document.getElementById("profName").value.trim();
+  const phone = document.getElementById("profPhone").value.trim();
+  const pin = document.getElementById("profPin").value.trim();
+  const address = document.getElementById("profAddress").value.trim();
+  const city = document.getElementById("profCity").value.trim();
+  const state = document.getElementById("profState").value.trim();
+
+  let vipId = "JW-" + Math.floor(10000 + Math.random() * 90000);
+  const existing = localStorage.getItem("jhumkawala_user");
+  if (existing) {
+    vipId = JSON.parse(existing).vipId || vipId;
+  }
+
+  const profileData = { name, phone, pin, address, city, state, vipId };
+  localStorage.setItem("jhumkawala_user", JSON.stringify(profileData));
+
+  alert("VIP Profile & ID successfully saved! ✨");
+  loadVIPProfile();
+  closeProfileModal();
+}
+
+function openProfileModal() {
+  document.getElementById("profileModal").classList.add("active");
+}
+
+function closeProfileModal() {
+  document.getElementById("profileModal").classList.remove("active");
+}
+
+// ================= STAR RATING & REVIEWS LOGIC =================
 function pickStars(num) {
   currentRating = num;
   const stars = document.querySelectorAll("#starSelector span");
@@ -811,19 +1001,19 @@ function renderReviews() {
   if (stored.length === 0) {
     feed.innerHTML = `
       <div style="text-align:center;padding:30px 10px;color:var(--text-muted);font-size:13px;">
-        No reviews yet. Be the first customer to share your thoughts!
+        No reviews yet. Be the first customer to share your rating! ✦
       </div>
     `;
     return;
   }
 
   feed.innerHTML = stored.map(r => `
-    <div class="review-card">
-      <div class="review-card-top">
-        <span class="review-card-name">${r.author} (${r.city})</span>
+    <div class="single-review-box">
+      <div class="review-header">
+        <span class="review-author-name">${r.author} (${r.city})</span>
         <span class="review-stars">${'★'.repeat(r.stars)}</span>
       </div>
-      <p class="review-card-text">${r.comment}</p>
+      <p class="review-comment">"${r.comment}"</p>
     </div>
   `).join('');
 }
@@ -838,12 +1028,13 @@ function submitNewReview(e) {
   stored.unshift({ author, city, comment, stars: currentRating });
   localStorage.setItem("jhumka_real_reviews", JSON.stringify(stored));
 
-  alert("Thank you! Your review has been submitted.");
+  alert("धन्यवाद! आपका रिव्यू सफलतापूर्वक जोड़ दिया गया है 🌟");
   document.getElementById("newReviewForm").reset();
   pickStars(5);
   renderReviews();
 }
 
+// ================= CHECKOUT & UPI PAYMENT =================
 function setupUpiDetails() {
   const upiUrl = `upi://pay?pa=${UPI_ID}&pn=Jhumkawala&am=${AMOUNT}&cu=INR`;
   document.getElementById("directUpiLink").href = upiUrl;
@@ -860,6 +1051,7 @@ function closeCheckout() {
 
 window.addEventListener('click', (e) => {
   if (e.target.id === "checkoutModal") closeCheckout();
+  if (e.target.id === "profileModal") closeProfileModal();
 });
 
 function handleOrderSubmission(e) {
@@ -873,26 +1065,34 @@ function handleOrderSubmission(e) {
   const utr = document.getElementById("custUtr").value.trim();
 
   if (!utr || utr.length < 8) {
-    alert("Please enter a valid 12-digit UTR/Transaction number after paying.");
+    alert("कृपया भुगतान के बाद 12-अंकों का मान्य UTR / Transaction No दर्ज करें।");
     return;
   }
 
+  let vipTag = "";
+  const savedUser = localStorage.getItem("jhumkawala_user");
+  if (savedUser) {
+    const u = JSON.parse(savedUser);
+    vipTag = `%0A• *VIP Member ID:* ${u.vipId}`;
+  }
+
   const message = 
-`*NEW ORDER - JHUMKAWALA*
+`*॥ श्री गणेशाय नमः ॥*
+*✨ NEW PREPAID ORDER - JHUMKAWALA ✨*
 ----------------------------------
 *Item:* Fashion Jhumka Combo Box
 *Total Amount:* ₹${AMOUNT}
-*Payment:* Prepaid via UPI ✅
+*Payment Status:* PAID ONLINE ✅
 *UTR / Transaction No:* ${utr}
 ----------------------------------
-*Customer Details:*
+*Customer Delivery Details:*
 • *Name:* ${name}
-• *Phone:* ${phone}
+• *Phone:* ${phone}${vipTag}
 • *Address:* ${address}
 • *City:* ${city}
 • *Pincode:* ${pin}
 ----------------------------------
-Please confirm the payment and dispatch my order.`;
+📸 *नोट:* कृपया इसके साथ अपने पेमेंट का स्क्रीनशॉट भी शेयर करें।`;
 
   window.open(`https://wa.me/${WA_PHONE}?text=${encodeURIComponent(message)}`, '_blank');
 }
