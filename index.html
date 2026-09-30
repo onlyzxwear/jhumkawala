@@ -3,26 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jhumkawala | Royal Heritage Jewellery</title>
-<meta name="description" content="Jhumkawala - Handcrafted Heritage Jhumka Boxes. Timeless Royal Elegance.">
+<title>Jhumkawala | सनातन पारंपरिक आभूषण</title>
+<meta name="description" content="झुमकावाला - शुद्ध कुंदन, मीनाकारी व 24K गोल्ड फिनिश पारंपरिक झुमका और आभूषण संग्रह।">
 
-<!-- Premium Google Fonts -->
+<!-- Vedic & Royal Heritage Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Yatra+One&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 :root {
-  --burgundy: #2e080b;
-  --royal-maroon: #490e13;
-  --velvet: #190305;
-  --gold-primary: #d4af37;
-  --gold-glow: #f3e5ab;
-  --gold-border: #c59b27;
-  --cream-bg: #fdfbf7;
-  --cream-card: #f9f5ec;
-  --text-dark: #221513;
-  --text-muted: #6e5d59;
+  /* सात्विक व सनातनी कलर पैलेट */
+  --saffron: #c84e0c;         /* गहरा केसरिया */
+  --saffron-light: #e66b27;   /* पीताम्बरी केसर */
+  --kumkum: #9c1b1e;          /* कुमकुम / सिंदूरी */
+  --chandan: #fff9ed;         /* चंदन क्रीम */
+  --haldi-gold: #d49a24;      /* हल्दी स्वर्ण */
+  --haldi-soft: #fcf4dd;      /* हल्का पीला बेस */
+  --border-gold: #deb35c;     /* नक्काशी बॉर्डर */
+  --text-main: #3a1c0d;       /* सौम्य कत्थई टेक्स्ट */
+  --text-muted: #73533e;      /* हल्का कत्थई */
   --whatsapp-green: #25D366;
 }
 
@@ -38,8 +38,8 @@ html {
 
 body {
   font-family: 'Cormorant Garamond', Georgia, serif;
-  background: radial-gradient(circle at 50% 0%, #fffbf2 0%, #f6ecd9 60%, #eedbc0 100%);
-  color: var(--text-dark);
+  background: radial-gradient(circle at 50% 0%, #ffffff 0%, #fffaf0 40%, #fbf1da 100%);
+  color: var(--text-main);
   min-height: 100vh;
   line-height: 1.5;
 }
@@ -49,34 +49,34 @@ a {
   color: inherit;
 }
 
-/* TOP ANNOUNCEMENT */
+/* TOP AUSPICIOUS TICKER */
 .topbar {
-  background: linear-gradient(90deg, #1b0305, #440d12, #1b0305);
-  color: var(--gold-glow);
-  padding: 10px 15px;
+  background: linear-gradient(90deg, #b03800, #c84e0c, #b03800);
+  color: #fff6df;
+  padding: 9px 15px;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  font-size: 11.5px;
+  font-size: 11px;
   letter-spacing: 2px;
-  text-transform: uppercase;
-  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+  font-weight: 600;
+  border-bottom: 2px solid var(--border-gold);
 }
 
 /* NAVBAR */
 header {
-  background: rgba(253, 251, 247, 0.96);
+  background: rgba(255, 253, 248, 0.97);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(197, 155, 39, 0.35);
+  border-bottom: 1.5px solid var(--border-gold);
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 4px 25px rgba(46, 8, 11, 0.08);
+  box-shadow: 0 4px 20px rgba(200, 78, 12, 0.08);
 }
 
 .nav {
-  max-width: 1280px;
+  max-width: 1300px;
   margin: auto;
-  min-height: 84px;
+  min-height: 86px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -90,125 +90,124 @@ header {
 }
 
 .brand-symbol {
-  width: 48px;
-  height: 48px;
-  border: 1.5px solid var(--gold-primary);
+  width: 50px;
+  height: 50px;
+  border: 1.5px solid var(--haldi-gold);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(145deg, #fffaf0, #f2e2c5);
-  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.25);
-  font-size: 20px;
-  color: var(--royal-maroon);
+  background: radial-gradient(circle, #fffef9, #faeccd);
+  box-shadow: 0 3px 12px rgba(212, 154, 36, 0.25);
+  font-size: 22px;
+  color: var(--saffron);
 }
 
 .brand-name {
   font-family: 'Cinzel Decorative', Georgia, serif;
   font-size: 26px;
-  letter-spacing: 1px;
-  color: var(--royal-maroon);
+  letter-spacing: 1.5px;
+  color: var(--saffron);
   font-weight: 700;
   line-height: 1;
 }
 
 .brand-name span {
-  color: var(--gold-border);
+  color: var(--kumkum);
 }
 
 .brand-sub {
   font-family: 'Montserrat', sans-serif;
-  font-size: 8px;
+  font-size: 8.5px;
   letter-spacing: 3.5px;
   text-transform: uppercase;
-  color: #7d6032;
+  color: #8c5b1c;
   margin-top: 5px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .links {
   display: flex;
-  gap: 24px;
+  gap: 26px;
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .links a:hover {
-  color: var(--gold-border);
+  color: var(--saffron);
 }
 
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 .nav-user-btn {
-  background: #f7eedb;
-  color: var(--royal-maroon);
-  border: 1px solid var(--gold-border);
-  padding: 9px 15px;
+  background: #fbf0d7;
+  color: var(--saffron);
+  border: 1.5px solid var(--border-gold);
+  padding: 8px 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: 0.3s;
+}
+
+.nav-user-btn:hover {
+  background: #f4dfb3;
+}
+
+.nav-cart-btn {
+  background: linear-gradient(135deg, var(--saffron), #a83a00);
+  color: #fff9ea;
+  border: 1px solid var(--haldi-gold);
+  padding: 9px 18px;
   border-radius: 30px;
   cursor: pointer;
   font-family: 'Montserrat', sans-serif;
   font-size: 12.5px;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  transition: all 0.3s ease;
-}
-
-.nav-user-btn:hover {
-  background: #ecdaba;
-}
-
-.nav-cart-btn {
-  background: var(--royal-maroon);
-  color: var(--gold-glow);
-  border: 1px solid var(--gold-primary);
-  padding: 10px 18px;
-  border-radius: 30px;
-  cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 13px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 1px;
   display: flex;
   align-items: center;
   gap: 8px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(73, 14, 19, 0.2);
+  box-shadow: 0 4px 15px rgba(200, 78, 12, 0.25);
+  transition: 0.3s;
 }
 
 .nav-cart-btn:hover {
-  background: var(--burgundy);
   transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(200, 78, 12, 0.35);
 }
 
-/* HERO */
+/* HERO SECTION */
 .hero {
-  max-width: 1280px;
+  max-width: 1300px;
   margin: 30px auto;
   padding: 0 20px;
 }
 
 .hero-box {
-  background: linear-gradient(135deg, #fffcf6 0%, #f7ecd7 50%, #ebd3af 100%);
-  border-radius: 28px;
-  border: 1.5px solid rgba(212, 175, 55, 0.45);
-  box-shadow: 0 20px 60px rgba(46, 8, 11, 0.12);
+  background: linear-gradient(135deg, #ffffff 0%, #fff8eb 45%, #faedd0 100%);
+  border-radius: 30px;
+  border: 1.5px solid var(--border-gold);
+  box-shadow: 0 15px 45px rgba(200, 78, 12, 0.08);
   display: grid;
   grid-template-columns: 1.15fr 1fr;
   overflow: hidden;
-  position: relative;
 }
 
 .hero-text {
-  padding: 65px 50px;
+  padding: 60px 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -216,26 +215,28 @@ header {
 
 .mantra {
   font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--gold-border);
-  font-weight: 600;
-  margin-bottom: 12px;
+  color: var(--kumkum);
+  font-weight: 700;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .hero-title {
   font-family: 'Cinzel Decorative', Georgia, serif;
-  font-size: clamp(38px, 5.5vw, 68px);
-  color: var(--royal-maroon);
+  font-size: clamp(38px, 5.5vw, 65px);
+  color: var(--saffron);
   line-height: 1.05;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .hero-tagline {
   font-size: 26px;
   font-style: italic;
-  color: #64442d;
+  color: #72401f;
   margin-bottom: 16px;
 }
 
@@ -252,17 +253,16 @@ header {
   display: flex;
   align-items: center;
   gap: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   flex-wrap: wrap;
 }
 
 .pricing-card {
-  background: var(--royal-maroon);
-  border: 1.5px solid var(--gold-primary);
-  padding: 10px 22px;
+  background: #fffdf8;
+  border: 2px solid var(--saffron);
+  padding: 8px 22px;
   border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(46, 8, 11, 0.25);
-  color: #fff;
+  box-shadow: 0 4px 14px rgba(200, 78, 12, 0.12);
   display: flex;
   align-items: baseline;
   gap: 12px;
@@ -270,7 +270,7 @@ header {
 
 .striked {
   text-decoration: line-through;
-  color: #c4a9a9;
+  color: #a88d80;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
 }
@@ -278,16 +278,16 @@ header {
 .deal-price {
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
-  font-weight: 700;
-  color: var(--gold-glow);
+  font-weight: 800;
+  color: var(--kumkum);
 }
 
 .save-chip {
-  background: var(--gold-primary);
-  color: var(--velvet);
+  background: linear-gradient(135deg, #f5b027, #df890b);
+  color: #3b1700;
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 800;
   padding: 10px 16px;
   border-radius: 10px;
 }
@@ -296,24 +296,24 @@ header {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background: var(--burgundy);
-  color: var(--gold-glow);
-  border: 1px solid var(--gold-primary);
+  background: linear-gradient(135deg, var(--saffron), #a83a00);
+  color: #fff;
+  border: 1px solid var(--border-gold);
   padding: 16px 36px;
   border-radius: 35px;
   font-family: 'Montserrat', sans-serif;
   font-size: 13.5px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   width: fit-content;
-  box-shadow: 0 10px 30px rgba(46, 8, 11, 0.25);
-  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(200, 78, 12, 0.25);
+  transition: 0.3s;
 }
 
 .hero-cta:hover {
-  background: #5b0f14;
   transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(200, 78, 12, 0.35);
 }
 
 .hero-image-wrap {
@@ -322,7 +322,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(circle, #fff7eb 0%, #ebd4b0 100%);
+  background: radial-gradient(circle, #ffffff, #faecd0);
 }
 
 .hero-image-wrap img {
@@ -332,16 +332,16 @@ header {
   transition: transform 0.6s ease;
 }
 
-/* SECTION */
+/* SECTION HEADINGS */
 .section {
-  max-width: 1280px;
-  margin: 75px auto;
+  max-width: 1300px;
+  margin: 70px auto;
   padding: 0 20px;
 }
 
 .section-head {
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 
 .subtitle-badge {
@@ -349,40 +349,72 @@ header {
   font-size: 11px;
   letter-spacing: 4px;
   text-transform: uppercase;
-  color: var(--gold-border);
+  color: var(--saffron);
   font-weight: 700;
   display: inline-block;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .section-head h2 {
   font-family: 'Cinzel Decorative', Georgia, serif;
-  font-size: clamp(28px, 4vw, 42px);
-  color: var(--royal-maroon);
+  font-size: clamp(28px, 4vw, 40px);
+  color: var(--kumkum);
   font-weight: 700;
 }
 
 .section-divider {
   width: 70px;
   height: 2px;
-  background: var(--gold-primary);
-  margin: 14px auto 0;
+  background: var(--border-gold);
+  margin: 12px auto 0;
   position: relative;
 }
 
 .section-divider::before {
-  content: "♦";
+  content: "卐";
   position: absolute;
-  top: -8px;
+  top: -9px;
   left: 50%;
   transform: translateX(-50%);
-  background: #f8ecda;
+  background: #fbf2dc;
   padding: 0 6px;
-  color: var(--gold-primary);
+  color: var(--saffron);
   font-size: 13px;
 }
 
-/* PRODUCT GRID */
+/* CATEGORY TABS */
+.category-nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 35px;
+  flex-wrap: wrap;
+}
+
+.cat-tab {
+  background: #fffbf3;
+  border: 1.5px solid var(--border-gold);
+  padding: 9px 20px;
+  border-radius: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-main);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cat-tab.active,
+.cat-tab:hover {
+  background: var(--saffron);
+  color: #fff;
+  border-color: var(--saffron);
+  box-shadow: 0 4px 15px rgba(200, 78, 12, 0.2);
+}
+
+/* PRODUCT CARD */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -390,27 +422,27 @@ header {
 }
 
 .product-card {
-  background: #fffdf9;
+  background: #ffffff;
   border-radius: 20px;
-  border: 1px solid rgba(212, 175, 55, 0.35);
+  border: 1.5px solid var(--border-gold);
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(46, 8, 11, 0.06);
+  box-shadow: 0 8px 25px rgba(200, 78, 12, 0.05);
   transition: all 0.35s ease;
   display: flex;
   flex-direction: column;
 }
 
 .product-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 45px rgba(46, 8, 11, 0.16);
-  border-color: var(--gold-primary);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(200, 78, 12, 0.14);
+  border-color: var(--saffron);
 }
 
 .card-image-box {
   position: relative;
   aspect-ratio: 1 / 1;
   overflow: hidden;
-  background: #f5e9d5;
+  background: #faf2e1;
 }
 
 .card-image-box img {
@@ -420,24 +452,28 @@ header {
   transition: transform 0.5s ease;
 }
 
+.product-card:hover .card-image-box img {
+  transform: scale(1.06);
+}
+
 .exclusive-tag {
   position: absolute;
-  top: 14px;
-  left: 14px;
-  background: var(--royal-maroon);
-  color: var(--gold-glow);
+  top: 12px;
+  left: 12px;
+  background: linear-gradient(135deg, var(--kumkum), #801215);
+  color: #fff7e3;
   font-family: 'Montserrat', sans-serif;
-  font-size: 9.5px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  padding: 6px 10px;
+  padding: 5px 10px;
   border-radius: 6px;
-  border: 1px solid rgba(212, 175, 55, 0.4);
+  border: 1px solid var(--border-gold);
 }
 
 .card-info {
-  padding: 22px 20px;
+  padding: 20px 18px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -445,32 +481,49 @@ header {
 
 .card-info h3 {
   font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: 24px;
+  font-size: 23px;
   font-weight: 700;
-  color: var(--royal-maroon);
-  margin-bottom: 6px;
+  color: var(--kumkum);
+  margin-bottom: 4px;
 }
 
-.rating-bar {
-  display: flex;
-  align-items: center;
-  gap: 6px;
+.product-short-desc {
   font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  color: var(--gold-border);
+  font-size: 11.5px;
+  color: var(--text-muted);
+  line-height: 1.5;
   margin-bottom: 12px;
+  min-height: 35px;
+}
+
+.card-specs-pills {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.spec-pill {
+  background: #fff8ea;
+  color: var(--saffron);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--border-gold);
 }
 
 .card-pricing {
   display: flex;
   align-items: baseline;
   gap: 10px;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 }
 
 .card-striked {
   text-decoration: line-through;
-  color: #9c8a85;
+  color: #a89489;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
 }
@@ -478,33 +531,155 @@ header {
 .card-final-price {
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
+  font-weight: 800;
+  color: var(--saffron);
+}
+
+.card-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.spec-btn {
+  background: #fff9ee;
+  color: var(--saffron);
+  border: 1.5px solid var(--border-gold);
+  padding: 10px;
+  border-radius: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
   font-weight: 700;
-  color: var(--royal-maroon);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.spec-btn:hover {
+  background: #f7e8c8;
 }
 
 .add-btn {
-  margin-top: auto;
-  background: var(--royal-maroon);
+  background: linear-gradient(135deg, var(--saffron), #a83a00);
   color: #fff;
-  border: 1px solid var(--gold-primary);
-  padding: 13px;
-  border-radius: 30px;
+  border: none;
+  padding: 10px;
+  border-radius: 25px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 12.5px;
-  font-weight: 600;
-  letter-spacing: 1px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
   cursor: pointer;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
+  transition: 0.3s;
 }
 
 .add-btn:hover {
-  background: var(--burgundy);
-  color: var(--gold-glow);
+  box-shadow: 0 4px 12px rgba(200, 78, 12, 0.3);
+}
+
+/* ARTISAN & CARE SECTION */
+.heritage-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 28px;
+  margin: 35px 0;
+}
+
+.heritage-card {
+  background: #fffdf9;
+  border: 1.5px solid var(--border-gold);
+  border-radius: 22px;
+  padding: 35px;
+  box-shadow: 0 10px 30px rgba(200, 78, 12, 0.05);
+}
+
+.heritage-card h3 {
+  font-family: 'Cinzel Decorative', Georgia, serif;
+  font-size: 25px;
+  color: var(--kumkum);
+  margin-bottom: 12px;
+}
+
+.heritage-card p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13.5px;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+
+.craft-badges {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.craft-item {
+  background: #fff9ee;
+  border: 1px solid var(--border-gold);
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.craft-item b {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: var(--kumkum);
+}
+
+.craft-item span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10.5px;
+  color: var(--text-muted);
+}
+
+.care-section {
+  background: linear-gradient(145deg, #fff7ea, #faecd0);
+  border-radius: 22px;
+  padding: 35px;
+  border: 1.5px solid var(--border-gold);
+  box-shadow: 0 10px 30px rgba(200, 78, 12, 0.05);
+}
+
+.care-section h3 {
+  font-family: 'Cinzel Decorative', Georgia, serif;
+  font-size: 23px;
+  color: var(--kumkum);
+  margin-bottom: 12px;
+}
+
+.care-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.care-box {
+  background: #ffffff;
+  border: 1px solid var(--border-gold);
+  padding: 14px 16px;
+  border-radius: 12px;
+}
+
+.care-box b {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  color: var(--saffron);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.care-box p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.5;
 }
 
 /* REVIEWS SECTION */
@@ -516,31 +691,31 @@ header {
 }
 
 .write-review-card {
-  background: #fffdf9;
-  border: 1.5px solid var(--gold-primary);
-  padding: 26px;
+  background: #fffdfa;
+  border: 1.5px solid var(--border-gold);
+  padding: 28px;
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(46, 8, 11, 0.08);
+  box-shadow: 0 8px 25px rgba(200, 78, 12, 0.06);
 }
 
 .write-review-card h3 {
   font-family: 'Cinzel Decorative', Georgia, serif;
-  font-size: 20px;
-  color: var(--royal-maroon);
-  margin-bottom: 8px;
+  font-size: 21px;
+  color: var(--kumkum);
+  margin-bottom: 6px;
 }
 
 .star-rating-select {
   display: flex;
   gap: 8px;
   font-size: 26px;
-  color: #d1bda2;
+  color: #dfcdb4;
   cursor: pointer;
   margin-bottom: 14px;
 }
 
 .star-rating-select span.active {
-  color: var(--gold-primary);
+  color: #e5900b;
 }
 
 .reviews-list {
@@ -550,30 +725,44 @@ header {
 }
 
 .review-item {
-  background: #fffdfa;
-  border: 1px solid rgba(197, 155, 39, 0.3);
+  background: #ffffff;
+  border: 1px solid var(--border-gold);
   padding: 18px;
   border-radius: 14px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
+}
+
+.rev-product-badge {
+  display: inline-block;
+  background: #fff6e5;
+  color: var(--saffron);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9.5px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 4px;
+  margin: 6px 0;
+  border: 1px solid var(--border-gold);
 }
 
 .review-author {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 13px;
-  color: var(--royal-maroon);
+  color: var(--kumkum);
   display: flex;
   justify-content: space-between;
-  margin-top: 8px;
+  margin-top: 10px;
+  align-items: center;
 }
 
-/* MODAL / DRAWER */
+/* MODALS */
 .checkout-modal {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(18, 3, 4, 0.82);
-  backdrop-filter: blur(8px);
+  background: rgba(45, 17, 3, 0.65);
+  backdrop-filter: blur(6px);
   z-index: 200;
   align-items: center;
   justify-content: center;
@@ -585,14 +774,14 @@ header {
 }
 
 .modal-content {
-  background: #fdfaf3;
+  background: #fffdf9;
   width: 100%;
   max-width: 540px;
   max-height: 94vh;
   overflow-y: auto;
   border-radius: 24px;
-  border: 1.5px solid var(--gold-primary);
-  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5);
+  border: 2px solid var(--border-gold);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
   padding: 30px 26px;
   position: relative;
 }
@@ -604,7 +793,7 @@ header {
   background: transparent;
   border: none;
   font-size: 32px;
-  color: var(--royal-maroon);
+  color: var(--kumkum);
   cursor: pointer;
   line-height: 1;
 }
@@ -617,33 +806,32 @@ header {
 .modal-head h3 {
   font-family: 'Cinzel Decorative', Georgia, serif;
   font-size: 24px;
-  color: var(--royal-maroon);
+  color: var(--kumkum);
 }
 
-/* VIP CARD UI */
+/* SAATVIK PRIVILEGED CARD */
 .vip-pass-card {
-  background: linear-gradient(135deg, #38080c 0%, #1e0305 100%);
-  border: 1.5px solid var(--gold-primary);
+  background: linear-gradient(135deg, #c84e0c 0%, #8c2000 100%);
+  border: 2px solid var(--haldi-gold);
   border-radius: 14px;
   padding: 18px 20px;
   color: #fff;
   margin-bottom: 20px;
-  position: relative;
-  box-shadow: 0 8px 22px rgba(46, 8, 11, 0.3);
+  box-shadow: 0 6px 20px rgba(200, 78, 12, 0.25);
 }
 
 .vip-pass-card .vip-tag {
   font-family: 'Montserrat', sans-serif;
   font-size: 9px;
   letter-spacing: 2px;
-  color: var(--gold-glow);
+  color: #ffdca3;
   text-transform: uppercase;
 }
 
 .vip-pass-card h4 {
   font-family: 'Cinzel Decorative', Georgia, serif;
-  font-size: 19px;
-  color: var(--gold-primary);
+  font-size: 20px;
+  color: #fff4db;
   margin: 6px 0;
 }
 
@@ -651,7 +839,7 @@ header {
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   letter-spacing: 1.5px;
-  color: #d1b8b8;
+  color: #fed0be;
 }
 
 /* FORM FIELDS */
@@ -666,7 +854,7 @@ header {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--royal-maroon);
+  color: var(--kumkum);
   margin-bottom: 4px;
 }
 
@@ -680,25 +868,25 @@ header {
   width: 100%;
   padding: 11px 13px;
   border-radius: 8px;
-  border: 1.5px solid #d8c29b;
-  background: #fff;
+  border: 1.5px solid var(--border-gold);
+  background: #ffffff;
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
-  color: var(--text-dark);
+  color: var(--text-main);
   outline: none;
   transition: 0.2s;
 }
 
 .input-field:focus {
-  border-color: var(--gold-primary);
-  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
+  border-color: var(--saffron);
+  box-shadow: 0 0 0 3px rgba(200, 78, 12, 0.15);
 }
 
-/* UPI PAYMENT BOX */
+/* UPI CARD */
 .payment-card {
   margin: 18px 0;
-  border: 2px dashed var(--gold-border);
-  background: #fffdf8;
+  border: 2px dashed var(--saffron);
+  background: #fffcf5;
   padding: 16px;
   border-radius: 14px;
   text-align: center;
@@ -718,7 +906,7 @@ header {
   font-weight: 700;
   font-size: 13px;
   margin: 10px auto;
-  box-shadow: 0 4px 14px rgba(26, 115, 232, 0.35);
+  box-shadow: 0 4px 14px rgba(26, 115, 232, 0.3);
 }
 
 .qr-box {
@@ -732,7 +920,7 @@ header {
   width: 145px;
   height: 145px;
   display: block;
-  border: 1px solid #d9c49a;
+  border: 1.5px solid var(--border-gold);
   border-radius: 10px;
   padding: 4px;
   background: #fff;
@@ -742,19 +930,19 @@ header {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: #f4ebd6;
-  border: 1px solid #d9c49a;
+  background: #fbf2dc;
+  border: 1px solid var(--border-gold);
   padding: 6px 12px;
   border-radius: 15px;
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   font-weight: 700;
-  color: var(--royal-maroon);
+  color: var(--kumkum);
   margin-top: 10px;
 }
 
 .copy-btn {
-  background: var(--royal-maroon);
+  background: var(--saffron);
   color: #fff;
   border: none;
   font-size: 10px;
@@ -764,8 +952,8 @@ header {
 }
 
 .utr-card {
-  background: #fff6f6;
-  border: 1.5px solid #f1c5c5;
+  background: #fff6f4;
+  border: 1.5px solid #f4bcaf;
   border-radius: 12px;
   padding: 14px;
   margin-bottom: 16px;
@@ -790,6 +978,26 @@ header {
   box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
 }
 
+/* SPEC TABLE */
+.specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12.5px;
+}
+
+.specs-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #fae8ca;
+}
+
+.specs-table td:first-child {
+  font-weight: 700;
+  color: var(--kumkum);
+  width: 40%;
+}
+
 .floating-actions {
   position: fixed;
   bottom: 22px;
@@ -809,7 +1017,7 @@ header {
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   font-weight: 700;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   border: none;
 }
@@ -820,9 +1028,9 @@ header {
 }
 
 .float-cart {
-  background: var(--royal-maroon);
-  color: var(--gold-glow);
-  border: 1.5px solid var(--gold-primary);
+  background: linear-gradient(135deg, var(--saffron), #a83a00);
+  color: #fff;
+  border: 1.5px solid var(--border-gold);
 }
 
 @media (max-width: 992px) {
@@ -834,6 +1042,9 @@ header {
   }
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .heritage-grid {
+    grid-template-columns: 1fr;
   }
   .reviews-container {
     grid-template-columns: 1fr;
@@ -851,6 +1062,9 @@ header {
   .reviews-list {
     grid-template-columns: 1fr;
   }
+  .craft-badges {
+    grid-template-columns: 1fr;
+  }
   .form-row {
     grid-template-columns: 1fr;
   }
@@ -860,34 +1074,35 @@ header {
 
 <body>
 
+<!-- AUSPICIOUS TICKER -->
 <div class="topbar">
-  ✦ Grand Festive Sale ✦ FLAT ₹300 OFF • 100% PREPAID VIP DISPATCH • FREE SHIPPING
+  ॥ शुभ लाभ ॥ &nbsp;•&nbsp; विशेष उत्सव ऑफर: FLAT ₹300 OFF &nbsp;•&nbsp; 100% सुरक्षित प्रीपेड बुकिंग व निःशुल्क होम डिलीवरी
 </div>
 
 <header>
   <nav class="nav">
     <a href="#" class="brand">
-      <div class="brand-symbol">❖</div>
+      <div class="brand-symbol">ॐ</div>
       <div class="brand-details">
         <div class="brand-name">Jhumka<span>wala</span></div>
-        <div class="brand-sub">Royalty In Every Chime</div>
+        <div class="brand-sub">सनातन परंपरा • अनुपम सौंदर्य</div>
       </div>
     </a>
 
     <div class="links">
-      <a href="#collection">Collection</a>
-      <a href="#reviews">Royal Reviews</a>
-      <a href="#contact">Support</a>
+      <a href="#collection">आभूषण संग्रह</a>
+      <a href="#heritage">कारीगरी</a>
+      <a href="#reviews">ग्राहक अनुभव</a>
+      <a href="#contact">संपर्क</a>
     </div>
 
     <div class="nav-actions">
-      <!-- USER ACCOUNT BUTTON -->
       <button class="nav-user-btn" onclick="openProfileModal()">
-        <span id="navUserLabel">👤 VIP Profile</span>
+        <span id="navUserLabel">👤 सदस्य प्रोफाइल</span>
       </button>
 
       <button class="nav-cart-btn" onclick="openOrderModal()">
-        🛍️ Cart (<span id="topCartCount">0</span>)
+        🛍️ झोली (<span id="topCartCount">0</span>)
       </button>
     </div>
   </nav>
@@ -898,11 +1113,13 @@ header {
   <section class="hero">
     <div class="hero-box">
       <div class="hero-text">
-        <div class="mantra">॥ श्री गणेशाय नमः ॥ &nbsp;•&nbsp; Artisanal Heritage</div>
-        <h1 class="hero-title">Timeless Jhumkas</h1>
-        <div class="hero-tagline">Crafted for Royal Elegance</div>
+        <div class="mantra">
+          <span>॥ श्री गणेशाय नमः ॥</span> &nbsp;•&nbsp; <span>शुद्ध पारंपरिक कला</span>
+        </div>
+        <h1 class="hero-title">Timeless Heritage</h1>
+        <div class="hero-tagline">पारंपरिक नज़ाकत और सात्विक सौंदर्य</div>
         <p class="hero-description">
-          पारंपरिक नज़ाकत और आधुनिक शान का बेमिसाल संगम। विशेष रूप से तैयार किए गए Premium Jhumka Combo Boxes जो हर शादी, त्योहार और खास पल को यादगार बनाएं।
+          भारतीय संस्कृति, मीनाकारी नक्काशी और शुद्ध कुंदन की चमक का दिव्य संगम। हमारे विशेष Combo Boxes हर उत्सव, पूजा और विवाह समारोह में आपकी शोभा बढ़ाएंगे।
         </p>
 
         <div class="offer-ribbon">
@@ -910,118 +1127,111 @@ header {
             <span class="striked">₹1,199</span>
             <span class="deal-price">₹899</span>
           </div>
-          <div class="save-chip">LIMITED FESTIVE OFFER</div>
+          <div class="save-chip">उत्सव स्पेशल कॉम्बो</div>
         </div>
 
         <a href="#collection" class="hero-cta">
-          Explore Collection ✦
+          आभूषण संग्रह देखें ✦
         </a>
       </div>
 
       <div class="hero-image-wrap">
-        <img src="./jhumka-combo-1.png" alt="Royal Jhumka Collection">
+        <img src="./jhumka-combo-1.png" alt="Traditional Jhumka Box">
       </div>
     </div>
   </section>
 
-  <!-- PRODUCTS COLLECTION -->
+  <!-- PRODUCTS & CATEGORY SECTION -->
   <section class="section" id="collection">
     <div class="section-head">
       <span class="subtitle-badge">Royal Treasury</span>
-      <h2>Curated Combo Boxes</h2>
+      <h2>पारंपरिक आभूषण वाटिका</h2>
       <div class="section-divider"></div>
     </div>
 
-    <div class="product-grid">
-      <!-- 1 -->
-      <article class="product-card">
-        <div class="card-image-box">
-          <span class="exclusive-tag">Bestseller</span>
-          <img src="./jhumka-combo-1.png" alt="Classic Jhumka Combo">
-        </div>
-        <div class="card-info">
-          <h3>Classic Heritage Combo</h3>
-          <div class="rating-bar">★★★★★ <span style="color:var(--text-muted);font-size:11px;">(4.9/5)</span></div>
-          <div class="card-pricing">
-            <span class="card-striked">₹1,199</span>
-            <span class="card-final-price">₹899</span>
-          </div>
-          <button class="add-btn" onclick="addToCart('Classic Heritage Combo', 899)">Add To Bag ✦</button>
-        </div>
-      </article>
+    <!-- Category Tabs -->
+    <div class="category-nav">
+      <button class="cat-tab active" onclick="filterCategory('all', this)">सभी आभूषण</button>
+      <button class="cat-tab" onclick="filterCategory('combos', this)">झुमका कॉम्बो बॉक्स</button>
+      <button class="cat-tab" onclick="filterCategory('bridal', this)">ब्राइडल झुमका</button>
+      <button class="cat-tab" onclick="filterCategory('bangles', this)">पारंपरिक चूड़ियां व कड़े</button>
+      <button class="cat-tab" onclick="filterCategory('chokers', this)">चोकर व हार सेट</button>
+    </div>
 
-      <!-- 2 -->
-      <article class="product-card">
-        <div class="card-image-box">
-          <span class="exclusive-tag">Trending</span>
-          <img src="./jhumka-combo-2.png" alt="Traditional Jhumka Combo">
-        </div>
-        <div class="card-info">
-          <h3>Royal Rajputana Combo</h3>
-          <div class="rating-bar">★★★★★ <span style="color:var(--text-muted);font-size:11px;">(5.0/5)</span></div>
-          <div class="card-pricing">
-            <span class="card-striked">₹1,199</span>
-            <span class="card-final-price">₹899</span>
-          </div>
-          <button class="add-btn" onclick="addToCart('Royal Rajputana Combo', 899)">Add To Bag ✦</button>
-        </div>
-      </article>
+    <!-- Product Grid -->
+    <div class="product-grid" id="productGrid"></div>
+  </section>
 
-      <!-- 3 -->
-      <article class="product-card">
-        <div class="card-image-box">
-          <span class="exclusive-tag">Festive Special</span>
-          <img src="./jhumka-combo-3.png" alt="Premium Jhumka Combo">
-        </div>
-        <div class="card-info">
-          <h3>Meenakari Velvet Combo</h3>
-          <div class="rating-bar">★★★★★ <span style="color:var(--text-muted);font-size:11px;">(4.8/5)</span></div>
-          <div class="card-pricing">
-            <span class="card-striked">₹1,199</span>
-            <span class="card-final-price">₹899</span>
+  <!-- HERITAGE & CARE -->
+  <section class="section" id="heritage">
+    <div class="heritage-grid">
+      <div class="heritage-card">
+        <span class="subtitle-badge">हमारी परंपरा</span>
+        <h3>झुमकावाला की अनूठी कारीगरी</h3>
+        <p>
+          सनातन परंपरा में आभूषण मात्र श्रृंगार नहीं, बल्कि सौभाग्य और सकारात्मक ऊर्जा का प्रतीक हैं। राजस्थान के कुशल स्वर्णकारों द्वारा तैयार यह संग्रह पारंपरिक मीनाकारी और बनारसी नक्काशी से सजाया गया है।
+        </p>
+        <p>
+          हम त्वचा-अनुकूल और हाइपोएलर्जेनिक धातुओं का प्रयोग करते हैं, जिससे यह आभूषण पूरे दिन पहनने पर भी बेहद हल्के और आरामदायक महसूस होते हैं।
+        </p>
+        
+        <div class="craft-badges">
+          <div class="craft-item">
+            <b>24K गोल्ड फिनिश</b>
+            <span>सालों-साल टिकने वाली चमक</span>
           </div>
-          <button class="add-btn" onclick="addToCart('Meenakari Velvet Combo', 899)">Add To Bag ✦</button>
+          <div class="craft-item">
+            <b>त्वचा-सुरक्षित</b>
+            <span>संवेदनशील कानों के लिए उपयुक्त</span>
+          </div>
+          <div class="craft-item">
+            <b>हैंडकट कुंदन</b>
+            <span>बारीक नक्काशीदार जड़ाऊ</span>
+          </div>
         </div>
-      </article>
+      </div>
 
-      <!-- 4 -->
-      <article class="product-card">
-        <div class="card-image-box">
-          <span class="exclusive-tag">New Edition</span>
-          <img src="./jhumka-combo-4.png" alt="Designer Jhumka Combo">
-        </div>
-        <div class="card-info">
-          <h3>Kundan Floral Combo</h3>
-          <div class="rating-bar">★★★★★ <span style="color:var(--text-muted);font-size:11px;">(4.9/5)</span></div>
-          <div class="card-pricing">
-            <span class="card-striked">₹1,199</span>
-            <span class="card-final-price">₹899</span>
+      <div class="care-section">
+        <h3>✦ आभूषण सुरक्षा निर्देश</h3>
+        <p style="font-family:'Montserrat',sans-serif;font-size:13px;color:var(--text-muted);line-height:1.6;">
+          पारंपरिक कुंदन और मीनाकारी आभूषणों की चमक को पीढ़ियों तक बनाए रखने के नियम:
+        </p>
+        <div class="care-grid">
+          <div class="care-box">
+            <b>🚫 इत्र व जल से दूरी</b>
+            <p>इत्र या परफ्यूम लगाने के 5 मिनट बाद ही ज्वेलरी पहनें। पानी से बचाएं।</p>
           </div>
-          <button class="add-btn" onclick="addToCart('Kundan Floral Combo', 899)">Add To Bag ✦</button>
+          <div class="care-box">
+            <b>📦 मखमली या एयरटाइट पाउच</b>
+            <p>इस्तेमाल के बाद मखमली डिब्बे या प्लास्टिक एयरटाइट पाउच में रखें।</p>
+          </div>
+          <div class="care-box">
+            <b>✨ सूती कपड़े से सफाई</b>
+            <p>पसीना साफ़ करने के लिए सदैव सूखे व मुलायम सूती कपड़े से पोंछें।</p>
+          </div>
         </div>
-      </article>
+      </div>
     </div>
   </section>
 
-  <!-- LIVE RATING & REVIEWS SECTION -->
+  <!-- REVIEWS SECTION -->
   <section class="section" id="reviews">
     <div class="section-head">
-      <span class="subtitle-badge">Royal Experience</span>
-      <h2>Customer Ratings &amp; Reviews</h2>
+      <span class="subtitle-badge">Customer Love</span>
+      <h2>ग्राहकों के अनुभव व समीक्षाएं</h2>
       <div class="section-divider"></div>
     </div>
 
     <div class="reviews-container">
-      <!-- Write Review Form -->
       <div class="write-review-card">
-        <h3>Rate Your Experience</h3>
+        <h3>अपना अनुभव साझा करें</h3>
         <p style="font-family:'Montserrat',sans-serif;font-size:12px;color:var(--text-muted);margin-bottom:14px;">
-          झुमका कॉम्बो बॉक्स आपको कैसा लगा? अपना रिव्यू दर्ज करें:
+          झुमका कॉम्बो की गुणवत्ता और पैकेजिंग आपको कैसी लगी?
         </p>
 
         <form id="reviewForm" onsubmit="submitReview(event)">
           <div class="form-group">
-            <label>Select Rating (स्टार चुनें):</label>
+            <label>रेटिंग चुनें (स्टार):</label>
             <div class="star-rating-select" id="starSelector">
               <span onclick="setRating(1)">★</span>
               <span onclick="setRating(2)">★</span>
@@ -1032,25 +1242,38 @@ header {
           </div>
 
           <div class="form-group">
-            <label>Your Name (नाम) *</label>
-            <input type="text" class="input-field" id="revName" placeholder="उदा. अंजलि सिंह" required>
+            <label>आपका नाम *</label>
+            <input type="text" class="input-field" id="revName" placeholder="उदा. प्रिया शर्मा" required>
           </div>
 
           <div class="form-group">
-            <label>Your Review (अनुभव लिखें) *</label>
-            <textarea class="input-field" id="revText" rows="3" placeholder="डिज़ाइन, क्वालिटी और पैकेजिंग के बारे में बताएं..." required></textarea>
+            <label>शहर / राज्य *</label>
+            <input type="text" class="input-field" id="revCity" placeholder="उदा. दिल्ली / वाराणसी" required>
           </div>
 
-          <button type="submit" class="add-btn" style="width:100%;margin-top:10px;">
-            Publish Review ✍️
+          <div class="form-group">
+            <label>कौन-सा आभूषण मंगाया?</label>
+            <select class="input-field" id="revProduct">
+              <option value="Classic Heritage Combo">Classic Heritage Combo</option>
+              <option value="Royal Rajputana Combo">Royal Rajputana Combo</option>
+              <option value="Meenakari Velvet Combo">Meenakari Velvet Combo</option>
+              <option value="Kundan Floral Combo">Kundan Floral Combo</option>
+              <option value="Rajputi Bangle Kada Set">Rajputi Bangle Kada Set</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>आपकी समीक्षा *</label>
+            <textarea class="input-field" id="revText" rows="3" placeholder="फिनिशिंग, वजन और डिजाइन के बारे में बताएं..." required></textarea>
+          </div>
+
+          <button type="submit" class="add-btn" style="width:100%;margin-top:10px;padding:13px;">
+            समीक्षा प्रकाशित करें ✍️
           </button>
         </form>
       </div>
 
-      <!-- Reviews Feed -->
-      <div class="reviews-list" id="reviewsList">
-        <!-- Rendered by JavaScript -->
-      </div>
+      <div class="reviews-list" id="reviewsList"></div>
     </div>
   </section>
 </main>
@@ -1058,7 +1281,7 @@ header {
 <!-- FLOATING QUICK ACTIONS -->
 <div class="floating-actions">
   <button class="floating-btn float-cart" onclick="openOrderModal()">
-    🛍️ Bag (<span id="floatCartCount">0</span>)
+    🛍️ झोली (<span id="floatCartCount">0</span>)
   </button>
   <a class="floating-btn float-wa" href="https://wa.me/919971566545?text=Hi%20Jhumkawala%2C%20mujhe%20jhumka%20ke%20designs%20dekhne%20hain." target="_blank">
     💬 WhatsApp
@@ -1071,118 +1294,158 @@ header {
     <button class="modal-close" onclick="closeProfileModal()">×</button>
     
     <div class="modal-head">
-      <h3>VIP Member ID</h3>
+      <h3>सौभाग्य सदस्य कार्ड</h3>
       <p style="font-family:'Montserrat',sans-serif;font-size:12px;color:var(--text-muted);margin-top:4px;">
-        अपनी प्रोफाइल सेव करें ताकि चेकआउट पर बार-बार एड्रेस न भरना पड़े
+        अपनी जानकारी सुरक्षित रखें ताकि चेकआउट पर बार-बार एड्रेस न भरना पड़े
       </p>
     </div>
 
     <!-- Visual Member ID Card -->
     <div class="vip-pass-card">
-      <div class="vip-tag">✦ Jhumkawala Privileged Member ✦</div>
-      <h4 id="vipCardName">Guest Customer</h4>
+      <div class="vip-tag">॥ Jhumkawala Privileged Patron ॥</div>
+      <h4 id="vipCardName">प्रिय ग्राहक</h4>
       <div class="vip-id-num" id="vipCardId">ID: JW-NOT-REGISTERED</div>
     </div>
 
     <form id="profileForm" onsubmit="saveProfile(event)">
       <div class="form-group">
-        <label>Full Name *</label>
+        <label>पूरा नाम *</label>
         <input type="text" class="input-field" id="profName" placeholder="उदा. प्रिया शर्मा" required>
       </div>
 
       <div class="form-row">
         <div class="form-group">
-          <label>Phone Number *</label>
+          <label>मोबाइल नंबर *</label>
           <input type="tel" class="input-field" id="profPhone" placeholder="10 अंकों का नंबर" pattern="[0-9]{10}" required>
         </div>
         <div class="form-group">
-          <label>Pincode *</label>
+          <label>पिनकोड *</label>
           <input type="text" class="input-field" id="profPin" placeholder="उदा. 110059" required>
         </div>
       </div>
 
       <div class="form-group">
-        <label>Saved Delivery Address *</label>
+        <label>डिलीवरी पता *</label>
         <textarea class="input-field" id="profAddress" rows="2" placeholder="मकान नं, गली, इलाका..." required></textarea>
       </div>
 
       <div class="form-row">
         <div class="form-group">
-          <label>City *</label>
+          <label>शहर *</label>
           <input type="text" class="input-field" id="profCity" placeholder="उदा. नई दिल्ली" required>
         </div>
         <div class="form-group">
-          <label>State *</label>
+          <label>राज्य *</label>
           <input type="text" class="input-field" id="profState" placeholder="उदा. दिल्ली" required>
         </div>
       </div>
 
-      <button type="submit" class="submit-order-btn" style="background:var(--royal-maroon);">
-        <span>Save VIP Profile</span> 💾
+      <button type="submit" class="submit-order-btn" style="background:var(--saffron);">
+        <span>सदस्यता सुरक्षित करें</span> 💾
       </button>
     </form>
   </div>
 </div>
 
-<!-- 2. CHECKOUT + PREPAID UPI MODAL -->
+<!-- 2. SPEC MODAL -->
+<div class="checkout-modal" id="specModal">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeSpecModal()">×</button>
+    <div class="modal-head">
+      <h3 id="specTitle">आभूषण विवरण</h3>
+      <p style="font-family:'Montserrat',sans-serif;font-size:12px;color:var(--text-muted);margin-top:4px;">
+        हस्तनिर्मित आभूषण व प्रमाणिकता विनिर्देश
+      </p>
+    </div>
+
+    <table class="specs-table">
+      <tr>
+        <td>धातु (Base Metal)</td>
+        <td id="specMetal">High-Grade Brass Alloy</td>
+      </tr>
+      <tr>
+        <td>पॉलिश (Plating)</td>
+        <td id="specPlating">24K Antique Matte Gold Micro-Finish</td>
+      </tr>
+      <tr>
+        <td>नगीने (Stones)</td>
+        <td id="specStones">Hand-cut Kundan &amp; Seed Pearls</td>
+      </tr>
+      <tr>
+        <td>वजन (Weight)</td>
+        <td id="specWeight">Lightweight &amp; Comfort Fit (45-60g)</td>
+      </tr>
+      <tr>
+        <td>क्लोजर (Lock)</td>
+        <td id="specClosure">Push Back with Secure Silicone Lock</td>
+      </tr>
+    </table>
+
+    <button type="button" class="submit-order-btn" id="specAddBtn" style="background:var(--saffron);">
+      झोली में जोड़ें 🛍️
+    </button>
+  </div>
+</div>
+
+<!-- 3. CHECKOUT MODAL -->
 <div class="checkout-modal" id="orderModal">
   <div class="modal-content">
     <button class="modal-close" onclick="closeOrderModal()">×</button>
     
     <div class="modal-head">
-      <h3>Royal Checkout</h3>
+      <h3>ऑर्डर व सुरक्षित पेमेंट</h3>
       <p style="font-family:'Montserrat',sans-serif;font-size:12px;color:var(--text-muted);margin-top:4px;">
-        100% सुरक्षित प्रीपेड बुकिंग व फ्री होम डिलीवरी
+        100% सुरक्षित प्रीपेड बुकिंग व निःशुल्क होम डिलीवरी
       </p>
     </div>
 
-    <div class="order-items-box" id="cartContent">
+    <div class="order-items-box" id="cartContent" style="background:#fffcf5;border:1px solid var(--border-gold);border-radius:12px;padding:14px;margin-bottom:18px;">
       <p style="font-family:'Montserrat',sans-serif;font-size:13px;color:var(--text-muted);text-align:center;">
-        आपकी शॉपिंग बैग अभी खाली है।
+        आपकी झोली अभी खाली है।
       </p>
     </div>
 
     <form id="orderForm" onsubmit="handleOrderSubmit(event)">
       <div class="form-group">
-        <label>Full Name *</label>
+        <label>पूरा नाम *</label>
         <input type="text" class="input-field" id="custName" placeholder="उदा. अनुष्का शर्मा" required>
       </div>
 
       <div class="form-row">
         <div class="form-group">
-          <label>Phone Number *</label>
+          <label>मोबाइल नंबर *</label>
           <input type="tel" class="input-field" id="custPhone" placeholder="10 अंकों का नंबर" pattern="[0-9]{10}" required>
         </div>
         <div class="form-group">
-          <label>Pincode *</label>
+          <label>पिनकोड *</label>
           <input type="text" class="input-field" id="custPin" placeholder="उदा. 110059" required>
         </div>
       </div>
 
       <div class="form-group">
-        <label>Full Delivery Address *</label>
+        <label>डिलीवरी का पूरा पता *</label>
         <textarea class="input-field" id="custAddress" rows="2" placeholder="मकान नं, गली/रोड, लैंडमार्क..." required></textarea>
       </div>
 
       <div class="form-row">
         <div class="form-group">
-          <label>City *</label>
+          <label>शहर *</label>
           <input type="text" class="input-field" id="custCity" placeholder="उदा. नई दिल्ली" required>
         </div>
         <div class="form-group">
-          <label>State *</label>
+          <label>राज्य *</label>
           <input type="text" class="input-field" id="custState" placeholder="उदा. दिल्ली" required>
         </div>
       </div>
 
       <!-- UPI STEP 1 -->
       <div class="payment-card">
-        <span style="font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;color:var(--royal-maroon);text-transform:uppercase;">
-          💳 Step 1: Pay Online (Instant UPI)
+        <span style="font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;color:var(--kumkum);text-transform:uppercase;">
+          💳 चरण 1: ऑनलाइन पेमेंट (Instant UPI)
         </span>
         
         <a id="directUpiBtn" class="direct-upi-btn" href="#">
-          ⚡ Pay Directly via UPI App (GPay / PhonePe / Paytm)
+          ⚡ Pay via UPI App (PhonePe / GPay / Paytm)
         </a>
 
         <div class="qr-box">
@@ -1198,17 +1461,17 @@ header {
 
       <!-- UPI STEP 2 -->
       <div class="utr-card">
-        <label style="font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;color:#8c1d1d;display:block;">
-          📝 Step 2: UPI Transaction / UTR No. *
+        <label style="font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;color:var(--kumkum);display:block;">
+          📝 चरण 2: 12-अंकों का UPI UTR / Ref No. दर्ज करें *
         </label>
-        <small style="font-family:'Montserrat',sans-serif;font-size:11px;color:#695252;display:block;margin:3px 0 8px;">
-          पेमेंट के बाद 12-अंकों का UTR / Ref No. यहाँ दर्ज करें:
+        <small style="font-family:'Montserrat',sans-serif;font-size:11px;color:var(--text-muted);display:block;margin:3px 0 8px;">
+          पेमेंट के बाद PhonePe / Google Pay की रसीद से UTR नंबर यहाँ भरें:
         </small>
         <input type="text" class="input-field" id="custUtr" placeholder="उदा. 4256XXXXXXXX (12 Digits)" maxlength="24" required>
       </div>
 
       <button type="submit" class="submit-order-btn">
-        <span>Confirm Order &amp; Send via WhatsApp</span> 💬
+        <span>ऑर्डर कन्फर्म करें व WhatsApp पर भेजें</span> 💬
       </button>
     </form>
   </div>
@@ -1220,24 +1483,170 @@ const UPI_ID = "9971566545@pthdfc";
 const MERCHANT_NAME = "Jhumkawala";
 const WA_PHONE = "919971566545";
 
-let cart = [];
-let selectedStars = 5;
-
-// DEFAULT REVIEWS
-const defaultReviews = [
-  { name: "Priya Sharma", rating: 5, text: "Jhumka combo quality is genuinely royal! Beautiful packing and received on time in Delhi." },
-  { name: "Sneha Roy", rating: 5, text: "Meenakari velvet combo is gorgeous. Heavy festive look at such an affordable price." },
-  { name: "Ananya Mishra", rating: 4, text: "Loved the Rajputana combo box. Traditional, elegant and very comfortable to wear." }
+const products = [
+  {
+    id: 1,
+    category: "combos",
+    tag: "सर्वाधिक लोकप्रिय",
+    title: "Classic Heritage Combo",
+    desc: "3 अद्वितीय पारंपरिक झुमके सेट - मीनाकारी, घूँघरू व कुंदन फिनिशिंग के साथ।",
+    price: 899,
+    mrp: 1199,
+    img: "./jhumka-combo-1.png",
+    metal: "Skin-Friendly Brass Alloy",
+    plating: "24K Antique Gold Micro-Finish",
+    stones: "Kundan, Green Beads & Pearls",
+    weight: "Comfort Light (55g)",
+    closure: "Smooth Push-back with Silicone lock"
+  },
+  {
+    id: 2,
+    category: "combos",
+    tag: "रजवाड़ा स्टाइल",
+    title: "Royal Rajputana Combo",
+    desc: "शाही रजवाड़ा नक्काशी, चांदबाली पैटर्न और मखमली फिनिश वाला 3-पीस बॉक्स।",
+    price: 899,
+    mrp: 1199,
+    img: "./jhumka-combo-2.png",
+    metal: "High-Grade Copper Alloy",
+    plating: "Matte Royal Gold Polish",
+    stones: "Ruby Red Stones & Seed Pearls",
+    weight: "Ultra-Lightweight (60g)",
+    closure: "Classic Push-Back Post"
+  },
+  {
+    id: 3,
+    category: "combos",
+    tag: "उत्सव स्पेशल",
+    title: "Meenakari Velvet Combo",
+    desc: "हैंडक्राफ्टेड बनारसी मीनाकारी व मोतियों की लड़ियों से सजे 3 कॉम्बो इयररिंग्स।",
+    price: 899,
+    mrp: 1199,
+    img: "./jhumka-combo-3.png",
+    metal: "Eco-Friendly Brass Base",
+    plating: "Micro-Gold Gloss & Enamel",
+    stones: "Pink & Mint Meenakari Enamel",
+    weight: "Standard Festive Feel (50g)",
+    closure: "Push-Back with Stopper"
+  },
+  {
+    id: 4,
+    category: "combos",
+    tag: "नवीनतम संग्रह",
+    title: "Kundan Floral Combo",
+    desc: "फूलों की पंखुड़ियों जैसी नक्काशी, फ्लोरल कुंदन वर्क और लटकन ड्रॉप्स।",
+    price: 899,
+    mrp: 1199,
+    img: "./jhumka-combo-4.png",
+    metal: "Pure Brass Alloy Base",
+    plating: "Dual Tone Antique Finish",
+    stones: "White Polki Kundan & Tiny Pearls",
+    weight: "Featherlight Balance (48g)",
+    closure: "Ergonomic Push Post"
+  },
+  {
+    id: 5,
+    category: "bangles",
+    tag: "हस्तशिल्प कड़ा",
+    title: "Rajputi Bangle Kada Set",
+    desc: "पारंपरिक कुंदन कंगन व चूड़ी सेट - 2.4, 2.6 व 2.8 आकारों में उपलब्ध।",
+    price: 999,
+    mrp: 1499,
+    img: "./jhumka-combo-2.png",
+    metal: "Durable Brass Kada Base",
+    plating: "24K Matte Gold Texture",
+    stones: "Emerald & Ruby CZ Kundan",
+    weight: "Solid Hand Feel (95g pair)",
+    closure: "Screw Openable Lock"
+  }
 ];
 
-// INITIALIZE APP
+let cart = [];
+let selectedStars = 5;
+let activeCat = 'all';
+
+const defaultReviews = [
+  { name: "प्रिया शर्मा", city: "नई दिल्ली", product: "Classic Heritage Combo", rating: 5, text: "झुमका कॉम्बो की फिनिशिंग अद्भुत है! बिल्कुल असली सोने जैसा लुक देता है और वजन में भी हल्का है।" },
+  { name: "स्नेहा रॉय", city: "कोलकाता", product: "Meenakari Velvet Combo", rating: 5, text: "मीनाकारी का काम बहुत बारीकी से किया गया है। शादी में सबने पूछा कहाँ से लिया। ₹899 में 3 सेट मिलना कमाल है!" },
+  { name: "अनन्या मिश्रा", city: "लखनऊ", product: "Royal Rajputana Combo", rating: 5, text: "पैकेजिंग बहुत सुरक्षित और सुंदर थी। कानों में कोई दर्द नहीं होता।" }
+];
+
 window.addEventListener('DOMContentLoaded', () => {
   loadVIPProfile();
   loadReviews();
+  renderProducts();
   setRating(5);
 });
 
-// ================= VIP PROFILE LOGIC =================
+function filterCategory(cat, btn) {
+  activeCat = cat;
+  document.querySelectorAll('.cat-tab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderProducts();
+}
+
+function renderProducts() {
+  const grid = document.getElementById("productGrid");
+  const filtered = products.filter(p => activeCat === 'all' || p.category === activeCat);
+
+  if (filtered.length === 0) {
+    grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:50px;font-family:'Montserrat',sans-serif;color:var(--text-muted)">इस श्रेणी में नए डिज़ाइन जल्द ही शामिल किए जा रहे हैं! ✦</div>`;
+    return;
+  }
+
+  grid.innerHTML = filtered.map(p => `
+    <article class="product-card">
+      <div class="card-image-box">
+        <span class="exclusive-tag">${p.tag}</span>
+        <img src="${p.img}" alt="${p.title}" onerror="this.src='./jhumka-combo-1.png'">
+      </div>
+      <div class="card-info">
+        <h3>${p.title}</h3>
+        <p class="product-short-desc">${p.desc}</p>
+        
+        <div class="card-specs-pills">
+          <span class="spec-pill">✦ 24K मैट फिनिश</span>
+          <span class="spec-pill">✦ हैंडक्राफ्टेड</span>
+        </div>
+
+        <div class="card-pricing">
+          <span class="card-striked">₹${p.mrp}</span>
+          <span class="card-final-price">₹${p.price}</span>
+        </div>
+
+        <div class="card-buttons">
+          <button class="spec-btn" onclick="openSpecModal(${p.id})">विवरण 🔍</button>
+          <button class="add-btn" onclick="addToCart('${p.title}', ${p.price})">झोली में जोड़ें 🛍️</button>
+        </div>
+      </div>
+    </article>
+  `).join('');
+}
+
+function openSpecModal(productId) {
+  const p = products.find(item => item.id === productId);
+  if (!p) return;
+
+  document.getElementById("specTitle").innerText = p.title;
+  document.getElementById("specMetal").innerText = p.metal;
+  document.getElementById("specPlating").innerText = p.plating;
+  document.getElementById("specStones").innerText = p.stones;
+  document.getElementById("specWeight").innerText = p.weight;
+  document.getElementById("specClosure").innerText = p.closure;
+  
+  const addBtn = document.getElementById("specAddBtn");
+  addBtn.onclick = function() {
+    addToCart(p.title, p.price);
+    closeSpecModal();
+  };
+
+  document.getElementById("specModal").classList.add("active");
+}
+
+function closeSpecModal() {
+  document.getElementById("specModal").classList.remove("active");
+}
+
 function loadVIPProfile() {
   const saved = localStorage.getItem("jhumkawala_user");
   if (saved) {
@@ -1246,7 +1655,6 @@ function loadVIPProfile() {
     document.getElementById("vipCardName").innerText = user.name;
     document.getElementById("vipCardId").innerText = `ID: ${user.vipId}`;
 
-    // Autofill Profile Modal Form
     document.getElementById("profName").value = user.name || "";
     document.getElementById("profPhone").value = user.phone || "";
     document.getElementById("profPin").value = user.pin || "";
@@ -1254,7 +1662,6 @@ function loadVIPProfile() {
     document.getElementById("profCity").value = user.city || "";
     document.getElementById("profState").value = user.state || "";
 
-    // Autofill Checkout Form
     document.getElementById("custName").value = user.name || "";
     document.getElementById("custPhone").value = user.phone || "";
     document.getElementById("custPin").value = user.pin || "";
@@ -1282,7 +1689,7 @@ function saveProfile(e) {
   const profileData = { name, phone, pin, address, city, state, vipId };
   localStorage.setItem("jhumkawala_user", JSON.stringify(profileData));
 
-  alert("🎉 VIP Profile सफलतापूर्वक सेव हो गई!");
+  alert("🎉 आपकी सदस्यता प्रोफाइल सुरक्षित कर ली गई है!");
   loadVIPProfile();
   closeProfileModal();
 }
@@ -1295,7 +1702,6 @@ function closeProfileModal() {
   document.getElementById("profileModal").classList.remove("active");
 }
 
-// ================= REVIEWS & RATING LOGIC =================
 function setRating(stars) {
   selectedStars = stars;
   const spans = document.querySelectorAll("#starSelector span");
@@ -1318,13 +1724,14 @@ function loadReviews() {
   const listEl = document.getElementById("reviewsList");
   listEl.innerHTML = reviews.map(r => `
     <div class="review-item">
-      <div style="color:var(--gold-primary);font-size:16px;">${'★'.repeat(r.rating)}${'☆'.repeat(5 - r.rating)}</div>
+      <div style="color:#e5900b;font-size:16px;">${'★'.repeat(r.rating)}${'☆'.repeat(5 - r.rating)}</div>
+      <span class="rev-product-badge">📦 ${r.product || 'Jhumka Combo Box'}</span>
       <p style="font-family:'Montserrat',sans-serif;font-size:13px;color:var(--text-muted);margin:8px 0;line-height:1.6;">
         "${r.text}"
       </p>
       <div class="review-author">
-        <span>— ${r.name}</span>
-        <span style="font-size:10px;color:#28a745;font-weight:600;">✓ Verified Buyer</span>
+        <span>— ${r.name} (${r.city || 'सत्यापित ग्राहक'})</span>
+        <span style="font-size:10px;color:#28a745;font-weight:700;">✓ Verified</span>
       </div>
     </div>
   `).join('');
@@ -1333,19 +1740,20 @@ function loadReviews() {
 function submitReview(e) {
   e.preventDefault();
   const name = document.getElementById("revName").value.trim();
+  const city = document.getElementById("revCity").value.trim();
+  const product = document.getElementById("revProduct").value;
   const text = document.getElementById("revText").value.trim();
 
   let reviews = JSON.parse(localStorage.getItem("jhumkawala_reviews")) || defaultReviews;
-  reviews.unshift({ name, rating: selectedStars, text });
+  reviews.unshift({ name, city, product, rating: selectedStars, text });
   localStorage.setItem("jhumkawala_reviews", JSON.stringify(reviews));
 
-  alert("धन्यवाद! आपका रिव्यू सफलतापूर्वक जोड़ दिया गया है 🌟");
+  alert("धन्यवाद! आपकी समीक्षा जोड़ दी गई है 🌟");
   document.getElementById("reviewForm").reset();
   setRating(5);
   loadReviews();
 }
 
-// ================= CART & CHECKOUT LOGIC =================
 function addToCart(title, price) {
   cart.push({ title, price });
   updateCartUI();
@@ -1365,7 +1773,7 @@ function updateCartUI() {
   if (cart.length === 0) {
     container.innerHTML = `
       <p style="font-family:'Montserrat',sans-serif;font-size:13px;color:var(--text-muted);text-align:center;">
-        आपकी शॉपिंग बैग अभी खाली है।
+        आपकी झोली अभी खाली है।
       </p>
     `;
     updatePaymentDetails(0);
@@ -1375,18 +1783,18 @@ function updateCartUI() {
   let total = cart.reduce((acc, item) => acc + item.price, 0);
 
   let html = cart.map((item, idx) => `
-    <div class="cart-item-row" style="display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px dashed #d9c49a;font-family:'Montserrat',sans-serif;font-size:13px;">
+    <div style="display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px dashed var(--border-gold);font-family:'Montserrat',sans-serif;font-size:13px;">
       <span><b>${idx + 1}.</b> ${item.title}</span>
       <span>
         ₹${item.price}
-        <span class="item-remove" onclick="removeFromCart(${idx})" style="color:#ad2b2b;cursor:pointer;margin-left:10px;font-weight:bold;">✕</span>
+        <span onclick="removeFromCart(${idx})" style="color:#b22222;cursor:pointer;margin-left:10px;font-weight:bold;">✕</span>
       </span>
     </div>
   `).join('');
 
   html += `
-    <div style="display:flex;justify-content:space-between;font-family:'Montserrat',sans-serif;font-size:15px;font-weight:700;color:var(--royal-maroon);margin-top:8px;padding-top:8px;border-top:1.5px solid var(--gold-border);">
-      <span>Total Payable (कुल राशि):</span>
+    <div style="display:flex;justify-content:space-between;font-family:'Montserrat',sans-serif;font-size:15px;font-weight:700;color:var(--kumkum);margin-top:8px;padding-top:8px;border-top:1.5px solid var(--border-gold);">
+      <span>कुल देय राशि:</span>
       <span>₹${total}</span>
     </div>
   `;
@@ -1422,7 +1830,6 @@ function closeOrderModal() {
   document.getElementById('orderModal').classList.remove('active');
 }
 
-// Close modals on outside tap
 window.addEventListener('click', function(e) {
   if (e.target.classList.contains('checkout-modal')) {
     e.target.classList.remove('active');
@@ -1433,7 +1840,7 @@ function handleOrderSubmit(e) {
   e.preventDefault();
 
   if (cart.length === 0) {
-    alert("कृपया पहले कम से कम एक Jhumka Combo चुनें!");
+    alert("कृपया पहले कम से कम एक आभूषण चुनें!");
     return;
   }
 
@@ -1451,33 +1858,33 @@ function handleOrderSubmit(e) {
     return;
   }
 
-  // Get VIP ID if saved
   let vipTag = "";
   const savedUser = localStorage.getItem("jhumkawala_user");
   if (savedUser) {
     const u = JSON.parse(savedUser);
-    vipTag = `%0A• *VIP Member ID:* ${u.vipId}`;
+    vipTag = `%0A• *सदस्य ID:* ${u.vipId}`;
   }
 
   let total = cart.reduce((acc, item) => acc + item.price, 0);
   let itemsText = cart.map((item, idx) => `• ${idx + 1}. ${item.title} (₹${item.price})`).join("%0A");
 
   let waMessage = 
-    `*👑 NEW PREPAID ORDER - JHUMKAWALA 👑*%0A` +
+    `*॥ श्री गणेशाय नमः ॥*%0A` +
+    `*✨ नया आभूषण ऑर्डर - JHUMKAWALA ✨*%0A` +
     `============================%0A` +
-    `*📦 ORDER DETAILS:*%0A${itemsText}%0A%0A` +
-    `*💰 TOTAL AMOUNT:* ₹${total}%0A` +
-    `*💳 PAYMENT STATUS:* PAID ONLINE ✅%0A` +
-    `*🔢 UTR / TXN ID:* ${utr}%0A` +
+    `*📦 आभूषण विवरण:*%0A${itemsText}%0A%0A` +
+    `*💰 कुल भुगतान:* ₹${total}%0A` +
+    `*💳 भुगतान स्थिति:* PAID ONLINE ✅%0A` +
+    `*🔢 UPI UTR / TXN ID:* ${utr}%0A` +
     `============================%0A` +
-    `*👤 DELIVERY DETAILS:*%0A` +
-    `• *Customer:* ${name}%0A` +
-    `• *Mobile:* ${phone}${vipTag}%0A` +
-    `• *Address:* ${address}%0A` +
-    `• *City:* ${city}, ${state}%0A` +
-    `• *Pincode:* ${pin}%0A` +
+    `*👤 ग्राहक का पता:*%0A` +
+    `• *नाम:* ${name}%0A` +
+    `• *मोबाइल:* ${phone}${vipTag}%0A` +
+    `• *पता:* ${address}%0A` +
+    `• *शहर:* ${city}, ${state}%0A` +
+    `• *पिनकोड:* ${pin}%0A` +
     `============================%0A` +
-    `_कृपया पेमेंट व UTR वैरिफाई करके ऑर्डर डिस्पैच करें._`;
+    `_कृपया ऑर्डर व भुगतान की पुष्टि करके पार्सल डिस्पैच करें._`;
 
   window.open(`https://wa.me/${WA_PHONE}?text=${waMessage}`, '_blank');
 }
